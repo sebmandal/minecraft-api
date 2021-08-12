@@ -6,6 +6,7 @@
 
 ### Table of contents
 
+- [Distribution of work](#work-distribution)
 - [Introduction](#introduction)
 - [Features](#features)
 - [Examples](#example-pages)
@@ -18,6 +19,12 @@
 📲 To see the latest features and commits on this repo, check out the [working-branch](https://github.com/sebmandal/tebone/tree/working-branch) branch.
 
 ###### 👆🏼 If it doesn't exist, no changes are being made at the moment.
+
+### Work distribution
+
+Backend and frontend engineering: [@sebmandal](https://github.com/sebmandal)
+
+API information and development: [@LucasJoel1](https://github.com/LucasJoel1)
 
 ### Features
 
