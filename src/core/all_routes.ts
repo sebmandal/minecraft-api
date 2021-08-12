@@ -1,6 +1,8 @@
 // importing all the pages and APIs
-import blocks from "../api_routes/blocks";
+import blockNoInput from "../api_routes/blocks_no_input";
+import blockWithInput from "../api_routes/blocks_input";
 
 export default {
-	blocks,
+	blockNoInput,
+	blockWithInput,
 };

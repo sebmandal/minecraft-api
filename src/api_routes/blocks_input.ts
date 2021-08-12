@@ -1,4 +1,5 @@
 import Route from "../core/route";
+import Express from "express";
 import fs from "fs";
 
 // temporarily until we have actual JSON data
@@ -80,32 +81,29 @@ const BLOCKS = [
 	},
 ];
 
-const script = async (req: any, res: any) => {
-	// const BLOCKS = await JSON.parse(fs.readFileSync("./api/blocks.json", "utf8"));
+const script = async (req: Express.Request, res: Express.Response) => {
+	res.setHeader("Content-Type", "application/json");
 
+	// const BLOCKS = await JSON.parse(fs.readFileSync("./api/blocks.json", "utf8"));
 	const input = req.params.block;
 
-	if (!isNaN(input)) {
-		/**
-		 * checking if a block exists with the provided ID
-		 */
-		const inputNumber: number = parseInt(input);
-		const block: object | undefined = BLOCKS.find((b) => b.id === inputNumber);
-		if (block) return res.send(block);
-	} else {
-		/**
-		 * checking if a block exists with the provided name
-		 */
-		const result = BLOCKS.find(
-			(b) => b.name.toLowerCase() === input.toLowerCase()
-		);
-		if (result) return res.send(result);
-	}
+	/**
+	 * checking if a block has an ID equal to the provided input
+	 */
+	const inputNumber: number = parseInt(input);
+	const block: object | undefined = BLOCKS.find((b) => b.id === inputNumber);
+	if (block) return res.send(block);
+
+	/**
+	 * checking if a block has a name equal to the provided input
+	 */
+	const result = BLOCKS.find((b) => b.name.toLowerCase() === input);
+	if (result) return res.send(result);
 
 	/**
 	 * if nothing was found or no query was provided, return everything
 	 */
-	return res.send(BLOCKS);
+	return res.json(BLOCKS);
 };
 
 export default class API extends Route {
