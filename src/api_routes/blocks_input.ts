@@ -106,7 +106,7 @@ const script = async (req: Express.Request, res: Express.Response) => {
 	return res.json(BLOCKS);
 };
 
-export default class API extends Route {
+export default class BlockAPIWithInput extends Route {
 	/**
 	 * Configuring the necessary properties for the class to be executable()
 	 *
