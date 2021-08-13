@@ -3,7 +3,7 @@
 		"name": "Air",
 		"minecraftName": "minecraft:air",
 		"legacyID": "0",
-		"imageUrl": "https://cdn.discordapp.com/attachments/869843923428847666/875806669517512734/air.png",
+		"imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/item/barrier.png",
 		"naturalSpawns": {
 			"naturalSpawnInOverworldDimension": true,
 			"naturalSpawnInNetherDimension": true,
