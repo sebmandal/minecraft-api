@@ -6,7 +6,7 @@ const script = async (req: any, res: any) => {
 	const newObject = {
 		name: req.body.name,
 		minecraftName: req.body.minecraftName,
-		legacyID: parseInt(req.body.legacyID),
+		legacyID: req.body.legacyID,
 		imageUrl: `https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/${req.body.name
 			.replace(" ", "_")
 			.toLowerCase()}.png`,
