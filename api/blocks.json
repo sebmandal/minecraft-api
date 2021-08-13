@@ -808,5 +808,61 @@
         "minimumExperienceOnBreak": 0,
         "maximumExperienceOnBreak": 0,
         "removed": false
+    },
+    {
+        "name": "Birch Planks",
+        "minecraftName": "minecraft:birch_planks",
+        "legacyID": "5:2",
+        "introduced": "1.2.4",
+        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/birch_planks.png",
+        "naturalSpawns": {
+            "naturalSpawnInOverworldDimension": true,
+            "naturalSpawnInNetherDimension": false,
+            "naturalSpawnInEndDimension": false
+        },
+        "solidity": "solid",
+        "stats": {
+            "opacity": 1,
+            "hardness": 1.5,
+            "resistance": 6,
+            "luminance": 0,
+            "interactive": false,
+            "slippery": false,
+            "flammable": true,
+            "catchesFireFromLava": true,
+            "brokenByWater": false
+        },
+        "hitbox": {
+            "width": 1,
+            "height": 1,
+            "length": 1
+        },
+        "drops": {
+            "defaultDrop": "minecraft:birch_planks",
+            "silkTouchDrop": "minecraft:birch_planks",
+            "dropAffectedByFortune": false
+        },
+        "toolData": [
+            {
+                "tool": "axe",
+                "breakSpeed": {
+                    "wooden": 1.5,
+                    "stone": 0.75,
+                    "iron": 0.5,
+                    "diamond": 0.4,
+                    "netherite": 0.35,
+                    "golden": 0.2
+                }
+            },
+            {
+                "tool": "fists",
+                "breakSpeed": {
+                    "default": 3
+                }
+            }
+        ],
+        "minimumExperienceOnBreak": 0,
+        "maximumExperienceOnBreak": 0,
+        "removed": false
     }
 ]
