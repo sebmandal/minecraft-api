@@ -21,7 +21,10 @@ const script = async (req: Express.Request, res: Express.Response) => {
 	 * checking if a block has a name equal to the provided input
 	 */
 	const result: object | undefined = BLOCKS.find(
-		(b: any) => b.name.toLowerCase() === input
+		(b: any) =>
+			b.name.toLowerCase() === input ||
+			b.legacyID === input ||
+			b.minecraftName.slice(10) === input
 	);
 	if (result) return res.send(result);
 
