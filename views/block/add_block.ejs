@@ -4,62 +4,64 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<%- include("./partials/head.ejs") %>
+		<%- include("../partials/head.ejs") %>
 		<title>MC API</title>
 	</head>
-	<body class="container-md sm-light-mode">
-		<%- include("./partials/nav.ejs") %>
-        <div class="row py-5">
-            <div class="dark-mode-toggle">
-                <button type="button" class="dark-mode-toggle" onclick="toggleDarkMode()">Toggle dark mode</button>
-            </div>
+	<body>
+		<%- include("../partials/nav.ejs") %>
+        <div class="container bg-light py-3">
             <h1 class="text-center">Add a new block</h1>
-            <form class="mb-3" action="/block" method="post">
+            <form class="" action="/add_block" method="post">
 
                 <div class="form-group mb-3">
                     <label for="name">Name</label>
-                    <input required name="name" type="text" class="form-control sm-light-mode" placeholder="Stone" />
+                    <input required name="name" type="text" class="form-control" placeholder="Stone" />
                 </div>
 
                 <div class="form-group mb-3">
                     <label for="minecraftName">Minecraft name</label>
-                    <input required name="minecraftName" type="text" class="form-control sm-light-mode" placeholder="minecraft:stone" />
+                    <input required name="minecraftName" type="text" class="form-control" placeholder="minecraft:stone" />
                 </div>
 
                 <div class="form-group mb-3">
                     <label for="legacyID">Legacy ID</label>
-                    <input required name="legacyID" type="text" class="form-control sm-light-mode" placeholder="1" />
+                    <input required name="legacyID" type="text" class="form-control" placeholder="1" />
                 </div>
 
                 <div class="form-group mb-3">
-                    <input type="checkbox" class="form-check-input sm-light-mode" name="overworld" />
+                    <label for="introduced">Introduced in version:</label>
+                    <input required name="introduced" type="text" class="form-control" placeholder="rd-20090515" />
+                </div>
+
+                <div class="form-group mb-3">
+                    <input type="checkbox" class="form-check-input" name="overworld" />
                     <label for="overworld">Natural spawning in the overworld</label>
                     <br />
-                    <input type="checkbox" class="form-check-input sm-light-mode" name="nether" />
+                    <input type="checkbox" class="form-check-input" name="nether" />
                     <label for="nether">Natural spawning in the nether</label>
                     <br />
-                    <input type="checkbox" class="form-check-input sm-light-mode" name="end" />
+                    <input type="checkbox" class="form-check-input" name="end" />
                     <label for="end">Natural spawning in the end</label>
                 </div>
 
                 <div class="form-group mb-3">
                     <label for="defaultDrop">Default drop</label>
-                    <input required name="defaultDrop" type="text" class="form-control sm-light-mode" placeholder="minecraft:cobblestone" />
+                    <input required name="defaultDrop" type="text" class="form-control" placeholder="minecraft:cobblestone" />
                 </div>
                 
                 <div class="form-group mb-3">
                     <label for="silkTouchDrop">Silk touch drop</label>
-                    <input required name="silkTouchDrop" type="text" class="form-control sm-light-mode" placeholder="minecraft:stone" />
+                    <input required name="silkTouchDrop" type="text" class="form-control" placeholder="minecraft:stone" />
                 </div>
 
                 <div class="form-group mb-3">
-                    <input type="checkbox" class="form-check-input sm-light-mode" name="affectedByFortune" />
+                    <input type="checkbox" class="form-check-input" name="affectedByFortune" />
                     <label for="affectedByFortune">Affected by fortune</label>
                 </div>
 
                 <div class="form-group mb-3">
                     <label for="solidity">Solidity</label>
-                    <select class="form-control sm-light-mode" name="solidity">
+                    <select class="form-control" name="solidity">
                         <option>Solid</option>
                         <option>Liquid</option>
                         <option>Vacant</option>
@@ -72,7 +74,7 @@
                     required
                     name="width"
                     type="number" step="0.01"
-                    class="form-control sm-light-mode"
+                    class="form-control"
                     placeholder="1"
                     ></input>
                 </div>
@@ -83,7 +85,7 @@
                     required
                     name="length"
                     type="number" step="0.01"
-                    class="form-control sm-light-mode"
+                    class="form-control"
                     placeholder="1"
                     ></input>
                 </div>
@@ -94,7 +96,7 @@
                     required
                     name="height"
                     type="number" step="0.01"
-                    class="form-control sm-light-mode"
+                    class="form-control"
                     placeholder="1"
                     ></input>
                 </div>
@@ -105,7 +107,7 @@
                     required
                     name="hardness"
                     type="number" step="0.01"
-                    class="form-control sm-light-mode"
+                    class="form-control"
                     placeholder="1.5"
                     ></input>
                 </div>
@@ -116,7 +118,7 @@
                         required
                         name="resistance"
                         type="number" step="0.01"
-                        class="form-control sm-light-mode"
+                        class="form-control"
                         placeholder="6"
                     ></input>
                 </div>
@@ -127,7 +129,7 @@
                         required
                         name="opacity"
                         type="number" step="0.01"
-                        class="form-control sm-light-mode"
+                        class="form-control"
                         placeholder="1"
                     ></input>
                 </div>
@@ -138,7 +140,7 @@
                         required
                         name="luminance"
                         type="number" step="0.01"
-                        class="form-control sm-light-mode"
+                        class="form-control"
                         placeholder="0"
                     ></input>
                 </div>
@@ -149,7 +151,7 @@
                         required
                         name="minimumXP"
                         type="number" step="0.01"
-                        class="form-control sm-light-mode"
+                        class="form-control"
                         placeholder="0"
                     ></input>
                 </div>
@@ -160,39 +162,39 @@
                         required
                         name="maximumXP"
                         type="number" step="0.01"
-                        class="form-control sm-light-mode"
+                        class="form-control"
                         placeholder="0"
                     ></input>
                 </div>
 
                 <div class="form-group mb-3">
                     <label for="tooldata">Tool data</label>
-                    <textarea
+                    <pre><textarea
                         required
                         name="tooldata"
                         type="text"
-                        class="autogrow form-control sm-light-mode"
+                        class="autogrow form-control"
                         style="resize: none;"
                     >
 [
-    {
-        "tool": "pickaxe",
-        "breakSpeed": {
-            "wooden": 1.15,
-            "stone": 0.6,
-            "iron": 0.4,
-            "diamond": 0.3,
-            "netherite": 0.25,
-            "golden": 0.2
-        }
-    },
-    {
-        "tool": "fists",
-        "breakSpeed": {
-            "default": 7.5
-        }
+  {
+    "tool": "pickaxe",
+    "breakSpeed": {
+      "wooden": 1.15,
+      "stone": 0.6,
+      "iron": 0.4,
+      "diamond": 0.3,
+      "netherite": 0.25,
+      "golden": 0.2
     }
-]</textarea>
+  },
+  {
+    "tool": "fists",
+    "breakSpeed": {
+      "default": 7.5
+    }
+  }
+]</textarea></pre>
                 </div>
 
                 <div class="form-group my-3">
@@ -210,11 +212,14 @@
                     <br />
                     <input type="checkbox" class="form-check-input" name="brokenByWater" />
                     <label for="brokenByWater">Broken by water</label>
+                    <br />
+                    <input type="checkbox" class="form-check-input" name="interactive" />
+                    <label for="interactive">Interactive</label>
                 </div>
     
                 <input type="submit" value="Upload" class="btn btn-secondary" />
             </form>
         </div>
-		<%- include("./partials/footer.ejs") %>
+		<%- include("../partials/footer.ejs") %>
 	</body>
 </html>

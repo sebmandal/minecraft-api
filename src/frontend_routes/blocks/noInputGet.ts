@@ -2,13 +2,12 @@ import Route from "../../core/route";
 import fs from "fs";
 
 const script = async (req: any, res: any) => {
-	res.render("block", {
-		session: req.session,
-		blocks: JSON.parse(fs.readFileSync("./api/blocks.json", "utf8")),
-	});
+	const BLOCKS = await JSON.parse(fs.readFileSync("./api/blocks.json", "utf8"));
+
+	return res.render("block/blocks", { blocks: BLOCKS });
 };
 
-export default class BlockGet extends Route {
+export default class BlocksGet extends Route {
 	/**
 	 * Configuring the necessary properties for the class to be executable()
 	 *
@@ -17,6 +16,6 @@ export default class BlockGet extends Route {
 	 * @param script - The route handler script
 	 */
 	constructor() {
-		super("/block", "get", script);
+		super("/blocks", "get", script);
 	}
 }
