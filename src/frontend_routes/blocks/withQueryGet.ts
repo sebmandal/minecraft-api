@@ -13,7 +13,7 @@ const script = async (req: any, res: any) => {
 			(b: any) => b.id === inputNumber
 		);
 		if (block)
-			return res.render("block", {
+			return res.render("block/block", {
 				block: block,
 				blocks: JSON.parse(fs.readFileSync("./api/blocks.json", "utf8")),
 			});
@@ -28,7 +28,7 @@ const script = async (req: any, res: any) => {
 				b.minecraftName.slice(10) === req.query.block
 		);
 		if (result)
-			return res.render("block", {
+			return res.render("block/block", {
 				block: result,
 				blocks: JSON.parse(fs.readFileSync("./api/blocks.json", "utf8")),
 			});

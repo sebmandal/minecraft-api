@@ -2,7 +2,7 @@ import Route from "../../core/route";
 import fs from "fs";
 
 const script = async (req: any, res: any) => {
-	res.render("add_block", {
+	res.render("block/add_block", {
 		session: req.session,
 		blocks: JSON.parse(fs.readFileSync("./api/blocks.json", "utf8")),
 	});

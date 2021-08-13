@@ -4,7 +4,7 @@ import fs from "fs";
 const script = async (req: any, res: any) => {
 	const BLOCKS = await JSON.parse(fs.readFileSync("./api/blocks.json", "utf8"));
 
-	return res.render("blocks", { blocks: BLOCKS });
+	return res.render("block/blocks", { blocks: BLOCKS });
 };
 
 export default class BlocksGet extends Route {

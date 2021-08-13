@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<%- include("../partials/head.ejs") %>
+		<title>MC API</title>
+	</head>
+	<body>
+		<%- include("../partials/nav.ejs") %>
+		<div class="container bg-light">
+			<div class="row">
+				<% blocks.forEach(block => { %>
+				<div class="card col-6 col-md-3 rounded-0">
+					<div class="card-body my-2">
+						<a href="/blocks/<%= block.legacyID %>">
+							<img
+								src="<%= block.imageUrl %>"
+								alt="<%= block.minecraftName %>"
+								height="8"
+								width="8"
+								class="w-100 h-auto float-start mb-2"
+							/>
+						</a>
+						<p class="fs-4 card-title m-0 py-2">
+							<b><%= block.name %></b>
+							<small class="card-text fst-italic">
+								<%= block.legacyID %>
+							</small>
+							<br class="d-none d-md-block" />
+							<small
+								class="card-text fst-italic d-none d-md-block"
+							>
+								<%= block.minecraftName %>
+							</small>
+						</p>
+						<a href="/blocks/<%= block.legacyID %>">
+							<button type="button" class="btn btn-primary"
+								>View more</button
+							>
+						</a>
+					</div>
+				</div>
+				<% }) %>
+			</div>
+		</div>
+		<%- include("../partials/footer.ejs") %>
+	</body>
+</html>
