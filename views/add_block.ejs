@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<%- include("./partials/head.ejs") %>
+		<title>MC API</title>
+	</head>
+	<body>
+		<%- include("./partials/nav.ejs") %>
+        <div class="container bg-light py-5">
+            <h1 class="text-center">Add a new block</h1>
+            <form class="mb-3" action="/add_block" method="post">
+
+                <div class="form-group mb-3">
+                    <label for="name">Name</label>
+                    <input required name="name" type="text" class="form-control" placeholder="Stone" />
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="minecraftName">Minecraft name</label>
+                    <input required name="minecraftName" type="text" class="form-control" placeholder="minecraft:stone" />
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="legacyID">Legacy ID</label>
+                    <input required name="legacyID" type="text" class="form-control" placeholder="1" />
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="introduced">Introduced in version:</label>
+                    <input required name="introduced" type="text" class="form-control" placeholder="rd-20090515" />
+                </div>
+
+                <div class="form-group mb-3">
+                    <input type="checkbox" class="form-check-input" name="overworld" />
+                    <label for="overworld">Natural spawning in the overworld</label>
+                    <br />
+                    <input type="checkbox" class="form-check-input" name="nether" />
+                    <label for="nether">Natural spawning in the nether</label>
+                    <br />
+                    <input type="checkbox" class="form-check-input" name="end" />
+                    <label for="end">Natural spawning in the end</label>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="defaultDrop">Default drop</label>
+                    <input required name="defaultDrop" type="text" class="form-control" placeholder="minecraft:cobblestone" />
+                </div>
+                
+                <div class="form-group mb-3">
+                    <label for="silkTouchDrop">Silk touch drop</label>
+                    <input required name="silkTouchDrop" type="text" class="form-control" placeholder="minecraft:stone" />
+                </div>
+
+                <div class="form-group mb-3">
+                    <input type="checkbox" class="form-check-input" name="affectedByFortune" />
+                    <label for="affectedByFortune">Affected by fortune</label>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="solidity">Solidity</label>
+                    <select class="form-control" name="solidity">
+                        <option>Solid</option>
+                        <option>Liquid</option>
+                        <option>Vacant</option>
+                    </select>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="width">Width</label>
+                    <input
+                    required
+                    name="width"
+                    type="number" step="0.01"
+                    class="form-control"
+                    placeholder="1"
+                    ></input>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="length">Length</label>
+                    <input
+                    required
+                    name="length"
+                    type="number" step="0.01"
+                    class="form-control"
+                    placeholder="1"
+                    ></input>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="height">Height</label>
+                    <input
+                    required
+                    name="height"
+                    type="number" step="0.01"
+                    class="form-control"
+                    placeholder="1"
+                    ></input>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="hardness">Hardness</label>
+                    <input
+                    required
+                    name="hardness"
+                    type="number" step="0.01"
+                    class="form-control"
+                    placeholder="1.5"
+                    ></input>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="resistance">Blast Resistance</label>
+                    <input
+                        required
+                        name="resistance"
+                        type="number" step="0.01"
+                        class="form-control"
+                        placeholder="6"
+                    ></input>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="opacity">Opacity</label>
+                    <input
+                        required
+                        name="opacity"
+                        type="number" step="0.01"
+                        class="form-control"
+                        placeholder="1"
+                    ></input>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="luminance">Luminance</label>
+                    <input
+                        required
+                        name="luminance"
+                        type="number" step="0.01"
+                        class="form-control"
+                        placeholder="0"
+                    ></input>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="minimumXP">Min XP on break</label>
+                    <input
+                        required
+                        name="minimumXP"
+                        type="number" step="0.01"
+                        class="form-control"
+                        placeholder="0"
+                    ></input>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="maximumXP">Max XP on break</label>
+                    <input
+                        required
+                        name="maximumXP"
+                        type="number" step="0.01"
+                        class="form-control"
+                        placeholder="0"
+                    ></input>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="tooldata">Tool data</label>
+                    <pre><textarea
+                        required
+                        name="tooldata"
+                        type="text"
+                        class="autogrow form-control"
+                        style="resize: none;"
+                    >
+[
+  {
+    "tool": "pickaxe",
+    "breakSpeed": {
+      "wooden": 1.15,
+      "stone": 0.6,
+      "iron": 0.4,
+      "diamond": 0.3,
+      "netherite": 0.25,
+      "golden": 0.2
+    }
+  },
+  {
+    "tool": "fists",
+    "breakSpeed": {
+      "default": 7.5
+    }
+  }
+]</textarea></pre>
+                </div>
+
+                <div class="form-group my-3">
+                    <input type="checkbox" class="form-check-input" name="removed" />
+                    <label for="removed">Removed</label>
+                    <br />
+                    <input type="checkbox" class="form-check-input" name="slippery" />
+                    <label for="slippery">Slippery</label>
+                    <br />
+                    <input type="checkbox" class="form-check-input" name="flammable" />
+                    <label for="flammable">Flammable</label>
+                    <br />
+                    <input type="checkbox" class="form-check-input" name="catchesFireFromLava" />
+                    <label for="catchesFireFromLava">Catches fire from lava</label>
+                    <br />
+                    <input type="checkbox" class="form-check-input" name="brokenByWater" />
+                    <label for="brokenByWater">Broken by water</label>
+                    <br />
+                    <input type="checkbox" class="form-check-input" name="interactive" />
+                    <label for="interactive">Interactive</label>
+                </div>
+    
+                <input type="submit" value="Upload" class="btn btn-secondary" />
+            </form>
+        </div>
+		<%- include("./partials/footer.ejs") %>
+	</body>
+</html>

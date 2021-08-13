@@ -13,13 +13,3 @@ function expandTextarea(i, elem) {
 	});
 	resizeTextarea($(elem));
 }
-
-const toggleDarkMode = () => {
-	if ($("body").hasClass("bg-dark")) {
-		$("body").removeClass("bg-dark");
-		$("body").removeClass("text-light");
-	} else {
-		$("body").addClass("bg-dark");
-		$("body").addClass("text-light");
-	}
-};

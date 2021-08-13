@@ -574,5 +574,116 @@
         "minimumExperienceOnBreak": 0,
         "maximumExperienceOnBreak": 0,
         "removed": false
+    },
+    {
+        "name": "Test",
+        "minecraftName": "minecraft:testo",
+        "legacyID": "420:69",
+        "introduced": "some stupid shit",
+        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/test.png",
+        "naturalSpawns": {
+            "naturalSpawnInOverworldDimension": true,
+            "naturalSpawnInNetherDimension": true,
+            "naturalSpawnInEndDimension": false
+        },
+        "solidity": "liquid",
+        "stats": {
+            "opacity": 1,
+            "hardness": 1.5,
+            "resistance": 6.2,
+            "luminance": 0.1,
+            "slippery": true,
+            "flammable": false,
+            "catchesFireFromLava": true,
+            "brokenByWater": false
+        },
+        "hitbox": {
+            "width": 1,
+            "height": 2.45,
+            "length": 4.2
+        },
+        "drops": {
+            "defaultDrop": "minecraft:cobbletest",
+            "silkTouchDrop": "minecraft:testyblock",
+            "dropAffectedByFortune": true
+        },
+        "toolData": [
+            {
+                "tool": "pickaxe",
+                "breakSpeed": {
+                    "wooden": 1.15,
+                    "stone": 0.6,
+                    "iron": 0.4,
+                    "diamond": 0.3,
+                    "netherite": 0.25,
+                    "golden": 0.2
+                }
+            },
+            {
+                "tool": "fists",
+                "breakSpeed": {
+                    "default": 7.5
+                }
+            }
+        ],
+        "minimumExperienceOnBreak": 0,
+        "maximumExperienceOnBreak": 9,
+        "removed": false
+    },
+    {
+        "name": "test",
+        "minecraftName": "minecraft:testyblock",
+        "legacyID": "420:69",
+        "introduced": "rd-urmom",
+        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/test.png",
+        "naturalSpawns": {
+            "naturalSpawnInOverworldDimension": true,
+            "naturalSpawnInNetherDimension": false,
+            "naturalSpawnInEndDimension": true
+        },
+        "solidity": "solid",
+        "stats": {
+            "opacity": 1.2,
+            "hardness": 1.5,
+            "resistance": 6.2,
+            "luminance": 0,
+            "interactive": true,
+            "slippery": true,
+            "flammable": false,
+            "catchesFireFromLava": true,
+            "brokenByWater": false
+        },
+        "hitbox": {
+            "width": 1,
+            "height": 1.2,
+            "length": 3.24
+        },
+        "drops": {
+            "defaultDrop": "minecraft:cobbletest",
+            "silkTouchDrop": "minecraft:testyblock",
+            "dropAffectedByFortune": true
+        },
+        "toolData": [
+            {
+                "tool": "pickaxe",
+                "breakSpeed": {
+                    "wooden": 1.15,
+                    "stone": 0.6,
+                    "iron": 0.4,
+                    "diamond": 0.3,
+                    "netherite": 0.25,
+                    "golden": 0.2
+                }
+            },
+            {
+                "tool": "fists",
+                "breakSpeed": {
+                    "default": 7.5
+                }
+            }
+        ],
+        "minimumExperienceOnBreak": 0.4,
+        "maximumExperienceOnBreak": 1,
+        "removed": true
     }
 ]

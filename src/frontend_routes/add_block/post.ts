@@ -7,6 +7,7 @@ const script = async (req: any, res: any) => {
 		name: req.body.name,
 		minecraftName: req.body.minecraftName,
 		legacyID: req.body.legacyID,
+		introduced: req.body.introduced,
 		imageUrl: `https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/${req.body.name
 			.replace(" ", "_")
 			.toLowerCase()}.png`,
@@ -21,6 +22,7 @@ const script = async (req: any, res: any) => {
 			hardness: parseFloat(req.body.hardness),
 			resistance: parseFloat(req.body.resistance),
 			luminance: parseFloat(req.body.luminance),
+			interactive: Boolean(req.body.interactive),
 			slippery: Boolean(req.body.slippery),
 			flammable: Boolean(req.body.flammable),
 			catchesFireFromLava: Boolean(req.body.catchesFireFromLava),
@@ -49,7 +51,7 @@ const script = async (req: any, res: any) => {
 	return res.redirect("/");
 };
 
-export default class BlockPost extends Route {
+export default class AddBlockPost extends Route {
 	/**
 	 * Configuring the necessary properties for the class to be executable()
 	 *
@@ -58,6 +60,6 @@ export default class BlockPost extends Route {
 	 * @param script - The route handler script
 	 */
 	constructor() {
-		super("/block", "post", script);
+		super("/add_block", "post", script);
 	}
 }
