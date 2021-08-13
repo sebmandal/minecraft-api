@@ -1,13 +1,30 @@
+@import url("./minecraftia.css");
+
 body {
 	image-rendering: pixelated;
 
 	background: url(https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/dirt.png);
 	background-size: 100vw;
 	background-repeat: repeat;
+
+	font-family: "minecraftia";
 }
 
 .block {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+
+.index-jumbotron {
+	background-color: #146b41;
+}
+
+.index-jumbotron h2 {
+	text-shadow: 0.25rem 0.25rem 0px #005304;
+}
+
+pre,
+code {
+	font-family: "minecraftia", monospace;
 }

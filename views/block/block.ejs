@@ -24,7 +24,7 @@
 			<div class="row">
 				<!-- Title / header -->
 				<div class="col-12 text-center text-md-start">
-					<h1 class="mb-0"><%= block.name %></h1>
+					<h2 class="mb-0"><%= block.name %></h1>
 					<p class="mb-3 fst-italic">
 						<%= block.legacyID %> — <%= block.minecraftName %>
 					</p>
@@ -32,7 +32,7 @@
 
 				<!-- SPAWNS IN _ DIMENSIONS -->
 				<div class="col-12 mb-3">
-					<h2>Natural spawn dimensions:</h2>
+					<h3>Natural spawn dimensions:</h2>
 					<div class="col-12">
 						<code class="text-dark"
 							><b>Overworld</b>: <%=
@@ -55,7 +55,7 @@
 
 				<!-- Stats -->
 				<div class="col-12 mb-3">
-					<h2>Statistics</h2>
+					<h3>Statistics</h2>
                     <div class="col-12">
                         <code class="text-dark"><b>solidity</b>: <%= block.solidity %></code>
                     </div>
@@ -69,7 +69,7 @@
 
 				<!-- Hitbox dimensions -->
 				<div class="col-12 mb-3">
-					<h2>Hitbox Dimensions</h2>
+					<h3>Hitbox Dimensions</h2>
 					<div class="col-12">
 						<code class="text-dark"><b>Height</b>: <%= block.hitbox.height %></code>
 					</div>
@@ -83,7 +83,7 @@
 
 				<!-- Drops -->
 				<div class="col-12 mb-3">
-					<h2>Drops</h2>
+					<h3>Drops</h2>
                     <% Object.keys(block.drops).forEach(drop => { %>
 					<div class="col-12">
 						<code class="text-dark"><b><%= drop %></b>: <%= block.drops[drop] %></code>
@@ -92,26 +92,28 @@
 				</div>
 
 				<!-- Tool Data -->
-				<div class="col-12">
-					<h2>Breaking Speed</h2>
-					<% Object.keys(block.toolData).forEach(object => { %>
-					<div class="col-12 mb-3">
-						<code class="text-dark fs-5">
-							<b><%= block.toolData[object].tool.substring(1, -1).toUpperCase() +
-							block.toolData[object].tool.slice(1) %></b>
-						</code>
-                        <% Object.keys(block.toolData[object].breakSpeed).forEach(type => { %>
-                        <div class="col-12">
-                            <code class="text-dark"><b><%= type %></b>: <%= block.toolData[object].breakSpeed[type] + "seconds" %></code>
+				<% if (block.toolData.length > 0) { %>
+                    <div class="col-12">
+                        <h3>Breaking Speed</h2>
+                        <% Object.keys(block.toolData).forEach(object => { %>
+                        <div class="col-12 mb-3">
+                            <code class="text-dark fs-5">
+                                <b><%= block.toolData[object].tool.substring(1, -1).toUpperCase() +
+                                block.toolData[object].tool.slice(1) %></b>
+                            </code>
+                            <% Object.keys(block.toolData[object].breakSpeed).forEach(type => { %>
+                            <div class="col-12">
+                                <code class="text-dark"><b><%= type %></b>: <%= block.toolData[object].breakSpeed[type] + "seconds" %></code>
+                            </div>
+                            <% }) %>
                         </div>
                         <% }) %>
-					</div>
-					<% }) %>
-				</div>
+                    </div>
+                <% } %>
 
                 <!-- Experience -->
                 <div class="col-12 mb-3">
-                    <h2>Experience on break</h2>
+                    <h3>Experience on break</h2>
                     <div class="col-12">
                         <code class="text-dark"><b>Minimum</b>: <%= block.minimumExperienceOnBreak %></code>
                     </div>
