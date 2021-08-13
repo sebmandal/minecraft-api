@@ -7,7 +7,7 @@
 		<%- include("./partials/head.ejs") %>
 		<title>MC API</title>
 	</head>
-	<body class="container sm-light-mode">
+	<body class="container-md sm-light-mode">
 		<%- include("./partials/nav.ejs") %>
         <div class="row py-5">
             <div class="dark-mode-toggle">
@@ -28,13 +28,7 @@
 
                 <div class="form-group mb-3">
                     <label for="legacyID">Legacy ID</label>
-                    <input
-                        required
-                        name="legacyID"
-                        type="number"
-                        class="form-control sm-light-mode"
-                        placeholder="0"
-                    ></input>
+                    <input required name="legacyID" type="text" class="form-control sm-light-mode" placeholder="1" />
                 </div>
 
                 <div class="form-group mb-3">
