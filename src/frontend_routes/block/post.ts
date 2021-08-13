@@ -19,7 +19,7 @@ const script = async (req: any, res: any) => {
 			opacity: parseInt(req.body.opacity),
 			hardness: parseInt(req.body.hardness),
 			resistance: parseInt(req.body.resistance),
-			luminance: parseInt(req.body.lightEmit),
+			luminance: parseInt(req.body.luminance),
 			slippery: Boolean(req.body.slippery),
 			flammable: Boolean(req.body.flammable),
 			catchesFireFromLava: Boolean(req.body.catchesFireFromLava),
