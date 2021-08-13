@@ -6,33 +6,39 @@ const script = async (req: any, res: any) => {
 	const newObject = {
 		name: req.body.name,
 		minecraftName: req.body.minecraftName,
+		legacyID: req.body.legacyID,
 		imageUrl: `https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/${req.body.name
 			.replace(" ", "_")
 			.toLowerCase()}.png`,
 		naturalSpawns: {
-			naturalSpawnInOverworldDimension: req.body.overworld,
-			naturalSpawnInNetherDimension: req.body.nether,
-			naturalSpawnInEndDimension: req.body.end,
+			naturalSpawnInOverworldDimension: Boolean(req.body.overworld),
+			naturalSpawnInNetherDimension: Boolean(req.body.nether),
+			naturalSpawnInEndDimension: Boolean(req.body.end),
 		},
 		solidity: req.body.solidity.toLowerCase(),
 		stats: {
-			opacity: parseInt(req.body.opacity),
-			hardness: parseInt(req.body.hardness),
-			resistance: parseInt(req.body.resistance),
-			luminance: parseInt(req.body.lightEmit),
+			opacity: parseFloat(req.body.opacity),
+			hardness: parseFloat(req.body.hardness),
+			resistance: parseFloat(req.body.resistance),
+			luminance: parseFloat(req.body.luminance),
 			slippery: Boolean(req.body.slippery),
 			flammable: Boolean(req.body.flammable),
 			catchesFireFromLava: Boolean(req.body.catchesFireFromLava),
 			brokenByWater: Boolean(req.body.brokenByWater),
 		},
 		hitbox: {
-			width: parseInt(req.body.width),
-			height: parseInt(req.body.height),
-			length: parseInt(req.body.length),
+			width: parseFloat(req.body.width),
+			height: parseFloat(req.body.height),
+			length: parseFloat(req.body.length),
+		},
+		drops: {
+			defaultDrop: req.body.defaultDrop,
+			silkTouchDrop: req.body.silkTouchDrop,
+			dropAffectedByFortune: Boolean(req.body.affectedByFortune),
 		},
 		toolData: JSON.parse(req.body.tooldata),
-		minimumExperienceOnBreak: parseInt(req.body.minimumXP),
-		maximumExperienceOnBreak: parseInt(req.body.maximumXP),
+		minimumExperienceOnBreak: parseFloat(req.body.minimumXP),
+		maximumExperienceOnBreak: parseFloat(req.body.maximumXP),
 		removed: Boolean(req.body.removed),
 	};
 	blockData.push(newObject);
