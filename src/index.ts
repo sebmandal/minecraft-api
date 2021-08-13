@@ -8,9 +8,32 @@ import path from "path";
 
 // Set up Express app (views, static files, etc.)
 const app = express();
-app.set("views", "frontend");
+app.set("views", path.join(__dirname, "../views"));
 app.set("view engine", "ejs"); // change ejs to whatever you want
 app.use(express.static("./public"));
+
+// Session setup (cookies)
+import session from "express-session";
+app.set("trust proxy", 1);
+app.use(
+	session({
+		secret: "thisIsSecret",
+		resave: false,
+		saveUninitialized: true,
+		cookie: {
+			// secure: true, // true if https (not http)
+		},
+	})
+);
+
+// body-parser setup
+import bodyParser from "body-parser";
+app.use(bodyParser.json());
+app.use(
+	bodyParser.urlencoded({
+		extended: false,
+	})
+);
 
 // Automatically configure Express routes
 import routes from "./core/all_routes";

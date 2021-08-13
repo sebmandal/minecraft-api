@@ -1,1 +1,77 @@
-[]
+[
+    {
+        "name": "air",
+        "minecraft_name": "minecraft:air",
+        "naturalSpawns": {
+            "naturalSpawnInOverworldDimension": "on",
+            "naturalSpawnInNetherDimension": "on",
+            "naturalSpawnInEndDimension": "on"
+        },
+        "solidity": "solid",
+        "stats": {
+            "opacity": 0,
+            "hardness": 1,
+            "resistance": -1,
+            "luminance": null,
+            "slippery": false,
+            "flammable": false,
+            "catchesFireFromLava": false,
+            "brokenByWater": true
+        },
+        "hitbox": {
+            "width": 1,
+            "height": null,
+            "length": 1
+        },
+        "toolData": [],
+        "minimumExperienceOnBreak": 0,
+        "maximumExperienceOnBreak": 0,
+        "removed": false
+    },
+    {
+        "name": "Stone",
+        "minecraftName": "minecraft:stone",
+        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/stone.png",
+        "naturalSpawns": {
+            "naturalSpawnInOverworldDimension": "on"
+        },
+        "solidity": "solid",
+        "stats": {
+            "opacity": 1,
+            "hardness": 1,
+            "resistance": 6,
+            "luminance": null,
+            "slippery": false,
+            "flammable": false,
+            "catchesFireFromLava": false,
+            "brokenByWater": false
+        },
+        "hitbox": {
+            "width": 1,
+            "height": null,
+            "length": 1
+        },
+        "toolData": [
+            {
+                "tool": "pickaxe",
+                "breakSpeed": {
+                    "wooden": 1.15,
+                    "stone": 0.6,
+                    "iron": 0.4,
+                    "diamond": 0.3,
+                    "netherite": 0.25,
+                    "golden": 0.2
+                }
+            },
+            {
+                "tool": "fists",
+                "breakSpeed": {
+                    "default": 7.5
+                }
+            }
+        ],
+        "minimumExperienceOnBreak": 0,
+        "maximumExperienceOnBreak": 0,
+        "removed": false
+    }
+]
