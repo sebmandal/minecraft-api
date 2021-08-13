@@ -6,13 +6,14 @@ const script = async (req: any, res: any) => {
 	const newObject = {
 		name: req.body.name,
 		minecraftName: req.body.minecraftName,
+		legacyID: parseInt(req.body.legacyID),
 		imageUrl: `https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/${req.body.name
 			.replace(" ", "_")
 			.toLowerCase()}.png`,
 		naturalSpawns: {
-			naturalSpawnInOverworldDimension: req.body.overworld,
-			naturalSpawnInNetherDimension: req.body.nether,
-			naturalSpawnInEndDimension: req.body.end,
+			naturalSpawnInOverworldDimension: Boolean(req.body.overworld),
+			naturalSpawnInNetherDimension: Boolean(req.body.nether),
+			naturalSpawnInEndDimension: Boolean(req.body.end),
 		},
 		solidity: req.body.solidity.toLowerCase(),
 		stats: {
@@ -29,6 +30,11 @@ const script = async (req: any, res: any) => {
 			width: parseFloat(req.body.width),
 			height: parseFloat(req.body.height),
 			length: parseFloat(req.body.length),
+		},
+		drops: {
+			defaultDrop: req.body.defaultDrop,
+			silkTouchDrop: req.body.silkTouchDrop,
+			dropAffectedByFortune: Boolean(req.body.affectedByFortune),
 		},
 		toolData: JSON.parse(req.body.tooldata),
 		minimumExperienceOnBreak: parseFloat(req.body.minimumXP),
