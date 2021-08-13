@@ -24,7 +24,7 @@
 
 Backend and frontend engineering: [@sebmandal](https://github.com/sebmandal)
 
-API information and development: [@LucasJoel1](https://github.com/LucasJoel1)
+API information gathering and development: [@LucasJoel1](https://github.com/LucasJoel1)
 
 ### Features
 
