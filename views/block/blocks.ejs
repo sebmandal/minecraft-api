@@ -9,10 +9,11 @@
 	</head>
 	<body>
 		<%- include("../partials/nav.ejs") %>
-		<div class="container bg-light">
+		<!-- Desktop view -->
+		<div class="d-none d-md-block container bg-light">
 			<div class="row">
 				<% blocks.forEach(block => { %>
-				<div class="card col-12 col-sm-6 col-md-3 rounded-0">
+				<div class="card col-3 rounded-0">
 					<div class="card-body my-2">
 						<a href="/blocks/<%= block.legacyID %>">
 							<img
@@ -28,15 +29,8 @@
 							<small class="card-text fst-italic">
 								<%= block.legacyID %>
 							</small>
-							<br class="d-none d-md-block" />
-							<small
-								class="
-									card-text
-									text-muted
-									d-none d-md-block
-									fs-6
-								"
-							>
+							<br />
+							<small class="card-text text-muted fs-6">
 								<%= block.minecraftName %>
 							</small>
 						</p>
@@ -49,6 +43,44 @@
 						</a>
 					</div>
 				</div>
+				<% }) %>
+			</div>
+		</div>
+
+		<!-- Mobile view -->
+		<div
+			class="d-md-none container-fluid bg-light"
+			style="overflow: auto; word-wrap: break-word"
+		>
+			<div class="row">
+				<% blocks.forEach(block => { %>
+				<a
+					href="/blocks/<%= block.legacyID %>"
+					class="text-reset text-decoration-none"
+				>
+					<div class="col-12 rounded-0">
+						<div class="d-flex align-items-center">
+							<img
+								src="<%= block.imageUrl %>"
+								alt="<%= block.minecraftName %>"
+								height="8"
+								width="8"
+								class="float-start me-3"
+								style="height: 50px; width: 50px"
+							/>
+							<p class="fs-4 card-title m-0 py-2">
+								<b><%= block.name %></b>
+								<small class="card-text fst-italic">
+									<%= block.legacyID %>
+								</small>
+								<br />
+								<small class="card-text text-muted fs-6">
+									<%= block.minecraftName %>
+								</small>
+							</p>
+						</div>
+					</div>
+				</a>
 				<% }) %>
 			</div>
 		</div>
