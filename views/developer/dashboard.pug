@@ -1,0 +1,40 @@
+extends ../partials/master
+block content
+    .container-md.p-5.bg-light.text-dark.text-center
+        if session.authorized
+            // Developer specific
+            h1 Welcome back, #{ session.userName }
+            .row.mt-3
+            .col-12
+                a.btn.btn-success.rounded-0.m-1(href='/dashboard/add_block') Add a new block
+                a.btn.btn-success.rounded-0.m-1(href='/blocks') View all blocks
+                a.btn.btn-success.rounded-0.m-1(href='/logout') Sign out
+            img.w-50.h-auto(
+                src=session.userImage,
+                alt=session.userName,
+                width='600',
+                height='800'
+            )
+        else
+            // Login form
+            .row.justify-content-center
+                .col-12.col-md-8
+                    .fs-2.col-12.mb-3 Dashboard Login
+                    form(action='/login', method='post')
+                        .form-group.mb-3
+                            label.float-start Developer ID
+                            input.form-control.rounded-0(
+                                type='text',
+                                name='name'
+                            )
+                        .form-group.mb-3
+                            label.float-start Password
+                            input.form-control.rounded-0(
+                                type='password',
+                                name='password',
+                                i=''
+                            )
+                        .form-group.mb-3
+                            button.btn.btn-outline-primary.float-start.rounded-0.w-50(
+                                type='submit'
+                            ) Submit

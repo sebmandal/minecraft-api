@@ -1,15 +1,14 @@
-import Route from "../../core/route";
-import fs from "fs";
+import Route from '../../core/route'
+import fs from 'fs'
 
 const script = async (req: any, res: any) => {
-	if (!req.session.authorized) return res.redirect("/");
+	if (!req.session.authorized) return res.redirect('/')
 
-	const blocks = JSON.parse(fs.readFileSync("./api/blocks.json", "utf8"));
+	const blocks = JSON.parse(fs.readFileSync('./api/blocks.json', 'utf8'))
 
 	let block = blocks.find(
-		(b: any) =>
-			b.minecraftName.slice(10) === req.params.block.toLowerCase(),
-	);
+		(b: any) => b.minecraftName.slice(10) === req.params.block.toLowerCase()
+	)
 
 	blocks[blocks.indexOf(block)] = {
 		name: req.body.name,
@@ -48,14 +47,14 @@ const script = async (req: any, res: any) => {
 		minimumExperienceOnBreak: parseFloat(req.body.minimumXP),
 		maximumExperienceOnBreak: parseFloat(req.body.maximumXP),
 		removed: Boolean(req.body.removed),
-	};
+	}
 
 	// writing the new object to the file
-	fs.writeFileSync("./api/blocks.json", JSON.stringify(blocks, null, 4));
+	fs.writeFileSync('./api/blocks.json', JSON.stringify(blocks, null, 4))
 
 	// returning the person back to index
-	return res.redirect("/blocks");
-};
+	return res.redirect('/blocks')
+}
 
 export default class EditBlockPost extends Route {
 	/**
@@ -66,6 +65,6 @@ export default class EditBlockPost extends Route {
 	 * @param script - The route handler script
 	 */
 	constructor() {
-		super("/dashboard/edit_block/:block", "post", script);
+		super('/dashboard/edit_block/:block', 'post', script)
 	}
 }

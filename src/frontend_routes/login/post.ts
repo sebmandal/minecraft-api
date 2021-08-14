@@ -1,17 +1,17 @@
-import Route from "../../core/route";
+import Route from '../../core/route'
 
 const administrators = [
 	{
-		name: "sebmandal",
-		imageUrl: "/img/sebmandal.png",
-		password: "399596706402009100",
+		name: 'sebmandal',
+		imageUrl: '/img/sebmandal.png',
+		password: '399596706402009100',
 	},
 	{
-		name: "LucasJoel1",
-		imageUrl: "/img/DragonLord25.png",
-		password: "616382822613123074",
+		name: 'LucasJoel1',
+		imageUrl: '/img/DragonLord25.png',
+		password: '616382822613123074',
 	},
-];
+]
 
 const script = async (req: any, res: any) => {
 	administrators.forEach((administrator) => {
@@ -19,14 +19,14 @@ const script = async (req: any, res: any) => {
 			administrator.name === req.body.name &&
 			administrator.password === req.body.password
 		) {
-			req.session.authorized = true;
-			req.session.userName = administrator.name;
-			req.session.userImage = administrator.imageUrl;
+			req.session.authorized = true
+			req.session.userName = administrator.name
+			req.session.userImage = administrator.imageUrl
 		}
-	});
+	})
 
-	return res.redirect("/dashboard");
-};
+	return res.redirect('/dashboard')
+}
 
 export default class LoginPost extends Route {
 	/**
@@ -37,6 +37,6 @@ export default class LoginPost extends Route {
 	 * @param script - The route handler script
 	 */
 	constructor() {
-		super("/login", "post", script);
+		super('/login', 'post', script)
 	}
 }

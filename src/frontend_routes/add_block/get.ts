@@ -1,16 +1,16 @@
-import Route from "../../core/route";
-import fs from "fs";
+import Route from '../../core/route'
+import fs from 'fs'
 
 const script = async (req: any, res: any) => {
 	if (req.session.authorized) {
-		return res.render("developer/add_block", {
+		return res.render('developer/add_block', {
 			session: req.session,
-			blocks: JSON.parse(fs.readFileSync("./api/blocks.json", "utf8")),
-		});
+			blocks: JSON.parse(fs.readFileSync('./api/blocks.json', 'utf8')),
+		})
 	} else {
-		return res.redirect("/login");
+		return res.redirect('/login')
 	}
-};
+}
 
 export default class AddBlockGet extends Route {
 	/**
@@ -21,6 +21,6 @@ export default class AddBlockGet extends Route {
 	 * @param script - The route handler script
 	 */
 	constructor() {
-		super("/dashboard/add_block", "get", script);
+		super('/dashboard/add_block', 'get', script)
 	}
 }

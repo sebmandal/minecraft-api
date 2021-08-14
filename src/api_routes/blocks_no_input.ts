@@ -1,15 +1,17 @@
-import Route from "../core/route";
-import Express from "express";
-import fs from "fs";
+import Route from '../core/route'
+import Express from 'express'
+import fs from 'fs'
 
 const script = async (req: Express.Request, res: Express.Response) => {
-	res.setHeader("Content-Type", "application/json");
+	res.setHeader('Content-Type', 'application/json')
 
-	const BLOCKS = await JSON.parse(fs.readFileSync("./api/blocks.json", "utf8"));
-	const input = req.params.block;
+	const BLOCKS = await JSON.parse(
+		fs.readFileSync('./api/blocks.json', 'utf8')
+	)
+	const input = req.params.block
 
-	return res.json(BLOCKS);
-};
+	return res.json(BLOCKS)
+}
 
 export default class BlockAPINoInput extends Route {
 	/**
@@ -20,6 +22,6 @@ export default class BlockAPINoInput extends Route {
 	 * @param script - The route handler script
 	 */
 	constructor() {
-		super("/api/blocks", "get", script);
+		super('/api/blocks', 'get', script)
 	}
 }

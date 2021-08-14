@@ -1,0 +1,55 @@
+extends ./partials/master
+block content
+	//- Desktop View
+	.d-none.d-md-block.container.bg-light
+		.row
+			each block in blocks
+				.card.col-3.rounded-0.py-2
+					.card-body.mt-2 
+						a(href="/blocks/" + block.minecraftName.slice(10))
+							img.w-100.h-auto.float-start.mb-2(
+								src=block.imageUrl,
+								alt=block.minecraftName,
+								height='8',
+								width='8'
+							)
+						p.fs-4.card-title.m-0.pt-2.mb-2
+							b= block.name
+							if block.legacyID !== "null"
+								small.card-text.fst-italic.ms-1= block.legacyID
+							br
+							small.card-text.text-muted.fs-6.d-none.d-xl-block= block.minecraftName
+
+					- var viewMorePadding = session.authorized ? "mb-2" : "mb-1"
+					a.rounded-0.btn.btn-success(
+						class=viewMorePadding,
+						style='position: relative; left: 0; bottom: 0'
+					)
+						| View more
+					if session.authorized
+						a.rounded-0.btn.btn-outline-success.w-100.mb-1(
+							href="/dashboard/edit_block/" + block.minecraftName.slice(10)
+						)
+							| Edit Block
+
+	//- Mobile View
+	.d-md-none.container-fluid.bg-light(
+		style='overflow: auto; word-wrap: break-word'
+	)
+		.row
+			each block in blocks
+				a.text-reset.text-decoration-none(
+					href='/blocks/#{block.minecraftName.slice(10)}'
+				)
+					img.float-start.me-3(
+						src=block.imageUrl,
+						alt=block.minecraftName,
+						height='8',
+						width='8'
+					)
+					p.fs-4.card-title.m-0.py-2
+						b= block.name
+						if block.legacyID !== "null"
+							small.card-text.fst-italic= block.legacyID
+						br
+						small.card-text.text-muted.fs-6= block.minecraftName
