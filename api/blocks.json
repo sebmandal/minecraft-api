@@ -10,12 +10,13 @@
             "naturalSpawnInNetherDimension": true,
             "naturalSpawnInEndDimension": true
         },
-        "solidity": "solid",
+        "solidity": "vacant",
         "stats": {
             "opacity": 0,
             "hardness": 0,
             "resistance": 0,
             "luminance": 0,
+            "interactive": false,
             "slippery": false,
             "flammable": false,
             "catchesFireFromLava": false,
