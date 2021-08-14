@@ -21,9 +21,9 @@ app.use(
 		resave: false,
 		saveUninitialized: true,
 		cookie: {
-			// secure: true, // true if https (not http)
+			secure: Boolean(process.env.COOKIESECURE) || false, // true if https (not http)
 		},
-	})
+	}),
 );
 
 // body-parser setup
@@ -32,7 +32,7 @@ app.use(bodyParser.json());
 app.use(
 	bodyParser.urlencoded({
 		extended: false,
-	})
+	}),
 );
 
 // Automatically configure Express routes

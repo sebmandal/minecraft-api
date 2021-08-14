@@ -2,6 +2,7 @@ import Route from "../../core/route";
 import fs from "fs";
 
 const script = async (req: any, res: any) => {
+	if (!req.session.authorized) return res.redirect("/");
 	const blockData = JSON.parse(fs.readFileSync("./api/blocks.json", "utf8"));
 	const newObject = {
 		name: req.body.name,
