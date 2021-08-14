@@ -1287,8 +1287,8 @@
             "length": 0.75
         },
         "drops": {
-            "defaultDrop": "minecraft:Dark_Oak_sapling",
-            "silkTouchDrop": "minecraft:Dark_Oak_sapling",
+            "defaultDrop": "minecraft:dark_oak_sapling",
+            "silkTouchDrop": "minecraft:dark_oak_sapling",
             "dropAffectedByFortune": false
         },
         "toolData": [
