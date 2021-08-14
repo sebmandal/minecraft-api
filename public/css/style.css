@@ -8,11 +8,15 @@ body {
 body {
 	image-rendering: pixelated;
 
-	background: url("/img/dirt.png");
-	background-size: 100vw;
-	background-repeat: repeat;
+    background-color: #1A8753;
 
 	font-family: "minecraftia";
+}
+
+.sebm-content-inner {
+    background: url("/img/dirt.png");
+    background-size: 100vw;
+	background-repeat: repeat;
 }
 
 .block {
