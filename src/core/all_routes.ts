@@ -14,9 +14,10 @@ import withInputBlockGet from "../frontend_routes/blocks/withInputGet"; // if a 
 import withQueryGet from "../frontend_routes/blocks/withQueryGet"; // if a query is given, it will be used as the block id/name
 import noInputBlockGet from "../frontend_routes/blocks/noInputGet"; // if nothing is provided, it sends the entire blockbase
 
-// login
+// login/out
 import loginGet from "../frontend_routes/login/get";
 import loginPost from "../frontend_routes/login/post";
+import logoutGet from "../frontend_routes/logout/get";
 
 export default {
 	// API
@@ -35,7 +36,8 @@ export default {
 	withQueryGet,
 	noInputBlockGet,
 
-	// LOGIN
+	// LOGIN/OUT
 	loginGet,
 	loginPost,
+	logoutGet,
 };
