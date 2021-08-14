@@ -1,7 +1,7 @@
 import Route from "../../core/route";
 
 const script = async (req: any, res: any) => {
-	res.render("dashboard", {
+	res.render("developer/dashboard", {
 		session: req.session,
 	});
 };
