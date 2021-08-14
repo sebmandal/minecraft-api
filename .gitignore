@@ -105,3 +105,6 @@ dist
 
 # .DS_Store for MacOS developers
 .DS_Store
+
+# Redundant files
+public/unused_textures
