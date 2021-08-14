@@ -22,13 +22,34 @@
 			</div>
 
 			<div class="row">
-				<!-- Title / header -->
+                <!-- Title / header -->
 				<div class="col-12 text-center text-md-start">
-					<h2 class="mb-0"><%= block.name %></h2>
-					<p class="mb-3 fst-italic">
-						<%= block.legacyID %> — <%= block.minecraftName %>
+                    <h2 class="mb-0"><%= block.name %></h2>
+					<p class="mb-2 fst-italic">
+                        <%= block.legacyID %> — <%= block.minecraftName %>
 					</p>
 				</div>
+
+                <!-- Edit button for developers -->
+                <% if (session.authorized) { %>
+                <div class="wrapper text-center mb-3">
+                    <!-- Desktop View -->
+                    <a
+                        href="/dashboard/edit_block/<%= block.minecraftName.slice(10) %>"
+                        type="button"
+                        class="rounded-0 btn btn-outline-success w-25 ms-2 d-none d-md-block"
+                        >Edit Block</a
+                    >
+    
+                    <!-- Mobile View -->
+                    <a
+                        href="/dashboard/edit_block/<%= block.minecraftName.slice(10) %>"
+                        type="button"
+                        class="rounded-0 btn btn-outline-success w-50 mx-2 d-md-none"
+                        >Edit Block</a
+                    >
+                </div>
+                <% } %>
 
 				<!-- SPAWNS IN _ DIMENSIONS -->
 				<div class="col-12 mb-3">
@@ -69,7 +90,7 @@
 
 				<!-- Hitbox dimensions -->
 				<div class="col-12 mb-3">
-					<h3>Hitbox Dimensions</h2>
+					<h3>Hitbox Dimensions</h3>
 					<div class="col-12">
 						<code class="text-dark"><b>Height</b>: <%= block.hitbox.height %></code>
 					</div>
