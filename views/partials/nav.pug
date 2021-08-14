@@ -1,0 +1,25 @@
+header.p-3.bg-success.text-white
+	.container
+		.d-flex.flex-wrap.align-items-center.justify-content-center.justify-content-lg-start
+			a.navbar-brand(href='/')
+				img(
+					src='/img/grass block.png',
+					alt='logo',
+					height='800',
+					width='800',
+					style='height: 50px; width: auto'
+				)
+			ul.nav.col-12.col-lg-auto.me-lg-auto.mb-2.justify-content-center.mb-md-0
+				li
+					a.nav-link.btn.btn-success.rounded-0.px-2.text-white(href='/') Home
+				li
+					a.nav-link.btn.btn-success.rounded-0.px-2.text-white(href='/blocks') Blocks
+				li
+					a.nav-link.btn.btn-success.rounded-0.px-2.text-white(href='/dashboard') Dashboard
+			form.col-12.col-lg-auto.mb-3.mb-lg-0.me-lg-3(action='/block/')
+				input.form-control.form-control-dark(
+					name='block',
+					type='search',
+					placeholder='Search...',
+					aria-label='Search'
+				)

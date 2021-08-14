@@ -4,8 +4,8 @@
 
 ## Table of contents
 
-- [Introduction](#introduction)
-- [Distribution of work](#work-distribution)
+-   [Introduction](#introduction)
+-   [Distribution of work](#work-distribution)
 
 ## Introduction
 

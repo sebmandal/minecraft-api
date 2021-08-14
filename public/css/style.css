@@ -1,4 +1,4 @@
-@import url("./minecraftia.css");
+@import url('./minecraftia.css');
 
 html,
 body {
@@ -8,11 +8,15 @@ body {
 body {
 	image-rendering: pixelated;
 
-	background: url("/img/dirt.png");
+	background-color: #1a8753;
+
+	font-family: 'minecraftia';
+}
+
+.sebm-content-inner {
+	background: url('/img/dirt.png');
 	background-size: 100vw;
 	background-repeat: repeat;
-
-	font-family: "minecraftia";
 }
 
 .block {
@@ -31,5 +35,5 @@ body {
 
 pre,
 code {
-	font-family: "minecraftia", monospace;
+	font-family: 'minecraftia', monospace;
 }

@@ -1,10 +1,10 @@
-import Route from "../../core/route";
+import Route from '../../core/route'
 
 const script = async (req: any, res: any) => {
-	return res.render("developer/dashboard", {
+	return res.render('developer/dashboard', {
 		session: req.session,
-	});
-};
+	})
+}
 
 export default class DashboardGet extends Route {
 	/**
@@ -15,6 +15,6 @@ export default class DashboardGet extends Route {
 	 * @param script - The route handler script
 	 */
 	constructor() {
-		super("/dashboard", "get", script);
+		super('/dashboard', 'get', script)
 	}
 }

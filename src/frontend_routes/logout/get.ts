@@ -1,9 +1,9 @@
-import Route from "../../core/route";
+import Route from '../../core/route'
 
 const script = async (req: any, res: any) => {
-	req.session.authorized = false;
-	return res.redirect("/");
-};
+	req.session.authorized = false
+	return res.redirect('/')
+}
 
 export default class LogoutGet extends Route {
 	/**
@@ -14,6 +14,6 @@ export default class LogoutGet extends Route {
 	 * @param script - The route handler script
 	 */
 	constructor() {
-		super("/logout", "get", script);
+		super('/logout', 'get', script)
 	}
 }

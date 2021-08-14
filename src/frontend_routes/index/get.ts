@@ -1,12 +1,12 @@
-import Route from "../../core/route";
-import fs from "fs";
+import Route from '../../core/route'
+import fs from 'fs'
 
 const script = async (req: any, res: any) => {
-	return res.render("index", {
+	return res.render('index', {
 		session: req.session,
-		blocks: JSON.parse(fs.readFileSync("./api/blocks.json", "utf8")),
-	});
-};
+		blocks: JSON.parse(fs.readFileSync('./api/blocks.json', 'utf8')),
+	})
+}
 
 export default class IndexGet extends Route {
 	/**
@@ -17,6 +17,6 @@ export default class IndexGet extends Route {
 	 * @param script - The route handler script
 	 */
 	constructor() {
-		super("/", "get", script);
+		super('/', 'get', script)
 	}
 }

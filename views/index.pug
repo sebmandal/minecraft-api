@@ -1,0 +1,49 @@
+extends ./partials/master
+block content
+	// JUMBOTRON
+	.index-jumbotron.container-md.p-5.text-light.text-center
+		.row.pb-4.justify-content-center
+			h2.display-5.fw-bold.my-4.text-light The Minecraft API
+			p.col-md-8.fs-4
+				| The Minecraft API is a free closed-source API with all
+				| the information you'll ever need on anything from items,
+				| to blocks, to dimensions and more!
+	.container-md.bg-light.py-5.text-center
+		.row
+		// Desktop View
+		.d-none.d-md-flex.row
+			.col-12.mb-3
+				h2 Developers
+			.col-6
+				h3
+					| @
+					a.text-reset(href='https://github.com/sebmandal') sebmandal
+				p Frontend and backend engineering
+			.col-6
+				h3
+					| @
+					a.text-reset(href='https://github.com/LucasJoel1') LucasJoel1
+				p API data gathering
+			.col-6
+				img.w-50(src='/img/sebmandal.png', alt='sebmandal_character')
+			.col-6
+				img.w-50(src='/img/DragonLord25.png', alt='DragonLord25_character')
+		// Mobile View
+		.d-md-none.text-center
+			.col-12.mb-4
+				h2 Developers
+				hr
+			.col-12
+				h3
+					| @
+					a.text-reset(href='https://github.com/sebmandal') sebmandal
+				p Frontend and backend engineering
+			.col-12.mb-3
+				img.w-50(src='/img/sebmandal.png', alt='sebmandal_character')
+			.col-12
+				h3
+					| @
+					a.text-reset(href='https://github.com/LucasJoel1') LucasJoel1
+				p API data gathering
+			.col-12
+				img.w-50(src='/img/DragonLord25.png', alt='DragonLord25_character')

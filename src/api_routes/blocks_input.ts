@@ -1,21 +1,23 @@
-import Route from "../core/route";
-import Express from "express";
-import fs from "fs";
+import Route from '../core/route'
+import Express from 'express'
+import fs from 'fs'
 
 const script = async (req: Express.Request, res: Express.Response) => {
-	res.setHeader("Content-Type", "application/json");
+	res.setHeader('Content-Type', 'application/json')
 
-	const BLOCKS = await JSON.parse(fs.readFileSync("./api/blocks.json", "utf8"));
-	const input = req.params.block.toLowerCase();
+	const BLOCKS = await JSON.parse(
+		fs.readFileSync('./api/blocks.json', 'utf8')
+	)
+	const input = req.params.block.toLowerCase()
 
 	/**
 	 * checking if a block has an ID equal to the provided input
 	 */
-	const inputNumber: number = parseInt(input);
+	const inputNumber: number = parseInt(input)
 	const block: object | undefined = BLOCKS.find(
 		(b: any) => b.id === inputNumber
-	);
-	if (block) return res.send(block);
+	)
+	if (block) return res.send(block)
 
 	/**
 	 * checking if a block has a name equal to the provided input
@@ -25,14 +27,14 @@ const script = async (req: Express.Request, res: Express.Response) => {
 			b.name.toLowerCase() === input ||
 			b.legacyID === input ||
 			b.minecraftName.slice(10) === input
-	);
-	if (result) return res.send(result);
+	)
+	if (result) return res.send(result)
 
 	/**
 	 * if nothing was found or no query was provided, return everything
 	 */
-	return res.json(BLOCKS);
-};
+	return res.json(BLOCKS)
+}
 
 export default class BlockAPIWithInput extends Route {
 	/**
@@ -43,6 +45,6 @@ export default class BlockAPIWithInput extends Route {
 	 * @param script - The route handler script
 	 */
 	constructor() {
-		super("/api/blocks/:block", "get", script);
+		super('/api/blocks/:block', 'get', script)
 	}
 }

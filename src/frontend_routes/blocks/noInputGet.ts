@@ -1,13 +1,13 @@
-import Route from "../../core/route";
-import fs from "fs";
+import Route from '../../core/route'
+import fs from 'fs'
 
 const script = async (req: any, res: any) => {
 	const BLOCKS = await JSON.parse(
-		fs.readFileSync("./api/blocks.json", "utf8"),
-	);
+		fs.readFileSync('./api/blocks.json', 'utf8')
+	)
 
-	return res.render("blocks", { session: req.session, blocks: BLOCKS });
-};
+	return res.render('blocks', { session: req.session, blocks: BLOCKS })
+}
 
 export default class BlocksGet extends Route {
 	/**
@@ -18,6 +18,6 @@ export default class BlocksGet extends Route {
 	 * @param script - The route handler script
 	 */
 	constructor() {
-		super("/blocks", "get", script);
+		super('/blocks', 'get', script)
 	}
 }

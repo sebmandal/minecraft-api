@@ -1,0 +1,113 @@
+extends ./partials/master
+block content
+	.container.p-3.bg-light(style='overflow: auto')
+		// header image
+		.col-md-3.col-12
+			img.w-100.h-auto.float-start.me-3.pb-3.pb-md-0(
+				src=block.imageUrl,
+				alt=block.minecraftName,
+				width='8',
+				height='8'
+			)
+		.row
+			// Title / header
+			.col-12.text-center.text-md-start
+				h2.mb-0 #{ block.name }
+				p.mb-2.fst-italic
+					| #{ block.legacyID } &mdash; #{ block.minecraftName }
+
+			// Edit button for developers
+			if session.authorized
+				.wrapper.text-center.mb-3
+					// Desktop View
+					a.rounded-0.btn.btn-outline-success.w-25.ms-2.d-none.d-md-block(
+						href="/dashboard/edit_block/" + block.minecraftName.slice(10),
+						type='button'
+					) Edit Block
+					// Mobile View
+					a.rounded-0.btn.btn-outline-success.w-50.mx-2.d-md-none(
+						href="/dashboard/edit_block/" + block.minecraftName.slice(10),
+						type='button'
+					) Edit Block
+
+			// SPAWNS IN _ DIMENSIONS
+			.col-12.mb-3
+				h3 Natural spawn dimensions:
+				.col-12
+					code.text-dark
+						b Overworld
+						| : #{ block.naturalSpawns["naturalSpawnInOverworldDimension"] }
+				.col-12
+					code.text-dark
+						b Nether
+						| : #{ block.naturalSpawns["naturalSpawnInNetherDimension"] }
+				.col-12
+					code.text-dark
+						b End
+						| : #{ block.naturalSpawns["naturalSpawnInEndDimension"] }
+
+			// Stats
+			.col-12.mb-3
+				h3 Statistics
+				.col-12
+					code.text-dark
+						b solidity
+						| : #{ block.solidity }
+
+				each stat in Object.keys(block.stats)
+					.col-12
+						code.text-dark
+							b #{ stat }
+							| : #{ block.stats[stat] }
+
+			// Hitbox dimensions
+			.col-12.mb-3
+				h3 Hitbox Dimensions
+				.col-12
+					code.text-dark
+						b Height
+						| : #{ block.hitbox.height }
+				.col-12
+					code.text-dark
+						b Width
+						| : #{ block.hitbox.width }
+				.col-12
+					code.text-dark
+						b Length
+						| : #{ block.hitbox.length }
+
+			// Drops
+			.col-12.mb-3
+				h3 Drops
+				each drop in Object.keys(block.drops)
+					.col-12
+						code.text-dark
+							b #{ drop }
+							| : #{ block.drops[drop] }
+
+			// Tool Data
+			if block.toolData.length > 0
+				.col-12
+					h3 Breaking Speed
+					each object in Object.keys(block.toolData)
+						.col-12.mb-3
+							code.text-dark.fs-5
+								b
+									| #{ block.toolData[object].tool.substring(1, -1).toUpperCase() + block.toolData[object].tool.slice(1) }
+							each upgrade in Object.keys(block.toolData[object].breakSpeed)
+								.col-12
+									code.text-dark
+										b #{ upgrade }
+										| : #{ block.toolData[object].breakSpeed[upgrade] + " seconds" }
+
+			// Experience
+			.col-12.mb-3
+				h3 Experience on break
+				.col-12
+					code.text-dark
+						b Minimum
+						| : #{ block.minimumExperienceOnBreak }
+				.col-12
+					code.text-dark
+						b Maximum
+						| : #{ block.maximumExperienceOnBreak }
