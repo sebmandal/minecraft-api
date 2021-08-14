@@ -21,6 +21,6 @@ export default class AddBlockGet extends Route {
 	 * @param script - The route handler script
 	 */
 	constructor() {
-		super("/add_block", "get", script);
+		super("/dashboard/add_block", "get", script);
 	}
 }

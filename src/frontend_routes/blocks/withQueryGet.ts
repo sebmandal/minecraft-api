@@ -16,6 +16,7 @@ const script = async (req: any, res: any) => {
 		);
 		if (block)
 			return res.render("block", {
+				session: req.session,
 				block: block,
 				blocks: JSON.parse(
 					fs.readFileSync("./api/blocks.json", "utf8"),
@@ -33,6 +34,7 @@ const script = async (req: any, res: any) => {
 		);
 		if (result)
 			return res.render("block", {
+				session: req.session,
 				block: result,
 				blocks: JSON.parse(
 					fs.readFileSync("./api/blocks.json", "utf8"),

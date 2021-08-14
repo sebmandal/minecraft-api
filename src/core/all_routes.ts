@@ -19,6 +19,10 @@ import dashboardGet from "../frontend_routes/dashboard/get";
 import loginPost from "../frontend_routes/login/post";
 import logoutGet from "../frontend_routes/logout/get";
 
+// edit block
+import editBlockGet from "../frontend_routes/edit_block/get";
+import editBlockPost from "../frontend_routes/edit_block/post";
+
 export default {
 	// API
 	blockNoInput,
@@ -40,4 +44,8 @@ export default {
 	dashboardGet,
 	loginPost,
 	logoutGet,
+
+	// EDIT BLOCK
+	editBlockGet,
+	editBlockPost,
 };

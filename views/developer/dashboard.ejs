@@ -4,18 +4,20 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<%- include("./partials/head.ejs") %>
+		<%- include("../partials/head.ejs") %>
 		<title>MC API</title>
 	</head>
 	<body>
-		<%- include("./partials/nav.ejs") %>
+		<%- include("../partials/nav.ejs") %>
 		<div class="container-md p-5 bg-light text-dark text-center">
 			<% if (session.authorized) { %>
 			<!-- Developer specific -->
 			<h1>Welcome back, <%= session.userName %></h1>
 			<div class="row mt-3">
 				<div class="col-12">
-					<a class="btn btn-success rounded-0 mb-3" href="/add_block"
+					<a
+						class="btn btn-success rounded-0 mb-3"
+						href="/dashboard/add_block"
 						>Add a new block</a
 					>
 					<a class="btn btn-success rounded-0 mb-3" href="/blocks"
@@ -75,6 +77,6 @@
 			</div>
 			<% } %>
 		</div>
-		<%- include("./partials/footer.ejs") %>
+		<%- include("../partials/footer.ejs") %>
 	</body>
 </html>

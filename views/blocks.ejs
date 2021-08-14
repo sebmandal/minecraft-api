@@ -41,6 +41,17 @@
 								>View more</button
 							>
 						</a>
+						<% if (session.authorized) { %>
+						<a
+							href="/dashboard/edit_block/<%= block.minecraftName.slice(10) %>"
+						>
+							<button
+								type="button"
+								class="rounded-0 btn btn-outline-success"
+								>Edit Block</button
+							>
+						</a>
+						<% } %>
 					</div>
 				</div>
 				<% }) %>

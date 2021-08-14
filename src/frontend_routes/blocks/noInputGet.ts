@@ -6,7 +6,7 @@ const script = async (req: any, res: any) => {
 		fs.readFileSync("./api/blocks.json", "utf8"),
 	);
 
-	return res.render("blocks", { blocks: BLOCKS });
+	return res.render("blocks", { session: req.session, blocks: BLOCKS });
 };
 
 export default class BlocksGet extends Route {

@@ -4,15 +4,19 @@ import fs from "fs";
 const script = async (req: any, res: any) => {
 	if (!req.session.authorized) return res.redirect("/");
 
-	const blockData = JSON.parse(fs.readFileSync("./api/blocks.json", "utf8"));
-	const newObject = {
+	const blocks = JSON.parse(fs.readFileSync("./api/blocks.json", "utf8"));
+
+	let block = blocks.find(
+		(b: any) =>
+			b.minecraftName.slice(10) === req.params.block.toLowerCase(),
+	);
+
+	blocks[blocks.indexOf(block)] = {
 		name: req.body.name,
 		minecraftName: req.body.minecraftName,
 		legacyID: req.body.legacyID,
 		introduced: req.body.introduced,
-		imageUrl: `https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/${req.body.name
-			.replace(" ", "_")
-			.toLowerCase()}.png`,
+		imageUrl: req.body.imageUrl,
 		naturalSpawns: {
 			naturalSpawnInOverworldDimension: Boolean(req.body.overworld),
 			naturalSpawnInNetherDimension: Boolean(req.body.nether),
@@ -45,16 +49,15 @@ const script = async (req: any, res: any) => {
 		maximumExperienceOnBreak: parseFloat(req.body.maximumXP),
 		removed: Boolean(req.body.removed),
 	};
-	blockData.push(newObject);
 
 	// writing the new object to the file
-	fs.writeFileSync("./api/blocks.json", JSON.stringify(blockData, null, 4));
+	fs.writeFileSync("./api/blocks.json", JSON.stringify(blocks, null, 4));
 
 	// returning the person back to index
 	return res.redirect("/");
 };
 
-export default class AddBlockPost extends Route {
+export default class EditBlockPost extends Route {
 	/**
 	 * Configuring the necessary properties for the class to be executable()
 	 *
@@ -63,6 +66,6 @@ export default class AddBlockPost extends Route {
 	 * @param script - The route handler script
 	 */
 	constructor() {
-		super("/dashboard/add_block", "post", script);
+		super("/dashboard/edit_block/:block", "post", script);
 	}
 }
