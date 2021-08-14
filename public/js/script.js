@@ -14,9 +14,3 @@ function expandTextarea(i, elem) {
 	});
 	resizeTextarea($(elem));
 }
-
-$(function () {
-	$('[data-toggle="tooltip"]').tooltip();
-});
-
-$("a").tooltip();
