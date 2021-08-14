@@ -2,7 +2,9 @@ import Route from "../../core/route";
 import fs from "fs";
 
 const script = async (req: any, res: any) => {
-	const BLOCKS = await JSON.parse(fs.readFileSync("./api/blocks.json", "utf8"));
+	const BLOCKS = await JSON.parse(
+		fs.readFileSync("./api/blocks.json", "utf8"),
+	);
 
 	if (req.query.block) {
 		/**
@@ -10,12 +12,15 @@ const script = async (req: any, res: any) => {
 		 */
 		const inputNumber: number = parseInt(req.query.block);
 		const block: object | undefined = BLOCKS.find(
-			(b: any) => b.id === inputNumber
+			(b: any) => b.id === inputNumber,
 		);
 		if (block)
-			return res.render("block/block", {
+			return res.render("block", {
+				session: req.session,
 				block: block,
-				blocks: JSON.parse(fs.readFileSync("./api/blocks.json", "utf8")),
+				blocks: JSON.parse(
+					fs.readFileSync("./api/blocks.json", "utf8"),
+				),
 			});
 
 		/**
@@ -25,12 +30,15 @@ const script = async (req: any, res: any) => {
 			(b: any) =>
 				b.name.toLowerCase() === req.query.block ||
 				b.legacyID === req.query.block ||
-				b.minecraftName.slice(10) === req.query.block
+				b.minecraftName.slice(10) === req.query.block,
 		);
 		if (result)
-			return res.render("block/block", {
+			return res.render("block", {
+				session: req.session,
 				block: result,
-				blocks: JSON.parse(fs.readFileSync("./api/blocks.json", "utf8")),
+				blocks: JSON.parse(
+					fs.readFileSync("./api/blocks.json", "utf8"),
+				),
 			});
 	}
 

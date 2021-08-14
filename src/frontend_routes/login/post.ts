@@ -1,11 +1,31 @@
 import Route from "../../core/route";
 
-const script = async (req: any, res: any) => {
-	if (req.body.password === "616382822613123074") {
-		req.session.authorized = true;
-	}
+const administrators = [
+	{
+		name: "sebmandal",
+		imageUrl: "/img/sebmandal.png",
+		password: "399596706402009100",
+	},
+	{
+		name: "LucasJoel1",
+		imageUrl: "/img/DragonLord25.png",
+		password: "616382822613123074",
+	},
+];
 
-	return res.redirect("/");
+const script = async (req: any, res: any) => {
+	administrators.forEach((administrator) => {
+		if (
+			administrator.name === req.body.name &&
+			administrator.password === req.body.password
+		) {
+			req.session.authorized = true;
+			req.session.userName = administrator.name;
+			req.session.userImage = administrator.imageUrl;
+		}
+	});
+
+	return res.redirect("/dashboard");
 };
 
 export default class LoginPost extends Route {

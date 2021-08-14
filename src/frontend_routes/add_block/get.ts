@@ -3,7 +3,7 @@ import fs from "fs";
 
 const script = async (req: any, res: any) => {
 	if (req.session.authorized) {
-		return res.render("block/add_block", {
+		return res.render("developer/add_block", {
 			session: req.session,
 			blocks: JSON.parse(fs.readFileSync("./api/blocks.json", "utf8")),
 		});
@@ -21,6 +21,6 @@ export default class AddBlockGet extends Route {
 	 * @param script - The route handler script
 	 */
 	constructor() {
-		super("/add_block", "get", script);
+		super("/dashboard/add_block", "get", script);
 	}
 }

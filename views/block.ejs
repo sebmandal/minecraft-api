@@ -4,11 +4,11 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<%- include("../partials/head.ejs") %>
+		<%- include("./partials/head.ejs") %>
 		<title>MC API</title>
 	</head>
 	<body>
-		<%- include("../partials/nav.ejs") %>
+		<%- include("./partials/nav.ejs") %>
 		<div class="container p-3 bg-light" style="overflow: auto">
 			<!-- header image -->
 			<div class="col-md-3 col-12">
@@ -24,7 +24,7 @@
 			<div class="row">
 				<!-- Title / header -->
 				<div class="col-12 text-center text-md-start">
-					<h2 class="mb-0"><%= block.name %></h1>
+					<h2 class="mb-0"><%= block.name %></h2>
 					<p class="mb-3 fst-italic">
 						<%= block.legacyID %> — <%= block.minecraftName %>
 					</p>
@@ -32,7 +32,7 @@
 
 				<!-- SPAWNS IN _ DIMENSIONS -->
 				<div class="col-12 mb-3">
-					<h3>Natural spawn dimensions:</h2>
+					<h3>Natural spawn dimensions:</h3>
 					<div class="col-12">
 						<code class="text-dark"
 							><b>Overworld</b>: <%=
@@ -55,7 +55,7 @@
 
 				<!-- Stats -->
 				<div class="col-12 mb-3">
-					<h3>Statistics</h2>
+					<h3>Statistics</h3>
                     <div class="col-12">
                         <code class="text-dark"><b>solidity</b>: <%= block.solidity %></code>
                     </div>
@@ -83,7 +83,7 @@
 
 				<!-- Drops -->
 				<div class="col-12 mb-3">
-					<h3>Drops</h2>
+					<h3>Drops</h3>
                     <% Object.keys(block.drops).forEach(drop => { %>
 					<div class="col-12">
 						<code class="text-dark"><b><%= drop %></b>: <%= block.drops[drop] %></code>
@@ -94,7 +94,7 @@
 				<!-- Tool Data -->
 				<% if (block.toolData.length > 0) { %>
                     <div class="col-12">
-                        <h3>Breaking Speed</h2>
+                        <h3>Breaking Speed</h3>
                         <% Object.keys(block.toolData).forEach(object => { %>
                         <div class="col-12 mb-3">
                             <code class="text-dark fs-5">
@@ -113,7 +113,7 @@
 
                 <!-- Experience -->
                 <div class="col-12 mb-3">
-                    <h3>Experience on break</h2>
+                    <h3>Experience on break</h3>
                     <div class="col-12">
                         <code class="text-dark"><b>Minimum</b>: <%= block.minimumExperienceOnBreak %></code>
                     </div>
@@ -123,6 +123,6 @@
                 </div>
 			</div>
 		</div>
-		<%- include("../partials/footer.ejs") %>
+		<%- include("./partials/footer.ejs") %>
 	</body>
 </html>

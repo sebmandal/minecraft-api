@@ -1,12 +1,12 @@
 import Route from "../../core/route";
 
 const script = async (req: any, res: any) => {
-	res.render("login", {
+	return res.render("developer/dashboard", {
 		session: req.session,
 	});
 };
 
-export default class LoginGet extends Route {
+export default class DashboardGet extends Route {
 	/**
 	 * Configuring the necessary properties for the class to be executable()
 	 *
@@ -15,6 +15,6 @@ export default class LoginGet extends Route {
 	 * @param script - The route handler script
 	 */
 	constructor() {
-		super("/login", "get", script);
+		super("/dashboard", "get", script);
 	}
 }
