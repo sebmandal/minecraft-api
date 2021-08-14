@@ -1260,7 +1260,7 @@
     },
     {
         "name": "Dark Oak Sapling",
-        "minecraftName": "minecraft:Dark_Oak_sapling",
+        "minecraftName": "minecraft:dark_oak_sapling",
         "legacyID": "6:5",
         "introduced": "13w43a",
         "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/dark_oak_sapling.png",
