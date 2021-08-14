@@ -2013,5 +2013,957 @@
         "minimumExperienceOnBreak": 0,
         "maximumExperienceOnBreak": 0,
         "removed": false
+    },
+    {
+        "name": "Stripped Oak Log",
+        "minecraftName": "minecraft:stripped_oak_log",
+        "legacyID": "null",
+        "introduced": "13w43a",
+        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/stripped_oak_log.png",
+        "naturalSpawns": {
+            "naturalSpawnInOverworldDimension": true,
+            "naturalSpawnInNetherDimension": false,
+            "naturalSpawnInEndDimension": false
+        },
+        "solidity": "solid",
+        "stats": {
+            "opacity": 1,
+            "hardness": 2,
+            "resistance": 2,
+            "luminance": 0,
+            "interactive": false,
+            "slippery": false,
+            "flammable": true,
+            "catchesFireFromLava": true,
+            "brokenByWater": false
+        },
+        "hitbox": {
+            "width": 1,
+            "height": 1,
+            "length": 1
+        },
+        "drops": {
+            "defaultDrop": "minecraft:stripped_oak_log",
+            "silkTouchDrop": "minecraft:stripped_oak_log",
+            "dropAffectedByFortune": false
+        },
+        "toolData": [
+            {
+                "tool": "axe",
+                "breakSpeed": {
+                    "wooden": 1.5,
+                    "stone": 0.75,
+                    "iron": 0.5,
+                    "diamond": 0.4,
+                    "netherite": 0.35,
+                    "golden": 0.25
+                }
+            },
+            {
+                "tool": "fists",
+                "breakSpeed": {
+                    "default": 3
+                }
+            }
+        ],
+        "minimumExperienceOnBreak": 0,
+        "maximumExperienceOnBreak": 0,
+        "removed": false
+    },
+    {
+        "name": "Stripped Spruce Log",
+        "minecraftName": "minecraft:stripped_spruce_log",
+        "legacyID": "null",
+        "introduced": "13w43a",
+        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/stripped_spruce_log.png",
+        "naturalSpawns": {
+            "naturalSpawnInOverworldDimension": true,
+            "naturalSpawnInNetherDimension": false,
+            "naturalSpawnInEndDimension": false
+        },
+        "solidity": "solid",
+        "stats": {
+            "opacity": 1,
+            "hardness": 2,
+            "resistance": 2,
+            "luminance": 0,
+            "interactive": false,
+            "slippery": false,
+            "flammable": true,
+            "catchesFireFromLava": true,
+            "brokenByWater": false
+        },
+        "hitbox": {
+            "width": 1,
+            "height": 1,
+            "length": 1
+        },
+        "drops": {
+            "defaultDrop": "minecraft:stripped_spruce_log",
+            "silkTouchDrop": "minecraft:stripped_spruce_log",
+            "dropAffectedByFortune": false
+        },
+        "toolData": [
+            {
+                "tool": "axe",
+                "breakSpeed": {
+                    "wooden": 1.5,
+                    "stone": 0.75,
+                    "iron": 0.5,
+                    "diamond": 0.4,
+                    "netherite": 0.35,
+                    "golden": 0.25
+                }
+            },
+            {
+                "tool": "fists",
+                "breakSpeed": {
+                    "default": 3
+                }
+            }
+        ],
+        "minimumExperienceOnBreak": 0,
+        "maximumExperienceOnBreak": 0,
+        "removed": false
+    },
+    {
+        "name": "Stripped Birch Log",
+        "minecraftName": "minecraft:stripped_birch_log",
+        "legacyID": "null",
+        "introduced": "13w43a",
+        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/stripped_birch_log.png",
+        "naturalSpawns": {
+            "naturalSpawnInOverworldDimension": true,
+            "naturalSpawnInNetherDimension": false,
+            "naturalSpawnInEndDimension": false
+        },
+        "solidity": "solid",
+        "stats": {
+            "opacity": 1,
+            "hardness": 2,
+            "resistance": 2,
+            "luminance": 0,
+            "interactive": false,
+            "slippery": false,
+            "flammable": true,
+            "catchesFireFromLava": true,
+            "brokenByWater": false
+        },
+        "hitbox": {
+            "width": 1,
+            "height": 1,
+            "length": 1
+        },
+        "drops": {
+            "defaultDrop": "minecraft:stripped_birch_log",
+            "silkTouchDrop": "minecraft:stripped_birch_log",
+            "dropAffectedByFortune": false
+        },
+        "toolData": [
+            {
+                "tool": "axe",
+                "breakSpeed": {
+                    "wooden": 1.5,
+                    "stone": 0.75,
+                    "iron": 0.5,
+                    "diamond": 0.4,
+                    "netherite": 0.35,
+                    "golden": 0.25
+                }
+            },
+            {
+                "tool": "fists",
+                "breakSpeed": {
+                    "default": 3
+                }
+            }
+        ],
+        "minimumExperienceOnBreak": 0,
+        "maximumExperienceOnBreak": 0,
+        "removed": false
+    },
+    {
+        "name": "Stripped Acacia Log",
+        "minecraftName": "minecraft:stripped_acacia_log",
+        "legacyID": "null",
+        "introduced": "13w43a",
+        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/stripped_acacia_log.png",
+        "naturalSpawns": {
+            "naturalSpawnInOverworldDimension": true,
+            "naturalSpawnInNetherDimension": false,
+            "naturalSpawnInEndDimension": false
+        },
+        "solidity": "solid",
+        "stats": {
+            "opacity": 1,
+            "hardness": 2,
+            "resistance": 2,
+            "luminance": 0,
+            "interactive": false,
+            "slippery": false,
+            "flammable": true,
+            "catchesFireFromLava": true,
+            "brokenByWater": false
+        },
+        "hitbox": {
+            "width": 1,
+            "height": 1,
+            "length": 1
+        },
+        "drops": {
+            "defaultDrop": "minecraft:stripped_acacia_log",
+            "silkTouchDrop": "minecraft:stripped_acacia_log",
+            "dropAffectedByFortune": false
+        },
+        "toolData": [
+            {
+                "tool": "axe",
+                "breakSpeed": {
+                    "wooden": 1.5,
+                    "stone": 0.75,
+                    "iron": 0.5,
+                    "diamond": 0.4,
+                    "netherite": 0.35,
+                    "golden": 0.25
+                }
+            },
+            {
+                "tool": "fists",
+                "breakSpeed": {
+                    "default": 3
+                }
+            }
+        ],
+        "minimumExperienceOnBreak": 0,
+        "maximumExperienceOnBreak": 0,
+        "removed": false
+    },
+    {
+        "name": "Stripped Dark Oak Log",
+        "minecraftName": "minecraft:stripped_dark_oak_log",
+        "legacyID": "null",
+        "introduced": "13w43a",
+        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/stripped_dark_oak_log.png",
+        "naturalSpawns": {
+            "naturalSpawnInOverworldDimension": true,
+            "naturalSpawnInNetherDimension": false,
+            "naturalSpawnInEndDimension": false
+        },
+        "solidity": "solid",
+        "stats": {
+            "opacity": 1,
+            "hardness": 2,
+            "resistance": 2,
+            "luminance": 0,
+            "interactive": false,
+            "slippery": false,
+            "flammable": true,
+            "catchesFireFromLava": true,
+            "brokenByWater": false
+        },
+        "hitbox": {
+            "width": 1,
+            "height": 1,
+            "length": 1
+        },
+        "drops": {
+            "defaultDrop": "minecraft:stripped_dark_oak_log",
+            "silkTouchDrop": "minecraft:stripped_dark_oak_log",
+            "dropAffectedByFortune": false
+        },
+        "toolData": [
+            {
+                "tool": "axe",
+                "breakSpeed": {
+                    "wooden": 1.5,
+                    "stone": 0.75,
+                    "iron": 0.5,
+                    "diamond": 0.4,
+                    "netherite": 0.35,
+                    "golden": 0.25
+                }
+            },
+            {
+                "tool": "fists",
+                "breakSpeed": {
+                    "default": 3
+                }
+            }
+        ],
+        "minimumExperienceOnBreak": 0,
+        "maximumExperienceOnBreak": 0,
+        "removed": false
+    },
+    {
+        "name": "Stripped Oak Wood",
+        "minecraftName": "minecraft:stripped_oak_wood",
+        "legacyID": "null",
+        "introduced": "1.13 pre-2",
+        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/stripped_oak_log.png",
+        "naturalSpawns": {
+            "naturalSpawnInOverworldDimension": true,
+            "naturalSpawnInNetherDimension": false,
+            "naturalSpawnInEndDimension": false
+        },
+        "solidity": "solid",
+        "stats": {
+            "opacity": 1,
+            "hardness": 2,
+            "resistance": 2,
+            "luminance": 0,
+            "interactive": false,
+            "slippery": false,
+            "flammable": true,
+            "catchesFireFromLava": true,
+            "brokenByWater": false
+        },
+        "hitbox": {
+            "width": 1,
+            "height": 1,
+            "length": 1
+        },
+        "drops": {
+            "defaultDrop": "minecraft:stripped_oak_wood",
+            "silkTouchDrop": "minecraft:stripped_oak_wood",
+            "dropAffectedByFortune": false
+        },
+        "toolData": [
+            {
+                "tool": "axe",
+                "breakSpeed": {
+                    "wooden": 1.5,
+                    "stone": 0.75,
+                    "iron": 0.5,
+                    "diamond": 0.4,
+                    "netherite": 0.35,
+                    "golden": 0.25
+                }
+            },
+            {
+                "tool": "fists",
+                "breakSpeed": {
+                    "default": 3
+                }
+            }
+        ],
+        "minimumExperienceOnBreak": 0,
+        "maximumExperienceOnBreak": 0,
+        "removed": false
+    },
+    {
+        "name": "Stripped Spruce Wood",
+        "minecraftName": "minecraft:stripped_spruce_wood",
+        "legacyID": "null",
+        "introduced": "1.13 pre-2",
+        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/stripped_spruce_log.png",
+        "naturalSpawns": {
+            "naturalSpawnInOverworldDimension": true,
+            "naturalSpawnInNetherDimension": false,
+            "naturalSpawnInEndDimension": false
+        },
+        "solidity": "solid",
+        "stats": {
+            "opacity": 1,
+            "hardness": 2,
+            "resistance": 2,
+            "luminance": 0,
+            "interactive": false,
+            "slippery": false,
+            "flammable": true,
+            "catchesFireFromLava": true,
+            "brokenByWater": false
+        },
+        "hitbox": {
+            "width": 1,
+            "height": 1,
+            "length": 1
+        },
+        "drops": {
+            "defaultDrop": "minecraft:stripped_spruce_wood",
+            "silkTouchDrop": "minecraft:stripped_spruce_wood",
+            "dropAffectedByFortune": false
+        },
+        "toolData": [
+            {
+                "tool": "axe",
+                "breakSpeed": {
+                    "wooden": 1.5,
+                    "stone": 0.75,
+                    "iron": 0.5,
+                    "diamond": 0.4,
+                    "netherite": 0.35,
+                    "golden": 0.25
+                }
+            },
+            {
+                "tool": "fists",
+                "breakSpeed": {
+                    "default": 3
+                }
+            }
+        ],
+        "minimumExperienceOnBreak": 0,
+        "maximumExperienceOnBreak": 0,
+        "removed": false
+    },
+    {
+        "name": "Stripped Birch Wood",
+        "minecraftName": "minecraft:stripped_birch_wood",
+        "legacyID": "null",
+        "introduced": "1.13 pre-2",
+        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/stripped_birch_log.png",
+        "naturalSpawns": {
+            "naturalSpawnInOverworldDimension": true,
+            "naturalSpawnInNetherDimension": false,
+            "naturalSpawnInEndDimension": false
+        },
+        "solidity": "solid",
+        "stats": {
+            "opacity": 1,
+            "hardness": 2,
+            "resistance": 2,
+            "luminance": 0,
+            "interactive": false,
+            "slippery": false,
+            "flammable": true,
+            "catchesFireFromLava": true,
+            "brokenByWater": false
+        },
+        "hitbox": {
+            "width": 1,
+            "height": 1,
+            "length": 1
+        },
+        "drops": {
+            "defaultDrop": "minecraft:stripped_birch_wood",
+            "silkTouchDrop": "minecraft:stripped_birch_wood",
+            "dropAffectedByFortune": false
+        },
+        "toolData": [
+            {
+                "tool": "axe",
+                "breakSpeed": {
+                    "wooden": 1.5,
+                    "stone": 0.75,
+                    "iron": 0.5,
+                    "diamond": 0.4,
+                    "netherite": 0.35,
+                    "golden": 0.25
+                }
+            },
+            {
+                "tool": "fists",
+                "breakSpeed": {
+                    "default": 3
+                }
+            }
+        ],
+        "minimumExperienceOnBreak": 0,
+        "maximumExperienceOnBreak": 0,
+        "removed": false
+    },
+    {
+        "name": "Stripped Jungle Wood",
+        "minecraftName": "minecraft:stripped_jungle_wood",
+        "legacyID": "null",
+        "introduced": "1.13 pre-2",
+        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/stripped_jungle_log.png",
+        "naturalSpawns": {
+            "naturalSpawnInOverworldDimension": true,
+            "naturalSpawnInNetherDimension": false,
+            "naturalSpawnInEndDimension": false
+        },
+        "solidity": "solid",
+        "stats": {
+            "opacity": 1,
+            "hardness": 2,
+            "resistance": 2,
+            "luminance": 0,
+            "interactive": false,
+            "slippery": false,
+            "flammable": true,
+            "catchesFireFromLava": true,
+            "brokenByWater": false
+        },
+        "hitbox": {
+            "width": 1,
+            "height": 1,
+            "length": 1
+        },
+        "drops": {
+            "defaultDrop": "minecraft:stripped_jungle_wood",
+            "silkTouchDrop": "minecraft:stripped_jungle_wood",
+            "dropAffectedByFortune": false
+        },
+        "toolData": [
+            {
+                "tool": "axe",
+                "breakSpeed": {
+                    "wooden": 1.5,
+                    "stone": 0.75,
+                    "iron": 0.5,
+                    "diamond": 0.4,
+                    "netherite": 0.35,
+                    "golden": 0.25
+                }
+            },
+            {
+                "tool": "fists",
+                "breakSpeed": {
+                    "default": 3
+                }
+            }
+        ],
+        "minimumExperienceOnBreak": 0,
+        "maximumExperienceOnBreak": 0,
+        "removed": false
+    },
+    {
+        "name": "Stripped Acacia Wood",
+        "minecraftName": "minecraft:stripped_acacia_wood",
+        "legacyID": "null",
+        "introduced": "1.13 pre-2",
+        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/stripped_acacia_log.png",
+        "naturalSpawns": {
+            "naturalSpawnInOverworldDimension": true,
+            "naturalSpawnInNetherDimension": false,
+            "naturalSpawnInEndDimension": false
+        },
+        "solidity": "solid",
+        "stats": {
+            "opacity": 1,
+            "hardness": 2,
+            "resistance": 2,
+            "luminance": 0,
+            "interactive": false,
+            "slippery": false,
+            "flammable": true,
+            "catchesFireFromLava": true,
+            "brokenByWater": false
+        },
+        "hitbox": {
+            "width": 1,
+            "height": 1,
+            "length": 1
+        },
+        "drops": {
+            "defaultDrop": "minecraft:stripped_acacia_wood",
+            "silkTouchDrop": "minecraft:stripped_acacia_wood",
+            "dropAffectedByFortune": false
+        },
+        "toolData": [
+            {
+                "tool": "axe",
+                "breakSpeed": {
+                    "wooden": 1.5,
+                    "stone": 0.75,
+                    "iron": 0.5,
+                    "diamond": 0.4,
+                    "netherite": 0.35,
+                    "golden": 0.25
+                }
+            },
+            {
+                "tool": "fists",
+                "breakSpeed": {
+                    "default": 3
+                }
+            }
+        ],
+        "minimumExperienceOnBreak": 0,
+        "maximumExperienceOnBreak": 0,
+        "removed": false
+    },
+    {
+        "name": "Stripped Dark Oak Wood",
+        "minecraftName": "minecraft:stripped_dark_oak_wood",
+        "legacyID": "null",
+        "introduced": "1.13 pre-2",
+        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/stripped_dark_oak_log.png",
+        "naturalSpawns": {
+            "naturalSpawnInOverworldDimension": true,
+            "naturalSpawnInNetherDimension": false,
+            "naturalSpawnInEndDimension": false
+        },
+        "solidity": "solid",
+        "stats": {
+            "opacity": 1,
+            "hardness": 2,
+            "resistance": 2,
+            "luminance": 0,
+            "interactive": false,
+            "slippery": false,
+            "flammable": true,
+            "catchesFireFromLava": true,
+            "brokenByWater": false
+        },
+        "hitbox": {
+            "width": 1,
+            "height": 1,
+            "length": 1
+        },
+        "drops": {
+            "defaultDrop": "minecraft:stripped_dard_oak_wood",
+            "silkTouchDrop": "minecraft:stripped_dark_oak_wood",
+            "dropAffectedByFortune": false
+        },
+        "toolData": [
+            {
+                "tool": "axe",
+                "breakSpeed": {
+                    "wooden": 1.5,
+                    "stone": 0.75,
+                    "iron": 0.5,
+                    "diamond": 0.4,
+                    "netherite": 0.35,
+                    "golden": 0.25
+                }
+            },
+            {
+                "tool": "fists",
+                "breakSpeed": {
+                    "default": 3
+                }
+            }
+        ],
+        "minimumExperienceOnBreak": 0,
+        "maximumExperienceOnBreak": 0,
+        "removed": false
+    },
+    {
+        "name": "Oak Wood",
+        "minecraftName": "minecraft:oak_wood",
+        "legacyID": "null",
+        "introduced": "12w30d",
+        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/oak_log.png",
+        "naturalSpawns": {
+            "naturalSpawnInOverworldDimension": true,
+            "naturalSpawnInNetherDimension": false,
+            "naturalSpawnInEndDimension": false
+        },
+        "solidity": "solid",
+        "stats": {
+            "opacity": 1,
+            "hardness": 2,
+            "resistance": 2,
+            "luminance": 0,
+            "interactive": false,
+            "slippery": false,
+            "flammable": true,
+            "catchesFireFromLava": true,
+            "brokenByWater": false
+        },
+        "hitbox": {
+            "width": 1,
+            "height": 1,
+            "length": 1
+        },
+        "drops": {
+            "defaultDrop": "minecraft:oak_wood",
+            "silkTouchDrop": "minecraft:oak_wood",
+            "dropAffectedByFortune": false
+        },
+        "toolData": [
+            {
+                "tool": "axe",
+                "breakSpeed": {
+                    "wooden": 1.5,
+                    "stone": 0.75,
+                    "iron": 0.5,
+                    "diamond": 0.4,
+                    "netherite": 0.35,
+                    "golden": 0.25
+                }
+            },
+            {
+                "tool": "fists",
+                "breakSpeed": {
+                    "default": 3
+                }
+            }
+        ],
+        "minimumExperienceOnBreak": 0,
+        "maximumExperienceOnBreak": 0,
+        "removed": false
+    },
+    {
+        "name": "Spruce Wood",
+        "minecraftName": "minecraft:spruce_wood",
+        "legacyID": "null",
+        "introduced": "12w30d",
+        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/spruce_log.png",
+        "naturalSpawns": {
+            "naturalSpawnInOverworldDimension": true,
+            "naturalSpawnInNetherDimension": false,
+            "naturalSpawnInEndDimension": false
+        },
+        "solidity": "solid",
+        "stats": {
+            "opacity": 1,
+            "hardness": 2,
+            "resistance": 2,
+            "luminance": 0,
+            "interactive": false,
+            "slippery": false,
+            "flammable": true,
+            "catchesFireFromLava": true,
+            "brokenByWater": false
+        },
+        "hitbox": {
+            "width": 1,
+            "height": 1,
+            "length": 1
+        },
+        "drops": {
+            "defaultDrop": "minecraft:spruce_wood",
+            "silkTouchDrop": "minecraft:spuce_wood",
+            "dropAffectedByFortune": false
+        },
+        "toolData": [
+            {
+                "tool": "axe",
+                "breakSpeed": {
+                    "wooden": 1.5,
+                    "stone": 0.75,
+                    "iron": 0.5,
+                    "diamond": 0.4,
+                    "netherite": 0.35,
+                    "golden": 0.25
+                }
+            },
+            {
+                "tool": "fists",
+                "breakSpeed": {
+                    "default": 3
+                }
+            }
+        ],
+        "minimumExperienceOnBreak": 0,
+        "maximumExperienceOnBreak": 0,
+        "removed": false
+    },
+    {
+        "name": "Birch Wood",
+        "minecraftName": "minecraft:birch_wood",
+        "legacyID": "null",
+        "introduced": "12w30d",
+        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/birch_log.png",
+        "naturalSpawns": {
+            "naturalSpawnInOverworldDimension": true,
+            "naturalSpawnInNetherDimension": false,
+            "naturalSpawnInEndDimension": false
+        },
+        "solidity": "solid",
+        "stats": {
+            "opacity": 1,
+            "hardness": 2,
+            "resistance": 2,
+            "luminance": 0,
+            "interactive": false,
+            "slippery": false,
+            "flammable": true,
+            "catchesFireFromLava": true,
+            "brokenByWater": false
+        },
+        "hitbox": {
+            "width": 1,
+            "height": 1,
+            "length": 1
+        },
+        "drops": {
+            "defaultDrop": "minecraft:birch_wood",
+            "silkTouchDrop": "minecraft:birch_wood",
+            "dropAffectedByFortune": false
+        },
+        "toolData": [
+            {
+                "tool": "axe",
+                "breakSpeed": {
+                    "wooden": 1.5,
+                    "stone": 0.75,
+                    "iron": 0.5,
+                    "diamond": 0.4,
+                    "netherite": 0.35,
+                    "golden": 0.25
+                }
+            },
+            {
+                "tool": "fists",
+                "breakSpeed": {
+                    "default": 3
+                }
+            }
+        ],
+        "minimumExperienceOnBreak": 0,
+        "maximumExperienceOnBreak": 0,
+        "removed": false
+    },
+    {
+        "name": "Jungle Wood",
+        "minecraftName": "minecraft:jungle_wood",
+        "legacyID": "null",
+        "introduced": "12w30d",
+        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/jungle_log.png",
+        "naturalSpawns": {
+            "naturalSpawnInOverworldDimension": true,
+            "naturalSpawnInNetherDimension": false,
+            "naturalSpawnInEndDimension": false
+        },
+        "solidity": "solid",
+        "stats": {
+            "opacity": 1,
+            "hardness": 2,
+            "resistance": 2,
+            "luminance": 0,
+            "interactive": false,
+            "slippery": false,
+            "flammable": true,
+            "catchesFireFromLava": true,
+            "brokenByWater": false
+        },
+        "hitbox": {
+            "width": 1,
+            "height": 1,
+            "length": 1
+        },
+        "drops": {
+            "defaultDrop": "minecraft:jungle_wood",
+            "silkTouchDrop": "minecraft:jungle_wood",
+            "dropAffectedByFortune": false
+        },
+        "toolData": [
+            {
+                "tool": "axe",
+                "breakSpeed": {
+                    "wooden": 1.5,
+                    "stone": 0.75,
+                    "iron": 0.5,
+                    "diamond": 0.4,
+                    "netherite": 0.35,
+                    "golden": 0.25
+                }
+            },
+            {
+                "tool": "fists",
+                "breakSpeed": {
+                    "default": 3
+                }
+            }
+        ],
+        "minimumExperienceOnBreak": 0,
+        "maximumExperienceOnBreak": 0,
+        "removed": false
+    },
+    {
+        "name": "Acacia Wood",
+        "minecraftName": "minecraft:acacia_wood",
+        "legacyID": "null",
+        "introduced": "13w43a",
+        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/acacia_log.png",
+        "naturalSpawns": {
+            "naturalSpawnInOverworldDimension": true,
+            "naturalSpawnInNetherDimension": false,
+            "naturalSpawnInEndDimension": false
+        },
+        "solidity": "solid",
+        "stats": {
+            "opacity": 1,
+            "hardness": 2,
+            "resistance": 2,
+            "luminance": 0,
+            "interactive": false,
+            "slippery": false,
+            "flammable": true,
+            "catchesFireFromLava": true,
+            "brokenByWater": false
+        },
+        "hitbox": {
+            "width": 1,
+            "height": 1,
+            "length": 1
+        },
+        "drops": {
+            "defaultDrop": "minecraft:acacia_wood",
+            "silkTouchDrop": "minecraft:acacia_wood",
+            "dropAffectedByFortune": false
+        },
+        "toolData": [
+            {
+                "tool": "axe",
+                "breakSpeed": {
+                    "wooden": 1.5,
+                    "stone": 0.75,
+                    "iron": 0.5,
+                    "diamond": 0.4,
+                    "netherite": 0.35,
+                    "golden": 0.25
+                }
+            },
+            {
+                "tool": "fists",
+                "breakSpeed": {
+                    "default": 3
+                }
+            }
+        ],
+        "minimumExperienceOnBreak": 0,
+        "maximumExperienceOnBreak": 0,
+        "removed": false
+    },
+    {
+        "name": "Dark Oak Wood",
+        "minecraftName": "minecraft:dark_oak_wood",
+        "legacyID": "null",
+        "introduced": "13w43a",
+        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/dark_oak_log.png",
+        "naturalSpawns": {
+            "naturalSpawnInOverworldDimension": true,
+            "naturalSpawnInNetherDimension": false,
+            "naturalSpawnInEndDimension": false
+        },
+        "solidity": "solid",
+        "stats": {
+            "opacity": 1,
+            "hardness": 2,
+            "resistance": 2,
+            "luminance": 0,
+            "interactive": false,
+            "slippery": false,
+            "flammable": true,
+            "catchesFireFromLava": true,
+            "brokenByWater": false
+        },
+        "hitbox": {
+            "width": 1,
+            "height": 1,
+            "length": 1
+        },
+        "drops": {
+            "defaultDrop": "minecraft:dark_oak_wood",
+            "silkTouchDrop": "minecraft:dark_oak_wood",
+            "dropAffectedByFortune": false
+        },
+        "toolData": [
+            {
+                "tool": "axe",
+                "breakSpeed": {
+                    "wooden": 1.5,
+                    "stone": 0.75,
+                    "iron": 0.5,
+                    "diamond": 0.4,
+                    "netherite": 0.35,
+                    "golden": 0.25
+                }
+            },
+            {
+                "tool": "fists",
+                "breakSpeed": {
+                    "default": 3
+                }
+            }
+        ],
+        "minimumExperienceOnBreak": 0,
+        "maximumExperienceOnBreak": 0,
+        "removed": false
     }
 ]
