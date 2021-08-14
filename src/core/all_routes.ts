@@ -15,7 +15,7 @@ import withQueryGet from "../frontend_routes/blocks/withQueryGet"; // if a query
 import noInputBlockGet from "../frontend_routes/blocks/noInputGet"; // if nothing is provided, it sends the entire blockbase
 
 // login/out
-import loginGet from "../frontend_routes/login/get";
+import dashboardGet from "../frontend_routes/dashboard/get";
 import loginPost from "../frontend_routes/login/post";
 import logoutGet from "../frontend_routes/logout/get";
 
@@ -37,7 +37,7 @@ export default {
 	noInputBlockGet,
 
 	// LOGIN/OUT
-	loginGet,
+	dashboardGet,
 	loginPost,
 	logoutGet,
 };

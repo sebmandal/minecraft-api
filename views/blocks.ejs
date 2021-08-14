@@ -4,18 +4,18 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<%- include("../partials/head.ejs") %>
+		<%- include("./partials/head.ejs") %>
 		<title>MC API</title>
 	</head>
 	<body>
-		<%- include("../partials/nav.ejs") %>
+		<%- include("./partials/nav.ejs") %>
 		<!-- Desktop view -->
 		<div class="d-none d-md-block container bg-light">
 			<div class="row">
 				<% blocks.forEach(block => { %>
 				<div class="card col-3 rounded-0">
 					<div class="card-body my-2">
-						<a href="/blocks/<%= block.legacyID %>">
+						<a href="/blocks/<%= block.minecraftName.slice(10) %>">
 							<img
 								src="<%= block.imageUrl %>"
 								alt="<%= block.minecraftName %>"
@@ -34,7 +34,7 @@
 								<%= block.minecraftName %>
 							</small>
 						</p>
-						<a href="/blocks/<%= block.legacyID %>">
+						<a href="/blocks/<%= block.minecraftName.slice(10) %>">
 							<button
 								type="button"
 								class="rounded-0 btn btn-success"
@@ -55,7 +55,7 @@
 			<div class="row">
 				<% blocks.forEach(block => { %>
 				<a
-					href="/blocks/<%= block.legacyID %>"
+					href="/blocks/<%= block.minecraftName.slice(10) %>"
 					class="text-reset text-decoration-none"
 				>
 					<div class="col-12 rounded-0">
@@ -84,6 +84,6 @@
 				<% }) %>
 			</div>
 		</div>
-		<%- include("../partials/footer.ejs") %>
+		<%- include("./partials/footer.ejs") %>
 	</body>
 </html>

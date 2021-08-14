@@ -3,7 +3,7 @@ import fs from "fs";
 
 const script = async (req: any, res: any) => {
 	if (req.session.authorized) {
-		return res.render("block/add_block", {
+		return res.render("developer/add_block", {
 			session: req.session,
 			blocks: JSON.parse(fs.readFileSync("./api/blocks.json", "utf8")),
 		});

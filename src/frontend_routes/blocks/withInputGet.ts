@@ -2,7 +2,9 @@ import Route from "../../core/route";
 import fs from "fs";
 
 const script = async (req: any, res: any) => {
-	const BLOCKS = await JSON.parse(fs.readFileSync("./api/blocks.json", "utf8"));
+	const BLOCKS = await JSON.parse(
+		fs.readFileSync("./api/blocks.json", "utf8"),
+	);
 	const input = req.params.block.toLowerCase();
 
 	/**
@@ -10,10 +12,10 @@ const script = async (req: any, res: any) => {
 	 */
 	const inputNumber: number = parseInt(input);
 	const block: object | undefined = BLOCKS.find(
-		(b: any) => b.id === inputNumber
+		(b: any) => b.id === inputNumber,
 	);
 	if (block)
-		return res.render("block/block", {
+		return res.render("block", {
 			block: block,
 			blocks: JSON.parse(fs.readFileSync("./api/blocks.json", "utf8")),
 		});
@@ -25,10 +27,10 @@ const script = async (req: any, res: any) => {
 		(b: any) =>
 			b.name.toLowerCase() === input ||
 			b.legacyID === input ||
-			b.minecraftName.slice(10) === input
+			b.minecraftName.slice(10) === input,
 	);
 	if (result)
-		return res.render("block/block", {
+		return res.render("block", {
 			block: result,
 			blocks: JSON.parse(fs.readFileSync("./api/blocks.json", "utf8")),
 		});
