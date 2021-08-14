@@ -4,7 +4,7 @@
         "minecraftName": "minecraft:air",
         "legacyID": "0",
         "introduced": "Cave game tech test",
-        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/item/barrier.png",
+        "imageUrl": "/textures/item/barrier.png",
         "naturalSpawns": {
             "naturalSpawnInOverworldDimension": true,
             "naturalSpawnInNetherDimension": true,
@@ -42,7 +42,7 @@
         "minecraftName": "minecraft:stone",
         "legacyID": "1",
         "introduced": "rd-20090515",
-        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/stone.png",
+        "imageUrl": "/textures/block/stone.png",
         "naturalSpawns": {
             "naturalSpawnInOverworldDimension": true,
             "naturalSpawnInNetherDimension": false,
@@ -97,7 +97,7 @@
         "minecraftName": "minecraft:granite",
         "legacyID": "1:1",
         "introduced": "14w02a",
-        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/granite.png",
+        "imageUrl": "/textures/block/granite.png",
         "naturalSpawns": {
             "naturalSpawnInOverworldDimension": true,
             "naturalSpawnInNetherDimension": false,
@@ -152,7 +152,7 @@
         "minecraftName": "minecraft:polished_granite",
         "legacyID": "1:2",
         "introduced": "14w02a",
-        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/polished_granite.png",
+        "imageUrl": "/textures/block/polished_granite.png",
         "naturalSpawns": {
             "naturalSpawnInOverworldDimension": false,
             "naturalSpawnInNetherDimension": false,
@@ -207,7 +207,7 @@
         "minecraftName": "minecraft:diorite",
         "legacyID": "1:3",
         "introduced": "14w02a",
-        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/diorite.png",
+        "imageUrl": "/textures/block/diorite.png",
         "naturalSpawns": {
             "naturalSpawnInOverworldDimension": true,
             "naturalSpawnInNetherDimension": false,
@@ -262,7 +262,7 @@
         "minecraftName": "minecraft:polished_diorite",
         "legacyID": "1:4",
         "introduced": "14w02a",
-        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/polished_diorite.png",
+        "imageUrl": "/textures/block/polished_diorite.png",
         "naturalSpawns": {
             "naturalSpawnInOverworldDimension": false,
             "naturalSpawnInNetherDimension": false,
@@ -317,7 +317,7 @@
         "minecraftName": "minecraft:andesite",
         "legacyID": "1:5",
         "introduced": "14w02a",
-        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/andesite.png",
+        "imageUrl": "/textures/block/andesite.png",
         "naturalSpawns": {
             "naturalSpawnInOverworldDimension": true,
             "naturalSpawnInNetherDimension": false,
@@ -372,7 +372,7 @@
         "minecraftName": "minecraft:polished_andesite",
         "legacyID": "2:6",
         "introduced": "14w02a",
-        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/polished_andesite.png",
+        "imageUrl": "/textures/block/polished_andesite.png",
         "naturalSpawns": {
             "naturalSpawnInOverworldDimension": false,
             "naturalSpawnInNetherDimension": false,
@@ -427,7 +427,7 @@
         "minecraftName": "minecraft:grass_block",
         "legacyID": "2",
         "introduced": "Cave game tech test",
-        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/grass_block_side.png",
+        "imageUrl": "/textures/block/grass_block_side.png",
         "naturalSpawns": {
             "naturalSpawnInOverworldDimension": true,
             "naturalSpawnInNetherDimension": false,
@@ -482,7 +482,7 @@
         "minecraftName": "minecraft:dirt",
         "legacyID": "3",
         "introduced": "rd-20090515",
-        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/dirt.png",
+        "imageUrl": "/textures/block/dirt.png",
         "naturalSpawns": {
             "naturalSpawnInOverworldDimension": true,
             "naturalSpawnInNetherDimension": false,
@@ -536,7 +536,7 @@
         "name": "Coarse Dirt",
         "minecraftName": "minecraft:coarse_dirt",
         "legacyID": "3:1",
-        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/coarse_dirt.png",
+        "imageUrl": "/textures/block/coarse_dirt.png",
         "naturalSpawns": {
             "naturalSpawnInOverworldDimension": false,
             "naturalSpawnInNetherDimension": false,
@@ -591,7 +591,7 @@
         "minecraftName": "minecraft:podzol",
         "legacyID": "3:2",
         "introduced": "13w36a",
-        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/podzol_side.png",
+        "imageUrl": "/textures/block/podzol_side.png",
         "naturalSpawns": {
             "naturalSpawnInOverworldDimension": true,
             "naturalSpawnInNetherDimension": false,
@@ -647,7 +647,7 @@
         "minecraftName": "minecraft:cobblestone",
         "legacyID": "4",
         "introduced": "rd-131655",
-        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/cobblestone.png",
+        "imageUrl": "/textures/block/cobblestone.png",
         "naturalSpawns": {
             "naturalSpawnInOverworldDimension": true,
             "naturalSpawnInNetherDimension": false,
@@ -703,7 +703,7 @@
         "minecraftName": "minecraft:oak_planks",
         "legacyID": "5",
         "introduced": "rd-20090515",
-        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/oak_planks.png",
+        "imageUrl": "/textures/block/oak_planks.png",
         "naturalSpawns": {
             "naturalSpawnInOverworldDimension": true,
             "naturalSpawnInNetherDimension": false,
@@ -759,7 +759,7 @@
         "minecraftName": "minecraft:spruce_planks",
         "legacyID": "5:1",
         "introduced": "1.2.4",
-        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/spruce_planks.png",
+        "imageUrl": "/textures/block/spruce_planks.png",
         "naturalSpawns": {
             "naturalSpawnInOverworldDimension": true,
             "naturalSpawnInNetherDimension": false,
@@ -815,7 +815,7 @@
         "minecraftName": "minecraft:birch_planks",
         "legacyID": "5:2",
         "introduced": "1.2.4",
-        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/birch_planks.png",
+        "imageUrl": "/textures/block/birch_planks.png",
         "naturalSpawns": {
             "naturalSpawnInOverworldDimension": true,
             "naturalSpawnInNetherDimension": false,
@@ -871,7 +871,7 @@
         "minecraftName": "minecraft:jungle_planks",
         "legacyID": "5:3",
         "introduced": "1.2.4",
-        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/jungle_planks.png",
+        "imageUrl": "/textures/block/jungle_planks.png",
         "naturalSpawns": {
             "naturalSpawnInOverworldDimension": true,
             "naturalSpawnInNetherDimension": false,
@@ -927,7 +927,7 @@
         "minecraftName": "minecraft:acacia_planks",
         "legacyID": "5:4",
         "introduced": "1.7.1",
-        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/acacia_planks.png",
+        "imageUrl": "/textures/block/acacia_planks.png",
         "naturalSpawns": {
             "naturalSpawnInOverworldDimension": true,
             "naturalSpawnInNetherDimension": false,
@@ -983,7 +983,7 @@
         "minecraftName": "minecraft:dark_oak_planks",
         "legacyID": "5:5",
         "introduced": "1.7.1",
-        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/dark_oak_planks.png",
+        "imageUrl": "/textures/block/dark_oak_planks.png",
         "naturalSpawns": {
             "naturalSpawnInOverworldDimension": true,
             "naturalSpawnInNetherDimension": false,
@@ -1039,7 +1039,7 @@
         "minecraftName": "minecraft:oak_sapling",
         "legacyID": "6",
         "introduced": "rd-161348",
-        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/oak_sapling.png",
+        "imageUrl": "/textures/block/oak_sapling.png",
         "naturalSpawns": {
             "naturalSpawnInOverworldDimension": true,
             "naturalSpawnInNetherDimension": false,
@@ -1084,7 +1084,7 @@
         "minecraftName": "minecraft:spruce_sapling",
         "legacyID": "6:1",
         "introduced": "beta 1.5",
-        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/spruce_sapling.png",
+        "imageUrl": "/textures/block/spruce_sapling.png",
         "naturalSpawns": {
             "naturalSpawnInOverworldDimension": true,
             "naturalSpawnInNetherDimension": false,
@@ -1129,7 +1129,7 @@
         "minecraftName": "minecraft:birch_sapling",
         "legacyID": "6:2",
         "introduced": "beta 1.5",
-        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/birch_sapling.png",
+        "imageUrl": "/textures/block/birch_sapling.png",
         "naturalSpawns": {
             "naturalSpawnInOverworldDimension": true,
             "naturalSpawnInNetherDimension": false,
@@ -1174,7 +1174,7 @@
         "minecraftName": "minecraft:birch_jungle",
         "legacyID": "6:3",
         "introduced": "12w04a",
-        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/jungle_sapling.png",
+        "imageUrl": "/textures/block/jungle_sapling.png",
         "naturalSpawns": {
             "naturalSpawnInOverworldDimension": true,
             "naturalSpawnInNetherDimension": false,
@@ -1219,7 +1219,7 @@
         "minecraftName": "minecraft:acacia_sapling",
         "legacyID": "6:4",
         "introduced": "1.7.2",
-        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/acacia_sapling.png",
+        "imageUrl": "/textures/block/acacia_sapling.png",
         "naturalSpawns": {
             "naturalSpawnInOverworldDimension": true,
             "naturalSpawnInNetherDimension": false,
@@ -1264,7 +1264,7 @@
         "minecraftName": "minecraft:dark_oak_sapling",
         "legacyID": "6:5",
         "introduced": "13w43a",
-        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/dark_oak_sapling.png",
+        "imageUrl": "/textures/block/dark_oak_sapling.png",
         "naturalSpawns": {
             "naturalSpawnInOverworldDimension": true,
             "naturalSpawnInNetherDimension": false,
@@ -1309,7 +1309,7 @@
         "minecraftName": "minecraft:bedrock",
         "legacyID": "7",
         "introduced": "classic 0.0.12a",
-        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/bedrock.png",
+        "imageUrl": "/textures/block/bedrock.png",
         "naturalSpawns": {
             "naturalSpawnInOverworldDimension": true,
             "naturalSpawnInNetherDimension": true,
@@ -1347,7 +1347,7 @@
         "minecraftName": "minecraft:sand",
         "legacyID": "12",
         "introduced": "classic 0.0.14a",
-        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/sand.png",
+        "imageUrl": "/textures/block/sand.png",
         "naturalSpawns": {
             "naturalSpawnInOverworldDimension": true,
             "naturalSpawnInNetherDimension": false,
@@ -1403,7 +1403,7 @@
         "minecraftName": "minecraft:red_sand",
         "legacyID": "12:1",
         "introduced": "13w39a",
-        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/red_sand.png",
+        "imageUrl": "/textures/block/red_sand.png",
         "naturalSpawns": {
             "naturalSpawnInOverworldDimension": true,
             "naturalSpawnInNetherDimension": false,
@@ -1459,7 +1459,7 @@
         "minecraftName": "minecraft:gravel",
         "legacyID": "13",
         "introduced": "classic 0.0.14a",
-        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/gravel.png",
+        "imageUrl": "/textures/block/gravel.png",
         "naturalSpawns": {
             "naturalSpawnInOverworldDimension": true,
             "naturalSpawnInNetherDimension": true,
@@ -1515,7 +1515,7 @@
         "minecraftName": "minecraft:gold_ore",
         "legacyID": "14",
         "introduced": "classic 0.0.14a",
-        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/gold_ore.png",
+        "imageUrl": "/textures/block/gold_ore.png",
         "naturalSpawns": {
             "naturalSpawnInOverworldDimension": true,
             "naturalSpawnInNetherDimension": false,
@@ -1571,7 +1571,7 @@
         "minecraftName": "minecraft:iron_ore",
         "legacyID": "15",
         "introduced": "classic 0.0.14a",
-        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/iron_ore.png",
+        "imageUrl": "/textures/block/iron_ore.png",
         "naturalSpawns": {
             "naturalSpawnInOverworldDimension": true,
             "naturalSpawnInNetherDimension": false,
@@ -1627,7 +1627,7 @@
         "minecraftName": "minecraft:coal_ore",
         "legacyID": "16",
         "introduced": "classic 0.0.14a",
-        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/coal_ore.png",
+        "imageUrl": "/textures/block/coal_ore.png",
         "naturalSpawns": {
             "naturalSpawnInOverworldDimension": true,
             "naturalSpawnInNetherDimension": false,
@@ -1683,7 +1683,7 @@
         "minecraftName": "minecraft:oak_log",
         "legacyID": "17",
         "introduced": "classic 0.0.14a",
-        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/oak_log.png",
+        "imageUrl": "/textures/block/oak_log.png",
         "naturalSpawns": {
             "naturalSpawnInOverworldDimension": true,
             "naturalSpawnInNetherDimension": false,
@@ -1739,7 +1739,7 @@
         "minecraftName": "minecraft:spruce_log",
         "legacyID": "17:1",
         "introduced": "beta 1.2",
-        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/spruce_log.png",
+        "imageUrl": "/textures/block/spruce_log.png",
         "naturalSpawns": {
             "naturalSpawnInOverworldDimension": true,
             "naturalSpawnInNetherDimension": false,
@@ -1795,7 +1795,7 @@
         "minecraftName": "minecraft:birch_log",
         "legacyID": "17:3",
         "introduced": "beta 1.2",
-        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/birch_log.png",
+        "imageUrl": "/textures/block/birch_log.png",
         "naturalSpawns": {
             "naturalSpawnInOverworldDimension": true,
             "naturalSpawnInNetherDimension": false,
@@ -1851,7 +1851,7 @@
         "minecraftName": "minecraft:jungle_log",
         "legacyID": "17:3",
         "introduced": "12w03a",
-        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/jungle_log.png",
+        "imageUrl": "/textures/block/jungle_log.png",
         "naturalSpawns": {
             "naturalSpawnInOverworldDimension": true,
             "naturalSpawnInNetherDimension": false,
@@ -1907,7 +1907,7 @@
         "minecraftName": "minecraft:acacia_log",
         "legacyID": "162",
         "introduced": "13w43a",
-        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/acacia_log.png",
+        "imageUrl": "/textures/block/acacia_log.png",
         "naturalSpawns": {
             "naturalSpawnInOverworldDimension": true,
             "naturalSpawnInNetherDimension": false,
@@ -1963,7 +1963,7 @@
         "minecraftName": "minecraft:dark_oak_log",
         "legacyID": "162:1",
         "introduced": "13w43a",
-        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/dark_oak_log.png",
+        "imageUrl": "/textures/block/dark_oak_log.png",
         "naturalSpawns": {
             "naturalSpawnInOverworldDimension": true,
             "naturalSpawnInNetherDimension": false,
@@ -2019,7 +2019,7 @@
         "minecraftName": "minecraft:stripped_oak_log",
         "legacyID": "null",
         "introduced": "13w43a",
-        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/stripped_oak_log.png",
+        "imageUrl": "/textures/block/stripped_oak_log.png",
         "naturalSpawns": {
             "naturalSpawnInOverworldDimension": true,
             "naturalSpawnInNetherDimension": false,
@@ -2075,7 +2075,7 @@
         "minecraftName": "minecraft:stripped_spruce_log",
         "legacyID": "null",
         "introduced": "13w43a",
-        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/stripped_spruce_log.png",
+        "imageUrl": "/textures/block/stripped_spruce_log.png",
         "naturalSpawns": {
             "naturalSpawnInOverworldDimension": true,
             "naturalSpawnInNetherDimension": false,
@@ -2131,7 +2131,7 @@
         "minecraftName": "minecraft:stripped_birch_log",
         "legacyID": "null",
         "introduced": "13w43a",
-        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/stripped_birch_log.png",
+        "imageUrl": "/textures/block/stripped_birch_log.png",
         "naturalSpawns": {
             "naturalSpawnInOverworldDimension": true,
             "naturalSpawnInNetherDimension": false,
@@ -2187,7 +2187,7 @@
         "minecraftName": "minecraft:stripped_acacia_log",
         "legacyID": "null",
         "introduced": "13w43a",
-        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/stripped_acacia_log.png",
+        "imageUrl": "/textures/block/stripped_acacia_log.png",
         "naturalSpawns": {
             "naturalSpawnInOverworldDimension": true,
             "naturalSpawnInNetherDimension": false,
@@ -2243,7 +2243,7 @@
         "minecraftName": "minecraft:stripped_dark_oak_log",
         "legacyID": "null",
         "introduced": "13w43a",
-        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/stripped_dark_oak_log.png",
+        "imageUrl": "/textures/block/stripped_dark_oak_log.png",
         "naturalSpawns": {
             "naturalSpawnInOverworldDimension": true,
             "naturalSpawnInNetherDimension": false,
@@ -2299,7 +2299,7 @@
         "minecraftName": "minecraft:stripped_oak_wood",
         "legacyID": "null",
         "introduced": "1.13 pre-2",
-        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/stripped_oak_log.png",
+        "imageUrl": "/textures/block/stripped_oak_log.png",
         "naturalSpawns": {
             "naturalSpawnInOverworldDimension": true,
             "naturalSpawnInNetherDimension": false,
@@ -2355,7 +2355,7 @@
         "minecraftName": "minecraft:stripped_spruce_wood",
         "legacyID": "null",
         "introduced": "1.13 pre-2",
-        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/stripped_spruce_log.png",
+        "imageUrl": "/textures/block/stripped_spruce_log.png",
         "naturalSpawns": {
             "naturalSpawnInOverworldDimension": true,
             "naturalSpawnInNetherDimension": false,
@@ -2411,7 +2411,7 @@
         "minecraftName": "minecraft:stripped_birch_wood",
         "legacyID": "null",
         "introduced": "1.13 pre-2",
-        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/stripped_birch_log.png",
+        "imageUrl": "/textures/block/stripped_birch_log.png",
         "naturalSpawns": {
             "naturalSpawnInOverworldDimension": true,
             "naturalSpawnInNetherDimension": false,
@@ -2467,7 +2467,7 @@
         "minecraftName": "minecraft:stripped_jungle_wood",
         "legacyID": "null",
         "introduced": "1.13 pre-2",
-        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/stripped_jungle_log.png",
+        "imageUrl": "/textures/block/stripped_jungle_log.png",
         "naturalSpawns": {
             "naturalSpawnInOverworldDimension": true,
             "naturalSpawnInNetherDimension": false,
@@ -2523,7 +2523,7 @@
         "minecraftName": "minecraft:stripped_acacia_wood",
         "legacyID": "null",
         "introduced": "1.13 pre-2",
-        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/stripped_acacia_log.png",
+        "imageUrl": "/textures/block/stripped_acacia_log.png",
         "naturalSpawns": {
             "naturalSpawnInOverworldDimension": true,
             "naturalSpawnInNetherDimension": false,
@@ -2579,7 +2579,7 @@
         "minecraftName": "minecraft:stripped_dark_oak_wood",
         "legacyID": "null",
         "introduced": "1.13 pre-2",
-        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/stripped_dark_oak_log.png",
+        "imageUrl": "/textures/block/stripped_dark_oak_log.png",
         "naturalSpawns": {
             "naturalSpawnInOverworldDimension": true,
             "naturalSpawnInNetherDimension": false,
@@ -2635,7 +2635,7 @@
         "minecraftName": "minecraft:oak_wood",
         "legacyID": "null",
         "introduced": "12w30d",
-        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/oak_log.png",
+        "imageUrl": "/textures/block/oak_log.png",
         "naturalSpawns": {
             "naturalSpawnInOverworldDimension": true,
             "naturalSpawnInNetherDimension": false,
@@ -2691,7 +2691,7 @@
         "minecraftName": "minecraft:spruce_wood",
         "legacyID": "null",
         "introduced": "12w30d",
-        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/spruce_log.png",
+        "imageUrl": "/textures/block/spruce_log.png",
         "naturalSpawns": {
             "naturalSpawnInOverworldDimension": true,
             "naturalSpawnInNetherDimension": false,
@@ -2747,7 +2747,7 @@
         "minecraftName": "minecraft:birch_wood",
         "legacyID": "null",
         "introduced": "12w30d",
-        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/birch_log.png",
+        "imageUrl": "/textures/block/birch_log.png",
         "naturalSpawns": {
             "naturalSpawnInOverworldDimension": true,
             "naturalSpawnInNetherDimension": false,
@@ -2803,7 +2803,7 @@
         "minecraftName": "minecraft:jungle_wood",
         "legacyID": "null",
         "introduced": "12w30d",
-        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/jungle_log.png",
+        "imageUrl": "/textures/block/jungle_log.png",
         "naturalSpawns": {
             "naturalSpawnInOverworldDimension": true,
             "naturalSpawnInNetherDimension": false,
@@ -2859,7 +2859,7 @@
         "minecraftName": "minecraft:acacia_wood",
         "legacyID": "null",
         "introduced": "13w43a",
-        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/acacia_log.png",
+        "imageUrl": "/textures/block/acacia_log.png",
         "naturalSpawns": {
             "naturalSpawnInOverworldDimension": true,
             "naturalSpawnInNetherDimension": false,
@@ -2915,7 +2915,7 @@
         "minecraftName": "minecraft:dark_oak_wood",
         "legacyID": "null",
         "introduced": "13w43a",
-        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/dark_oak_log.png",
+        "imageUrl": "/textures/block/dark_oak_log.png",
         "naturalSpawns": {
             "naturalSpawnInOverworldDimension": true,
             "naturalSpawnInNetherDimension": false,
@@ -2959,6 +2959,142 @@
                 "tool": "fists",
                 "breakSpeed": {
                     "default": 3
+                }
+            }
+        ],
+        "minimumExperienceOnBreak": 0,
+        "maximumExperienceOnBreak": 0,
+        "removed": false
+    },
+    {
+        "name": "Oak Leaves",
+        "minecraftName": "minecraf:oak_leaves",
+        "legacyID": "18",
+        "introduced": "classic 0.0.14a",
+        "imageUrl": "/textures/block/oak_leaves.png",
+        "naturalSpawns": {
+            "naturalSpawnInOverworldDimension": true,
+            "naturalSpawnInNetherDimension": false,
+            "naturalSpawnInEndDimension": false
+        },
+        "solidity": "solid",
+        "stats": {
+            "opacity": 0.5,
+            "hardness": 0.2,
+            "resistance": 0.2,
+            "luminance": 0,
+            "interactive": false,
+            "slippery": false,
+            "flammable": true,
+            "catchesFireFromLava": true,
+            "brokenByWater": false
+        },
+        "hitbox": {
+            "width": 1,
+            "height": 1,
+            "length": 1
+        },
+        "drops": {
+            "defaultDrop": "minecraft:oak_sapling, minecraft:apple, minecraft:stick",
+            "silkTouchDrop": "minecraf:oak_leaves",
+            "dropAffectedByFortune": true
+        },
+        "toolData": [
+            {
+                "tool": "hoe",
+                "breakSpeed": {
+                    "wooden": 0.15,
+                    "stone": 0.1,
+                    "iron": 0.05,
+                    "diamond": 0.05,
+                    "netherite": 0.05,
+                    "golden": 0.05
+                }
+            },
+            {
+                "tool": "shears",
+                "breakSpeed": {
+                    "default": 0.05
+                }
+            },
+            {
+                "tool": "sword",
+                "breakSpeed": {
+                    "default": 0.2
+                }
+            },
+            {
+                "tool": "fists",
+                "breakSpeed": {
+                    "default": 0.3
+                }
+            }
+        ],
+        "minimumExperienceOnBreak": 0,
+        "maximumExperienceOnBreak": 0,
+        "removed": false
+    },
+    {
+        "name": "Spruce Leaves",
+        "minecraftName": "minecraf:spruce_leaves",
+        "legacyID": "18:1",
+        "introduced": "beta 1.2",
+        "imageUrl": "/textures/block/pruce_leaves.png",
+        "naturalSpawns": {
+            "naturalSpawnInOverworldDimension": true,
+            "naturalSpawnInNetherDimension": false,
+            "naturalSpawnInEndDimension": false
+        },
+        "solidity": "solid",
+        "stats": {
+            "opacity": 0.5,
+            "hardness": 0.2,
+            "resistance": 0.2,
+            "luminance": 0,
+            "interactive": false,
+            "slippery": false,
+            "flammable": true,
+            "catchesFireFromLava": true,
+            "brokenByWater": false
+        },
+        "hitbox": {
+            "width": 1,
+            "height": 1,
+            "length": 1
+        },
+        "drops": {
+            "defaultDrop": "minecraft:spruce_sapling, minecraft:apple, minecraft:stick",
+            "silkTouchDrop": "minecraf:spruce_leaves",
+            "dropAffectedByFortune": true
+        },
+        "toolData": [
+            {
+                "tool": "hoe",
+                "breakSpeed": {
+                    "wooden": 0.15,
+                    "stone": 0.1,
+                    "iron": 0.05,
+                    "diamond": 0.05,
+                    "netherite": 0.05,
+                    "golden": 0.05
+                }
+            },
+            {
+                "tool": "shears",
+                "breakSpeed": {
+                    "default": 0.05
+                }
+            },
+            {
+                "tool": "sword",
+                "breakSpeed": {
+                    "default": 0.2
+                }
+            },
+            {
+                "tool": "fists",
+                "breakSpeed": {
+                    "default": 0.3
                 }
             }
         ],
