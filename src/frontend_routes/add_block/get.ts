@@ -2,10 +2,14 @@ import Route from "../../core/route";
 import fs from "fs";
 
 const script = async (req: any, res: any) => {
-	res.render("block/add_block", {
-		session: req.session,
-		blocks: JSON.parse(fs.readFileSync("./api/blocks.json", "utf8")),
-	});
+	if (req.session.authorized) {
+		return res.render("block/add_block", {
+			session: req.session,
+			blocks: JSON.parse(fs.readFileSync("./api/blocks.json", "utf8")),
+		});
+	} else {
+		return res.redirect("/login");
+	}
 };
 
 export default class AddBlockGet extends Route {

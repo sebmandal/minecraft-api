@@ -1,0 +1,7 @@
+<% if (session.authorized) { %>
+<h1>You're logged in.</h1>
+<% } else { %>
+<form action="/login" method="post">
+	<input type="password" placeholder="password" name="password" />
+</form>
+<% } %>
