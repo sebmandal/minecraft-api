@@ -1,5 +1,7 @@
 # The Minecraft API
 
+### ➡️ [mc.sebmandal.com](https://mc.sebmandal.com)
+
 ## Table of contents
 
 - [Introduction](#introduction)
