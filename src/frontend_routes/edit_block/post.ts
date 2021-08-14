@@ -54,7 +54,7 @@ const script = async (req: any, res: any) => {
 	fs.writeFileSync("./api/blocks.json", JSON.stringify(blocks, null, 4));
 
 	// returning the person back to index
-	return res.redirect("/");
+	return res.redirect("/blocks");
 };
 
 export default class EditBlockPost extends Route {

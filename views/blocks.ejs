@@ -13,8 +13,8 @@
 		<div class="d-none d-md-block container bg-light">
 			<div class="row">
 				<% blocks.forEach(block => { %>
-				<div class="card col-3 rounded-0 py-3">
-					<div class="card-body my-2">
+				<div class="card col-3 rounded-0 py-2">
+					<div class="card-body mt-2">
 						<a href="/blocks/<%= block.minecraftName.slice(10) %>">
 							<img
 								src="<%= block.imageUrl %>"
@@ -24,11 +24,13 @@
 								class="w-100 h-auto float-start mb-2"
 							/>
 						</a>
-						<p class="fs-4 card-title m-0 py-2">
+						<p class="fs-4 card-title m-0 pt-2">
 							<b><%= block.name %></b>
-							<small class="card-text fst-italic">
-								<%= block.legacyID %>
-							</small>
+							<% if (block.legacyID !== "null") { %>
+                                <small class="card-text fst-italic">
+                                    <%= block.legacyID %>
+                                </small>
+                            <% } %>
 							<br />
 							<small
 								class="
@@ -46,14 +48,32 @@
 						style="position: relative; bottom: 0; left: 0"
 						href="/blocks/<%= block.minecraftName.slice(10) %>"
 						type="button"
-						class="rounded-0 btn btn-success"
+						class="
+							rounded-0
+							btn btn-success
+							<%
+							if
+							(session.authorized)
+							{
+							%>
+							mb-2
+							<%
+							}
+							else
+							{
+							%>
+							mb-1
+							<%
+							}
+							%>
+						"
 						>View more
 					</a>
 					<% if (session.authorized) { %>
 					<a
 						href="/dashboard/edit_block/<%= block.minecraftName.slice(10) %>"
 						type="button"
-						class="rounded-0 btn btn-outline-success mt-3"
+						class="rounded-0 btn btn-outline-success mb-1"
 						>Edit Block</a
 					>
 					<% } %>
@@ -85,9 +105,11 @@
 							/>
 							<p class="fs-4 card-title m-0 py-2">
 								<b><%= block.name %></b>
+                                <% if (block.legacyID !== "null") { %>
 								<small class="card-text fst-italic">
 									<%= block.legacyID %>
 								</small>
+                                <% } %>
 								<br />
 								<small class="card-text text-muted fs-6">
 									<%= block.minecraftName %>
