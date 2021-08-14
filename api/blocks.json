@@ -1045,7 +1045,7 @@
             "naturalSpawnInNetherDimension": false,
             "naturalSpawnInEndDimension": false
         },
-        "solidity": "solid",
+        "solidity": "vacant",
         "stats": {
             "opacity": 0.5,
             "hardness": 0,
@@ -1090,7 +1090,7 @@
             "naturalSpawnInNetherDimension": false,
             "naturalSpawnInEndDimension": false
         },
-        "solidity": "solid",
+        "solidity": "vacant",
         "stats": {
             "opacity": 0.5,
             "hardness": 0,
@@ -1135,7 +1135,7 @@
             "naturalSpawnInNetherDimension": false,
             "naturalSpawnInEndDimension": false
         },
-        "solidity": "solid",
+        "solidity": "vacant",
         "stats": {
             "opacity": 0.5,
             "hardness": 0,
@@ -1180,7 +1180,7 @@
             "naturalSpawnInNetherDimension": false,
             "naturalSpawnInEndDimension": false
         },
-        "solidity": "solid",
+        "solidity": "vacant",
         "stats": {
             "opacity": 0.5,
             "hardness": 0,
@@ -1225,7 +1225,7 @@
             "naturalSpawnInNetherDimension": false,
             "naturalSpawnInEndDimension": false
         },
-        "solidity": "solid",
+        "solidity": "vacant",
         "stats": {
             "opacity": 0.5,
             "hardness": 0,
@@ -1270,7 +1270,7 @@
             "naturalSpawnInNetherDimension": false,
             "naturalSpawnInEndDimension": false
         },
-        "solidity": "solid",
+        "solidity": "vacant",
         "stats": {
             "opacity": 0.5,
             "hardness": 0,
