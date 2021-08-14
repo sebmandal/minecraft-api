@@ -864,5 +864,443 @@
         "minimumExperienceOnBreak": 0,
         "maximumExperienceOnBreak": 0,
         "removed": false
+    },
+    {
+        "name": "Jungle Planks",
+        "minecraftName": "minecraft:jungle_planks",
+        "legacyID": "5:3",
+        "introduced": "1.2.4",
+        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/jungle_planks.png",
+        "naturalSpawns": {
+            "naturalSpawnInOverworldDimension": true,
+            "naturalSpawnInNetherDimension": false,
+            "naturalSpawnInEndDimension": false
+        },
+        "solidity": "solid",
+        "stats": {
+            "opacity": 1,
+            "hardness": 2,
+            "resistance": 3,
+            "luminance": 0,
+            "interactive": false,
+            "slippery": false,
+            "flammable": true,
+            "catchesFireFromLava": true,
+            "brokenByWater": false
+        },
+        "hitbox": {
+            "width": 1,
+            "height": 1,
+            "length": 1
+        },
+        "drops": {
+            "defaultDrop": "minecraft:jungle_planks",
+            "silkTouchDrop": "minecraft:jungle_planks",
+            "dropAffectedByFortune": false
+        },
+        "toolData": [
+            {
+                "tool": "axe",
+                "breakSpeed": {
+                    "wooden": 1.5,
+                    "stone": 0.75,
+                    "iron": 0.5,
+                    "diamond": 0.4,
+                    "netherite": 0.35,
+                    "golden": 0.2
+                }
+            },
+            {
+                "tool": "fists",
+                "breakSpeed": {
+                    "default": 3
+                }
+            }
+        ],
+        "minimumExperienceOnBreak": 0,
+        "maximumExperienceOnBreak": 0,
+        "removed": false
+    },
+    {
+        "name": "Acacia Planks",
+        "minecraftName": "minecraft:acacia_planks",
+        "legacyID": "5:4",
+        "introduced": "1.7.1",
+        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/acacia_planks.png",
+        "naturalSpawns": {
+            "naturalSpawnInOverworldDimension": true,
+            "naturalSpawnInNetherDimension": false,
+            "naturalSpawnInEndDimension": false
+        },
+        "solidity": "solid",
+        "stats": {
+            "opacity": 1,
+            "hardness": 2,
+            "resistance": 3,
+            "luminance": 0,
+            "interactive": false,
+            "slippery": false,
+            "flammable": true,
+            "catchesFireFromLava": true,
+            "brokenByWater": false
+        },
+        "hitbox": {
+            "width": 1,
+            "height": 1,
+            "length": 1
+        },
+        "drops": {
+            "defaultDrop": "minecraft:acacia_planks",
+            "silkTouchDrop": "minecraft:acacia_planks",
+            "dropAffectedByFortune": false
+        },
+        "toolData": [
+            {
+                "tool": "axe",
+                "breakSpeed": {
+                    "wooden": 1.5,
+                    "stone": 0.75,
+                    "iron": 0.5,
+                    "diamond": 0.4,
+                    "netherite": 0.35,
+                    "golden": 0.2
+                }
+            },
+            {
+                "tool": "fists",
+                "breakSpeed": {
+                    "default": 3
+                }
+            }
+        ],
+        "minimumExperienceOnBreak": 0,
+        "maximumExperienceOnBreak": 0,
+        "removed": false
+    },
+    {
+        "name": "Dark Oak Planks",
+        "minecraftName": "minecraft:dark_oak_planks",
+        "legacyID": "5:5",
+        "introduced": "1.7.1",
+        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/dark_oak_planks.png",
+        "naturalSpawns": {
+            "naturalSpawnInOverworldDimension": true,
+            "naturalSpawnInNetherDimension": false,
+            "naturalSpawnInEndDimension": false
+        },
+        "solidity": "solid",
+        "stats": {
+            "opacity": 1,
+            "hardness": 2,
+            "resistance": 3,
+            "luminance": 0,
+            "interactive": false,
+            "slippery": false,
+            "flammable": true,
+            "catchesFireFromLava": true,
+            "brokenByWater": false
+        },
+        "hitbox": {
+            "width": 1,
+            "height": 1,
+            "length": 1
+        },
+        "drops": {
+            "defaultDrop": "minecraft:dark_oak_planks",
+            "silkTouchDrop": "minecraft:dark_oak_planks",
+            "dropAffectedByFortune": false
+        },
+        "toolData": [
+            {
+                "tool": "axe",
+                "breakSpeed": {
+                    "wooden": 1.5,
+                    "stone": 0.75,
+                    "iron": 0.5,
+                    "diamond": 0.4,
+                    "netherite": 0.35,
+                    "golden": 0.2
+                }
+            },
+            {
+                "tool": "fists",
+                "breakSpeed": {
+                    "default": 3
+                }
+            }
+        ],
+        "minimumExperienceOnBreak": 0,
+        "maximumExperienceOnBreak": 0,
+        "removed": false
+    },
+    {
+        "name": "Oak Sapling",
+        "minecraftName": "minecraft:oak_sapling",
+        "legacyID": "6",
+        "introduced": "rd-161348",
+        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/oak_sapling.png",
+        "naturalSpawns": {
+            "naturalSpawnInOverworldDimension": true,
+            "naturalSpawnInNetherDimension": false,
+            "naturalSpawnInEndDimension": false
+        },
+        "solidity": "solid",
+        "stats": {
+            "opacity": 0.5,
+            "hardness": 0,
+            "resistance": 0,
+            "luminance": 0,
+            "interactive": false,
+            "slippery": false,
+            "flammable": false,
+            "catchesFireFromLava": false,
+            "brokenByWater": true
+        },
+        "hitbox": {
+            "width": 0.75,
+            "height": 0.75,
+            "length": 0.75
+        },
+        "drops": {
+            "defaultDrop": "minecraft:oak_sapling",
+            "silkTouchDrop": "minecraft:oak_sapling",
+            "dropAffectedByFortune": false
+        },
+        "toolData": [
+            {
+                "tool": "all",
+                "breakSpeed": {
+                    "default": 0
+                }
+            }
+        ],
+        "minimumExperienceOnBreak": 0,
+        "maximumExperienceOnBreak": 0,
+        "removed": false
+    },
+    {
+        "name": "Spruce Sapling",
+        "minecraftName": "minecraft:spruce_sapling",
+        "legacyID": "6:1",
+        "introduced": "beta 1.5",
+        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/spruce_sapling.png",
+        "naturalSpawns": {
+            "naturalSpawnInOverworldDimension": true,
+            "naturalSpawnInNetherDimension": false,
+            "naturalSpawnInEndDimension": false
+        },
+        "solidity": "solid",
+        "stats": {
+            "opacity": 0.5,
+            "hardness": 0,
+            "resistance": 0,
+            "luminance": 0,
+            "interactive": false,
+            "slippery": false,
+            "flammable": false,
+            "catchesFireFromLava": false,
+            "brokenByWater": true
+        },
+        "hitbox": {
+            "width": 0.75,
+            "height": 0.75,
+            "length": 0.75
+        },
+        "drops": {
+            "defaultDrop": "minecraft:spruce_sapling",
+            "silkTouchDrop": "minecraft:spruce_sapling",
+            "dropAffectedByFortune": false
+        },
+        "toolData": [
+            {
+                "tool": "all",
+                "breakSpeed": {
+                    "default": 0
+                }
+            }
+        ],
+        "minimumExperienceOnBreak": 0,
+        "maximumExperienceOnBreak": 0,
+        "removed": false
+    },
+    {
+        "name": "Birch Sapling",
+        "minecraftName": "minecraft:birch_sapling",
+        "legacyID": "6:2",
+        "introduced": "beta 1.5",
+        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/birch_sapling.png",
+        "naturalSpawns": {
+            "naturalSpawnInOverworldDimension": true,
+            "naturalSpawnInNetherDimension": false,
+            "naturalSpawnInEndDimension": false
+        },
+        "solidity": "solid",
+        "stats": {
+            "opacity": 0.5,
+            "hardness": 0,
+            "resistance": 0,
+            "luminance": 0,
+            "interactive": false,
+            "slippery": false,
+            "flammable": false,
+            "catchesFireFromLava": false,
+            "brokenByWater": true
+        },
+        "hitbox": {
+            "width": 0.75,
+            "height": 0.75,
+            "length": 0.75
+        },
+        "drops": {
+            "defaultDrop": "minecraft:birch_sapling",
+            "silkTouchDrop": "minecraft:birch_sapling",
+            "dropAffectedByFortune": false
+        },
+        "toolData": [
+            {
+                "tool": "all",
+                "breakSpeed": {
+                    "default": 0
+                }
+            }
+        ],
+        "minimumExperienceOnBreak": 0,
+        "maximumExperienceOnBreak": 0,
+        "removed": false
+    },
+    {
+        "name": "jungle Sapling",
+        "minecraftName": "minecraft:birch_jungle",
+        "legacyID": "6:3",
+        "introduced": "12w04a",
+        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/jungle_sapling.png",
+        "naturalSpawns": {
+            "naturalSpawnInOverworldDimension": true,
+            "naturalSpawnInNetherDimension": false,
+            "naturalSpawnInEndDimension": false
+        },
+        "solidity": "solid",
+        "stats": {
+            "opacity": 0.5,
+            "hardness": 0,
+            "resistance": 0,
+            "luminance": 0,
+            "interactive": false,
+            "slippery": false,
+            "flammable": false,
+            "catchesFireFromLava": false,
+            "brokenByWater": true
+        },
+        "hitbox": {
+            "width": 0.75,
+            "height": 0.75,
+            "length": 0.75
+        },
+        "drops": {
+            "defaultDrop": "minecraft:jungle_sapling",
+            "silkTouchDrop": "minecraft:jungle_sapling",
+            "dropAffectedByFortune": false
+        },
+        "toolData": [
+            {
+                "tool": "all",
+                "breakSpeed": {
+                    "default": 0
+                }
+            }
+        ],
+        "minimumExperienceOnBreak": 0,
+        "maximumExperienceOnBreak": 0,
+        "removed": false
+    },
+    {
+        "name": "Acacia Sapling",
+        "minecraftName": "minecraft:acacia_sapling",
+        "legacyID": "6:4",
+        "introduced": "1.7.2",
+        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/acacia_sapling.png",
+        "naturalSpawns": {
+            "naturalSpawnInOverworldDimension": true,
+            "naturalSpawnInNetherDimension": false,
+            "naturalSpawnInEndDimension": false
+        },
+        "solidity": "solid",
+        "stats": {
+            "opacity": 0.5,
+            "hardness": 0,
+            "resistance": 0,
+            "luminance": 0,
+            "interactive": false,
+            "slippery": false,
+            "flammable": false,
+            "catchesFireFromLava": false,
+            "brokenByWater": true
+        },
+        "hitbox": {
+            "width": 0.75,
+            "height": 0.75,
+            "length": 0.75
+        },
+        "drops": {
+            "defaultDrop": "minecraft:acacia_sapling",
+            "silkTouchDrop": "minecraft:acacia_sapling",
+            "dropAffectedByFortune": false
+        },
+        "toolData": [
+            {
+                "tool": "all",
+                "breakSpeed": {
+                    "default": 0
+                }
+            }
+        ],
+        "minimumExperienceOnBreak": 0,
+        "maximumExperienceOnBreak": 0,
+        "removed": false
+    },
+    {
+        "name": "Dark Oak Sapling",
+        "minecraftName": "minecraft:Dark_Oak_sapling",
+        "legacyID": "6:5",
+        "introduced": "13w43a",
+        "imageUrl": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.17.1/assets/minecraft/textures/block/dark_oak_sapling.png",
+        "naturalSpawns": {
+            "naturalSpawnInOverworldDimension": true,
+            "naturalSpawnInNetherDimension": false,
+            "naturalSpawnInEndDimension": false
+        },
+        "solidity": "solid",
+        "stats": {
+            "opacity": 0.5,
+            "hardness": 0,
+            "resistance": 0,
+            "luminance": 0,
+            "interactive": false,
+            "slippery": false,
+            "flammable": false,
+            "catchesFireFromLava": false,
+            "brokenByWater": true
+        },
+        "hitbox": {
+            "width": 0.75,
+            "height": 0.75,
+            "length": 0.75
+        },
+        "drops": {
+            "defaultDrop": "minecraft:Dark_Oak_sapling",
+            "silkTouchDrop": "minecraft:Dark_Oak_sapling",
+            "dropAffectedByFortune": false
+        },
+        "toolData": [
+            {
+                "tool": "all",
+                "breakSpeed": {
+                    "default": 0
+                }
+            }
+        ],
+        "minimumExperienceOnBreak": 0,
+        "maximumExperienceOnBreak": 0,
+        "removed": false
     }
 ]
