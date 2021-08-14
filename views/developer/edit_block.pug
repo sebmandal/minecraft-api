@@ -26,6 +26,14 @@ block content
 					value=block.legacyID
 				)
 			.form-group.mb-3
+				label(for='imageUrl') Image URL
+				input.form-control(
+					required,
+					name='imageUrl',
+					type='text',
+					value=block.imageUrl
+				)
+			.form-group.mb-3
 				label(for='introduced') Introduced in version:
 				input.form-control(
 					required,

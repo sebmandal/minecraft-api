@@ -23,6 +23,7 @@ block content
 					- var viewMorePadding = session.authorized ? "mb-2" : "mb-1"
 					a.rounded-0.btn.btn-success(
 						class=viewMorePadding,
+						href="/blocks/" + block.minecraftName.slice(10),
 						style='position: relative; left: 0; bottom: 0'
 					)
 						| View more
