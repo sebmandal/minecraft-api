@@ -4,7 +4,7 @@
         "minecraftName": "minecraft:air",
         "legacyID": "0",
         "introduced": "Cave game tech test",
-        "imageUrl": "/textures/item/barrier.png",
+        "imageUrl": "/textures/block/air.png",
         "naturalSpawns": {
             "naturalSpawnInOverworldDimension": true,
             "naturalSpawnInNetherDimension": true,
