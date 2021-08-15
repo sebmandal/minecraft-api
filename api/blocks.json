@@ -3039,7 +3039,7 @@
         "minecraftName": "minecraf:spruce_leaves",
         "legacyID": "18:1",
         "introduced": "beta 1.2",
-        "imageUrl": "/textures/block/pruce_leaves.png",
+        "imageUrl": "/textures/block/spruce_leaves.png",
         "naturalSpawns": {
             "naturalSpawnInOverworldDimension": true,
             "naturalSpawnInNetherDimension": false,
