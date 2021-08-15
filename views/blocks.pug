@@ -3,6 +3,14 @@ block content
 	//- Desktop View
 	.d-none.d-md-block.container.bg-light
 		.row
+			.col-12.my-2.text-center
+				a.rounded-0.btn.btn-success.me-1(
+					href="/blocks?page=" + (pageNumber - 1)
+				) Last Page
+				a.rounded-0.btn.btn-success.ms-1(href="/blocks?page=" + (pageNumber + 1)) Next Page
+			if session.authorized
+				.col-12.mb-2.text-center
+					a.rounded-0.btn.btn-success.me-1(href='/dashboard/add_block') Add Block
 			each block in blocks
 				.card.col-3.rounded-0.py-2
 					.card-body.mt-2 
@@ -32,25 +40,43 @@ block content
 							href="/dashboard/edit_block/" + block.minecraftName.slice(10)
 						)
 							| Edit Block
+			.col-12.my-2.text-center
+				a.rounded-0.btn.btn-success.me-1(
+					href="/blocks?page=" + (pageNumber - 1)
+				) Last Page
+				a.rounded-0.btn.btn-success.ms-1(href="/blocks?page=" + (pageNumber + 1)) Next Page
 
 	//- Mobile View
 	.d-md-none.container-fluid.bg-light(
 		style='overflow: auto; word-wrap: break-word'
 	)
 		.row
+			.col-12.mt-2.text-center
+				a.rounded-0.btn.btn-success.me-1(
+					href="/blocks?page=" + (pageNumber - 1)
+				) Last Page
+				a.rounded-0.btn.btn-success.ms-1(href="/blocks?page=" + (pageNumber + 1)) Next Page
 			each block in blocks
 				a.text-reset.text-decoration-none(
 					href='/blocks/#{block.minecraftName.slice(10)}'
 				)
-					img.float-start.me-3(
-						src=block.imageUrl,
-						alt=block.minecraftName,
-						height='8',
-						width='8'
-					)
-					p.fs-4.card-title.m-0.py-2
-						b= block.name
-						if block.legacyID !== "null"
-							small.card-text.fst-italic= block.legacyID
-						br
-						small.card-text.text-muted.fs-6= block.minecraftName
+					.col-12.rounded-0
+						.d-flex.align-items-center
+							img.float-start.me-3(
+								src=block.imageUrl,
+								alt=block.minecraftName,
+								height='8',
+								width='8',
+								style='height: 50px; width: 50px'
+							)
+							p.fs-4.card-title.m-0.py-2
+								b= block.name
+								if block.legacyID !== "null"
+									small.card-text.fst-italic= block.legacyID
+								br
+								small.card-text.text-muted.fs-6= block.minecraftName
+			.col-12.my-2.text-center
+				a.rounded-0.btn.btn-success.me-1(
+					href="/blocks?page=" + (pageNumber - 1)
+				) Last Page
+				a.rounded-0.btn.btn-success.ms-1(href="/blocks?page=" + (pageNumber + 1)) Next Page
