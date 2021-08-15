@@ -4,171 +4,196 @@ block content
 		h2.text-center Add a new block
 		form(action='/dashboard/add_block', method='post')
 			.form-group.mb-3
-			label(for='name') Name
-			input.form-control(
-				required='',
-				name='name',
-				type='text',
-				placeholder='Stone'
-			)
+				label(for='name') Name
+				input.form-control(
+					required='',
+					name='name',
+					type='text',
+					placeholder='Stone'
+				)
 			.form-group.mb-3
-			label(for='minecraftName') Minecraft name
-			input.form-control(
-				required='',
-				name='minecraftName',
-				type='text',
-				placeholder='minecraft:stone'
-			)
+				label(for='minecraftName') Minecraft name
+				input.form-control(
+					required='',
+					name='minecraftName',
+					type='text',
+					placeholder='minecraft:stone'
+				)
 			.form-group.mb-3
-			label(for='legacyID') Legacy ID
-			input.form-control(
-				required='',
-				name='legacyID',
-				type='text',
-				placeholder='1'
-			)
+				label(for='legacyID') Legacy ID
+				input.form-control(
+					required='',
+					name='legacyID',
+					type='text',
+					placeholder='1'
+				)
 			.form-group.mb-3
-			label(for='introduced') Introduced in version:
-			input.form-control(
-				required='',
-				name='introduced',
-				type='text',
-				placeholder='rd-20090515'
-			)
+				label(for='introduced') Introduced in version:
+				input.form-control(
+					required='',
+					name='introduced',
+					type='text',
+					placeholder='rd-20090515'
+				)
 			.form-group.mb-3
-			input.form-check-input(type='checkbox', name='overworld')
-			label(for='overworld') Natural spawning in the overworld
-			br
-			input.form-check-input(type='checkbox', name='nether')
-			label(for='nether') Natural spawning in the nether
-			br
-			input.form-check-input(type='checkbox', name='end')
-			label(for='end') Natural spawning in the end
+				input.form-check-input.me-1(type='checkbox', name='overworld')
+				label(for='overworld') Natural spawning in the overworld
+				br
+				input.form-check-input.me-1(type='checkbox', name='nether')
+				label(for='nether') Natural spawning in the nether
+				br
+				input.form-check-input.me-1(type='checkbox', name='end')
+				label(for='end') Natural spawning in the end
 			.form-group.mb-3
-			label(for='defaultDrop') Default drop
-			input.form-control(
-				required='',
-				name='defaultDrop',
-				type='text',
-				placeholder='minecraft:cobblestone'
-			)
+				label(for='defaultDrop') Default drop
+				input.form-control(
+					required='',
+					name='defaultDrop',
+					type='text',
+					placeholder='minecraft:cobblestone'
+				)
 			.form-group.mb-3
-			label(for='silkTouchDrop') Silk touch drop
-			input.form-control(
-				required='',
-				name='silkTouchDrop',
-				type='text',
-				placeholder='minecraft:stone'
-			)
+				label(for='silkTouchDrop') Silk touch drop
+				input.form-control(
+					required='',
+					name='silkTouchDrop',
+					type='text',
+					placeholder='minecraft:stone'
+				)
 			.form-group.mb-3
-			input.form-check-input(type='checkbox', name='affectedByFortune')
-			label(for='affectedByFortune') Affected by fortune
+				input.form-check-input.me-1(type='checkbox', name='affectedByFortune')
+				label(for='affectedByFortune') Affected by fortune
 			.form-group.mb-3
-			label(for='solidity') Solidity
-			select.form-control(name='solidity')
-				option Solid
-				option Liquid
-				option Vacant
+				label(for='solidity') Solidity
+				select.form-control(name='solidity')
+					option Solid
+					option Liquid
+					option Vacant
 			.form-group.mb-3
-			label(for='width') Width
-			input.form-control(
-				required='',
-				name='width',
-				type='number',
-				step='0.01',
-				placeholder='1'
-			)
+				label(for='width') Width
+				input.form-control(
+					required='',
+					name='width',
+					type='number',
+					step='0.01',
+					placeholder='1'
+				)
 			.form-group.mb-3
-			label(for='length') Length
-			input.form-control(
-				required='',
-				name='length',
-				type='number',
-				step='0.01',
-				placeholder='1'
-			)
+				label(for='length') Length
+				input.form-control(
+					required='',
+					name='length',
+					type='number',
+					step='0.01',
+					placeholder='1'
+				)
 			.form-group.mb-3
-			label(for='height') Height
-			input.form-control(
-				required='',
-				name='height',
-				type='number',
-				step='0.01',
-				placeholder='1'
-			)
+				label(for='height') Height
+				input.form-control(
+					required='',
+					name='height',
+					type='number',
+					step='0.01',
+					placeholder='1'
+				)
 			.form-group.mb-3
-			label(for='hardness') Hardness
-			input.form-control(
-				required='',
-				name='hardness',
-				type='number',
-				step='0.01',
-				placeholder='1.5'
-			)
+				label(for='hardness') Hardness
+				input.form-control(
+					required='',
+					name='hardness',
+					type='number',
+					step='0.01',
+					placeholder='1.5'
+				)
 			.form-group.mb-3
-			label(for='resistance') Blast Resistance
-			input.form-control(
-				required='',
-				name='resistance',
-				type='number',
-				step='0.01',
-				placeholder='6'
-			)
+				label(for='resistance') Blast Resistance
+				input.form-control(
+					required='',
+					name='resistance',
+					type='number',
+					step='0.01',
+					placeholder='6'
+				)
 			.form-group.mb-3
-			label(for='opacity') Opacity
-			input.form-control(
-				required='',
-				name='opacity',
-				type='number',
-				step='0.01',
-				placeholder='1'
-			)
+				label(for='opacity') Opacity
+				input.form-control(
+					required='',
+					name='opacity',
+					type='number',
+					step='0.01',
+					placeholder='1'
+				)
 			.form-group.mb-3
-			label(for='luminance') Luminance
-			input.form-control(
-				required='',
-				name='luminance',
-				type='number',
-				step='0.01',
-				placeholder='0'
-			)
+				label(for='luminance') Luminance
+				input.form-control(
+					required='',
+					name='luminance',
+					type='number',
+					step='0.01',
+					placeholder='0'
+				)
 			.form-group.mb-3
-			label(for='minimumXP') Min XP on break
-			input.form-control(
-				required='',
-				name='minimumXP',
-				type='number',
-				step='0.01',
-				placeholder='0'
-			)
+				label(for='minimumXP') Min XP on break
+				input.form-control(
+					required='',
+					name='minimumXP',
+					type='number',
+					step='0.01',
+					placeholder='0'
+				)
 			.form-group.mb-3
-			label(for='maximumXP') Max XP on break
-			input.form-control(
-				required='',
-				name='maximumXP',
-				type='number',
-				step='0.01',
-				placeholder='0'
-			)
+				label(for='maximumXP') Max XP on break
+				input.form-control(
+					required='',
+					name='maximumXP',
+					type='number',
+					step='0.01',
+					placeholder='0'
+				)
 			.form-group.mb-3
-			label(for='tooldata') Tool data
-			pre.
+				label(for='tooldata') Tool data
+				pre
+					textarea.autogrow.form-control(
+						required,
+						name='tooldata',
+						type='text',
+						style='resize: none'
+					).
+						[
+							{
+								"tool": "pickaxe",
+								"breakSpeed": {
+									"wooden": 1.15,
+									"stone": 0.6,
+									"iron": 0.4,
+									"diamond": 0.3,
+									"netherite": 0.25,
+									"golden": 0.2
+								}
+							},
+							{
+								"tool": "fists",
+								"breakSpeed": {
+									"default": 7.5
+								}
+							}
+						]
 			.form-group.my-3
-			input.form-check-input(type='checkbox', name='removed')
-			label(for='removed') Removed
-			br
-			input.form-check-input(type='checkbox', name='slippery')
-			label(for='slippery') Slippery
-			br
-			input.form-check-input(type='checkbox', name='flammable')
-			label(for='flammable') Flammable
-			br
-			input.form-check-input(type='checkbox', name='catchesFireFromLava')
-			label(for='catchesFireFromLava') Catches fire from lava
-			br
-			input.form-check-input(type='checkbox', name='brokenByWater')
-			label(for='brokenByWater') Broken by water
-			br
-			input.form-check-input(type='checkbox', name='interactive')
-			label(for='interactive') Interactive
+				input.form-check-input.me-1(type='checkbox', name='removed')
+				label(for='removed') Removed
+				br
+				input.form-check-input.me-1(type='checkbox', name='slippery')
+				label(for='slippery') Slippery
+				br
+				input.form-check-input.me-1(type='checkbox', name='flammable')
+				label(for='flammable') Flammable
+				br
+				input.form-check-input.me-1(type='checkbox', name='catchesFireFromLava')
+				label(for='catchesFireFromLava') Catches fire from lava
+				br
+				input.form-check-input.me-1(type='checkbox', name='brokenByWater')
+				label(for='brokenByWater') Broken by water
+				br
+				input.form-check-input.me-1(type='checkbox', name='interactive')
+				label(for='interactive') Interactive
 		input.btn.btn-secondary(type='submit', value='Upload')

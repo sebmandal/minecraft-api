@@ -4,7 +4,7 @@ const administrators = [
 	{
 		name: 'sebmandal',
 		imageUrl: '/img/sebmandal.png',
-		password: '399596706402009100',
+		password: "sebmandal's private login",
 	},
 	{
 		name: 'LucasJoel1',

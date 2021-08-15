@@ -32,8 +32,3 @@ body {
 .index-jumbotron h2 {
 	text-shadow: 0.25rem 0.25rem 0px #005304;
 }
-
-pre,
-code {
-	font-family: 'minecraftia', monospace;
-}
