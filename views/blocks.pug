@@ -58,7 +58,7 @@ block content
 				a.rounded-0.btn.btn-success.ms-1(href="/blocks?page=" + (pageNumber + 1)) Next Page
 			each block in blocks
 				a.text-reset.text-decoration-none(
-					href='/blocks/#{block.minecraftName.slice(10)}'
+					href='/blocks/' + block.minecraftName.slice(10)
 				)
 					.col-12.rounded-0
 						.d-flex.align-items-center
