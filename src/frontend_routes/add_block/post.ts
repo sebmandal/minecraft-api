@@ -10,7 +10,7 @@ const script = async (req: any, res: any) => {
 		minecraftName: req.body.minecraftName,
 		legacyID: req.body.legacyID,
 		introduced: req.body.introduced,
-		imageUrl: `/textures/block/${req.body.minecraftName.slice(10)}.png`,
+		imageUrl: `https://mc.sebmandal.com/textures/block/${req.body.minecraftName.slice(10)}.png`,
 		naturalSpawns: {
 			naturalSpawnInOverworldDimension: Boolean(req.body.overworld),
 			naturalSpawnInNetherDimension: Boolean(req.body.nether),
