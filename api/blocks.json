@@ -3042,10 +3042,148 @@
         "imageUrl": "/textures/block/spruce_leaves.png",
         "naturalSpawns": {
             "naturalSpawnInOverworldDimension": true,
-            "naturalSpawnInNetherDimension": false,
-            "naturalSpawnInEndDimension": false
+            "naturalSpawnInNetherDimension": true,
+            "naturalSpawnInEndDimension": true
         },
-        "solidity": "solid",
+        "solidity": "vacant",
+        "stats": {
+            "opacity": 0.5,
+            "hardness": 0.2,
+            "resistance": 0.2,
+            "luminance": 0,
+            "interactive": false,
+            "slippery": false,
+            "flammable": true,
+            "catchesFireFromLava": true,
+            "brokenByWater": false
+        },
+        "hitbox": {
+            "width": 1,
+            "height": 1,
+            "length": 1
+        },
+        "drops": {
+            "defaultDrop": "minecraft:spruce_sapling, minecraft:apple, minecraft:stick",
+            "silkTouchDrop": "minecraf:spruce_leaves",
+            "dropAffectedByFortune": true
+        },
+        "toolData": [
+            {
+                "tool": "hoe",
+                "breakSpeed": {
+                    "wooden": 0.15,
+                    "stone": 0.1,
+                    "iron": 0.05,
+                    "diamond": 0.05,
+                    "netherite": 0.05,
+                    "golden": 0.05
+                }
+            },
+            {
+                "tool": "shears",
+                "breakSpeed": {
+                    "default": 0.05
+                }
+            },
+            {
+                "tool": "sword",
+                "breakSpeed": {
+                    "default": 0.2
+                }
+            },
+            {
+                "tool": "fists",
+                "breakSpeed": {
+                    "default": 0.3
+                }
+            }
+        ],
+        "minimumExperienceOnBreak": 0,
+        "maximumExperienceOnBreak": 0,
+        "removed": false
+    },
+    
+    {
+        "name": "birch Leaves",
+        "minecraftName": "minecraf:birch_leaves",
+        "legacyID": "18:1",
+        "introduced": "beta 1.2",
+        "imageUrl": "/textures/block/birch_leaves.png",
+        "naturalSpawns": {
+            "naturalSpawnInOverworldDimension": true,
+            "naturalSpawnInNetherDimension": true,
+            "naturalSpawnInEndDimension": true
+        },
+        "solidity": "vacant",
+        "stats": {
+            "opacity": 0.5,
+            "hardness": 0.2,
+            "resistance": 0.2,
+            "luminance": 0,
+            "interactive": false,
+            "slippery": false,
+            "flammable": true,
+            "catchesFireFromLava": true,
+            "brokenByWater": false
+        },
+        "hitbox": {
+            "width": 1,
+            "height": 1,
+            "length": 1
+        },
+        "drops": {
+            "defaultDrop": "minecraft:birch_sapling, minecraft:apple, minecraft:stick",
+            "silkTouchDrop": "minecraf:birch_leaves",
+            "dropAffectedByFortune": true
+        },
+        "toolData": [
+            {
+                "tool": "hoe",
+                "breakSpeed": {
+                    "wooden": 0.15,
+                    "stone": 0.1,
+                    "iron": 0.05,
+                    "diamond": 0.05,
+                    "netherite": 0.05,
+                    "golden": 0.05
+                }
+            },
+            {
+                "tool": "shears",
+                "breakSpeed": {
+                    "default": 0.05
+                }
+            },
+            {
+                "tool": "sword",
+                "breakSpeed": {
+                    "default": 0.2
+                }
+            },
+            {
+                "tool": "fists",
+                "breakSpeed": {
+                    "default": 0.3
+                }
+            }
+        ],
+        "minimumExperienceOnBreak": 0,
+        "maximumExperienceOnBreak": 0,
+        "removed": false
+    },
+    
+    {
+        "name": "Spruce Leaves",
+        "minecraftName": "minecraf:spruce_leaves",
+        "legacyID": "18:1",
+        "introduced": "beta 1.2",
+        "imageUrl": "/textures/block/spruce_leaves.png",
+        "naturalSpawns": {
+            "naturalSpawnInOverworldDimension": true,
+            "naturalSpawnInNetherDimension": true,
+            "naturalSpawnInEndDimension": true
+        },
+        "solidity": "vacant",
         "stats": {
             "opacity": 0.5,
             "hardness": 0.2,
