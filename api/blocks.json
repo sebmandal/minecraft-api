@@ -3036,7 +3036,7 @@
     },
     {
         "name": "Spruce Leaves",
-        "minecraftName": "minecraf:spruce_leaves",
+        "minecraftName": "minecraft:spruce_leaves",
         "legacyID": "18:1",
         "introduced": "beta 1.2",
         "imageUrl": "/textures/block/spruce_leaves.png",
@@ -3064,7 +3064,7 @@
         },
         "drops": {
             "defaultDrop": "minecraft:spruce_sapling, minecraft:apple, minecraft:stick",
-            "silkTouchDrop": "minecraf:spruce_leaves",
+            "silkTouchDrop": "minecraft:spruce_leaves",
             "dropAffectedByFortune": true
         },
         "toolData": [
@@ -3102,7 +3102,6 @@
         "maximumExperienceOnBreak": 0,
         "removed": false
     },
-    
     {
         "name": "birch Leaves",
         "minecraftName": "minecraf:birch_leaves",
@@ -3171,21 +3170,20 @@
         "maximumExperienceOnBreak": 0,
         "removed": false
     },
-    
     {
-        "name": "Spruce Leaves",
-        "minecraftName": "minecraf:spruce_leaves",
-        "legacyID": "18:1",
-        "introduced": "beta 1.2",
-        "imageUrl": "/textures/block/spruce_leaves.png",
+        "name": "Jungle Leaves",
+        "minecraftName": "minecraft:jungle_leaves",
+        "legacyID": "18:3",
+        "introduced": "12w03a",
+        "imageUrl": "/textures/block/jungle_leaves.png",
         "naturalSpawns": {
             "naturalSpawnInOverworldDimension": true,
-            "naturalSpawnInNetherDimension": true,
-            "naturalSpawnInEndDimension": true
+            "naturalSpawnInNetherDimension": false,
+            "naturalSpawnInEndDimension": false
         },
-        "solidity": "vacant",
+        "solidity": "solid",
         "stats": {
-            "opacity": 0.5,
+            "opacity": 1,
             "hardness": 0.2,
             "resistance": 0.2,
             "luminance": 0,
@@ -3201,8 +3199,144 @@
             "length": 1
         },
         "drops": {
-            "defaultDrop": "minecraft:spruce_sapling, minecraft:apple, minecraft:stick",
-            "silkTouchDrop": "minecraf:spruce_leaves",
+            "defaultDrop": "minecraft:jungle_leaves",
+            "silkTouchDrop": "minecraft:jungle_leaves",
+            "dropAffectedByFortune": true
+        },
+        "toolData": [
+            {
+                "tool": "hoe",
+                "breakSpeed": {
+                    "wooden": 0.15,
+                    "stone": 0.1,
+                    "iron": 0.05,
+                    "diamond": 0.05,
+                    "netherite": 0.05,
+                    "golden": 0.05
+                }
+            },
+            {
+                "tool": "shears",
+                "breakSpeed": {
+                    "default": 0.05
+                }
+            },
+            {
+                "tool": "sword",
+                "breakSpeed": {
+                    "default": 0.2
+                }
+            },
+            {
+                "tool": "fists",
+                "breakSpeed": {
+                    "default": 0.3
+                }
+            }
+        ],
+        "minimumExperienceOnBreak": 0,
+        "maximumExperienceOnBreak": 0,
+        "removed": false
+    },
+    {
+        "name": "Acacia Leaves",
+        "minecraftName": "minecraft:acacia_leaves",
+        "legacyID": "161",
+        "introduced": "13w43a",
+        "imageUrl": "/textures/block/acacia_leaves.png",
+        "naturalSpawns": {
+            "naturalSpawnInOverworldDimension": true,
+            "naturalSpawnInNetherDimension": false,
+            "naturalSpawnInEndDimension": false
+        },
+        "solidity": "solid",
+        "stats": {
+            "opacity": 1,
+            "hardness": 0.2,
+            "resistance": 0.2,
+            "luminance": 0,
+            "interactive": false,
+            "slippery": false,
+            "flammable": true,
+            "catchesFireFromLava": true,
+            "brokenByWater": false
+        },
+        "hitbox": {
+            "width": 1,
+            "height": 1,
+            "length": 1
+        },
+        "drops": {
+            "defaultDrop": "minecraft:acacia_leaves",
+            "silkTouchDrop": "minecraft:acacia_leaves",
+            "dropAffectedByFortune": true
+        },
+        "toolData": [
+            {
+                "tool": "hoe",
+                "breakSpeed": {
+                    "wooden": 0.15,
+                    "stone": 0.1,
+                    "iron": 0.05,
+                    "diamond": 0.05,
+                    "netherite": 0.05,
+                    "golden": 0.05
+                }
+            },
+            {
+                "tool": "shears",
+                "breakSpeed": {
+                    "default": 0.05
+                }
+            },
+            {
+                "tool": "sword",
+                "breakSpeed": {
+                    "default": 0.2
+                }
+            },
+            {
+                "tool": "fists",
+                "breakSpeed": {
+                    "default": 0.3
+                }
+            }
+        ],
+        "minimumExperienceOnBreak": 0,
+        "maximumExperienceOnBreak": 0,
+        "removed": false
+    },
+    {
+        "name": "Dark Oak Leaves",
+        "minecraftName": "minecraft:dark_oak_leaves",
+        "legacyID": "161:1",
+        "introduced": "13w43a",
+        "imageUrl": "/textures/block/dark_oak_leaves.png",
+        "naturalSpawns": {
+            "naturalSpawnInOverworldDimension": true,
+            "naturalSpawnInNetherDimension": false,
+            "naturalSpawnInEndDimension": false
+        },
+        "solidity": "solid",
+        "stats": {
+            "opacity": 1,
+            "hardness": 0.2,
+            "resistance": 0.2,
+            "luminance": 0,
+            "interactive": false,
+            "slippery": false,
+            "flammable": true,
+            "catchesFireFromLava": true,
+            "brokenByWater": false
+        },
+        "hitbox": {
+            "width": 1,
+            "height": 1,
+            "length": 1
+        },
+        "drops": {
+            "defaultDrop": "minecraft:dark_oak_leaves",
+            "silkTouchDrop": "minecraft:dark_oak_leaves",
             "dropAffectedByFortune": true
         },
         "toolData": [
