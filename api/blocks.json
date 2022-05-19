@@ -54,6 +54,7 @@
             "hardness": 1.5,
             "resistance": 6,
             "luminance": 0,
+            "interactive": false,
             "slippery": false,
             "flammable": false,
             "catchesFireFromLava": false,
@@ -109,6 +110,7 @@
             "hardness": 1.5,
             "resistance": 6,
             "luminance": 0,
+            "interactive": false,
             "slippery": false,
             "flammable": false,
             "catchesFireFromLava": false,
@@ -164,6 +166,7 @@
             "hardness": 1.5,
             "resistance": 6,
             "luminance": 0,
+            "interactive": false,
             "slippery": false,
             "flammable": false,
             "catchesFireFromLava": false,
@@ -494,6 +497,7 @@
             "hardness": 0.6,
             "resistance": 0.6,
             "luminance": 0,
+            "interactive": false,
             "slippery": false,
             "flammable": false,
             "catchesFireFromLava": false,
@@ -536,9 +540,10 @@
         "name": "Coarse Dirt",
         "minecraftName": "minecraft:coarse_dirt",
         "legacyID": "3:1",
+        "introduced": "13w36a",
         "imageUrl": "https://mc.sebmandal.com/textures/block/coarse_dirt.png",
         "naturalSpawns": {
-            "naturalSpawnInOverworldDimension": false,
+            "naturalSpawnInOverworldDimension": true,
             "naturalSpawnInNetherDimension": false,
             "naturalSpawnInEndDimension": false
         },
@@ -548,6 +553,7 @@
             "hardness": 0.5,
             "resistance": 0.5,
             "luminance": 0,
+            "interactive": false,
             "slippery": false,
             "flammable": false,
             "catchesFireFromLava": false,
@@ -3527,6 +3533,661 @@
                 }
             }
         ],
+        "minimumExperienceOnBreak": 0,
+        "maximumExperienceOnBreak": 0,
+        "removed": false
+    },
+    {
+        "name": "Lapis Lazuli ore",
+        "minecraftName": "minecraft:lapis_ore",
+        "legacyID": "21",
+        "introduced": "beta 1.2",
+        "imageUrl": "https://mc.sebmandal.com/textures/block/lapis_ore.png",
+        "naturalSpawns": {
+            "naturalSpawnInOverworldDimension": true,
+            "naturalSpawnInNetherDimension": true,
+            "naturalSpawnInEndDimension": true
+        },
+        "solidity": "vacant",
+        "stats": {
+            "opacity": 1,
+            "hardness": 3,
+            "resistance": 3,
+            "luminance": 0,
+            "interactive": false,
+            "slippery": false,
+            "flammable": false,
+            "catchesFireFromLava": false,
+            "brokenByWater": false
+        },
+        "hitbox": {
+            "width": 1,
+            "height": 1,
+            "length": 1
+        },
+        "drops": {
+            "defaultDrop": "minecraft:lapis_lazuli",
+            "silkTouchDrop": "minecraft:lapis_ore",
+            "dropAffectedByFortune": true
+        },
+        "toolData": [
+            {
+                "tool": "pickaxe",
+                "breakSpeed": {
+                    "wooden": 7.5,
+                    "stone": 1.15,
+                    "iron": 0.75,
+                    "diamond": 0.6,
+                    "netherite": 0.5,
+                    "golden": 1.25
+                }
+            },
+            {
+                "tool": "fists",
+                "breakSpeed": {
+                    "default": 15
+                }
+            }
+        ],
+        "minimumExperienceOnBreak": 2,
+        "maximumExperienceOnBreak": 5,
+        "removed": false
+    },
+    {
+        "name": "Lapis Lazuli Block",
+        "minecraftName": "minecraft:lapis_block",
+        "legacyID": "22",
+        "introduced": "beta 1.2",
+        "imageUrl": "https://mc.sebmandal.com/textures/block/lapis_block.png",
+        "naturalSpawns": {
+            "naturalSpawnInOverworldDimension": false,
+            "naturalSpawnInNetherDimension": false,
+            "naturalSpawnInEndDimension": false
+        },
+        "solidity": "solid",
+        "stats": {
+            "opacity": 1,
+            "hardness": 3,
+            "resistance": 3,
+            "luminance": 0,
+            "interactive": false,
+            "slippery": false,
+            "flammable": false,
+            "catchesFireFromLava": false,
+            "brokenByWater": false
+        },
+        "hitbox": {
+            "width": 1,
+            "height": 1,
+            "length": 1
+        },
+        "drops": {
+            "defaultDrop": "minecraft:lapis_block",
+            "silkTouchDrop": "minecraft:lapis_block",
+            "dropAffectedByFortune": false
+        },
+        "toolData": [
+            {
+                "tool": "pickaxe",
+                "breakSpeed": {
+                    "wooden": 7.5,
+                    "stone": 1.15,
+                    "iron": 0.75,
+                    "diamond": 0.6,
+                    "netherite": 0.5,
+                    "golden": 1.25
+                }
+            },
+            {
+                "tool": "fists",
+                "breakSpeed": {
+                    "default": 15
+                }
+            }
+        ],
+        "minimumExperienceOnBreak": 0,
+        "maximumExperienceOnBreak": 0,
+        "removed": false
+    },
+    {
+        "name": "Dispenser",
+        "minecraftName": "minecraft:dispenser",
+        "legacyID": "23",
+        "introduced": "beta 1.2",
+        "imageUrl": "https://mc.sebmandal.com/textures/block/dispenser_front.png",
+        "naturalSpawns": {
+            "naturalSpawnInOverworldDimension": true,
+            "naturalSpawnInNetherDimension": true,
+            "naturalSpawnInEndDimension": true
+        },
+        "solidity": "vacant",
+        "stats": {
+            "opacity": 1,
+            "hardness": 3.5,
+            "resistance": 3.5,
+            "luminance": 0,
+            "interactive": true,
+            "slippery": false,
+            "flammable": false,
+            "catchesFireFromLava": false,
+            "brokenByWater": false
+        },
+        "hitbox": {
+            "width": 1,
+            "height": 1,
+            "length": 1
+        },
+        "drops": {
+            "defaultDrop": "minecrafr:dispenser",
+            "silkTouchDrop": "minecrafr:dispenser",
+            "dropAffectedByFortune": false
+        },
+        "toolData": [
+            {
+                "tool": "pickaxe",
+                "breakSpeed": {
+                    "wooden": 2.65,
+                    "stone": 1.35,
+                    "iron": 0.9,
+                    "diamond": 0.7,
+                    "netherite": 0.6,
+                    "golden": 0.45
+                }
+            },
+            {
+                "tool": "fists",
+                "breakSpeed": {
+                    "default": 17.5
+                }
+            }
+        ],
+        "minimumExperienceOnBreak": 0,
+        "maximumExperienceOnBreak": 0,
+        "removed": false
+    },
+    {
+        "name": "Sandstone",
+        "minecraftName": "minecraft:sandstone",
+        "legacyID": "24",
+        "introduced": "beta 1.2",
+        "imageUrl": "https://mc.sebmandal.com/textures/block/sandstone.png",
+        "naturalSpawns": {
+            "naturalSpawnInOverworldDimension": true,
+            "naturalSpawnInNetherDimension": false,
+            "naturalSpawnInEndDimension": false
+        },
+        "solidity": "solid",
+        "stats": {
+            "opacity": 1,
+            "hardness": 0.8,
+            "resistance": 0.8,
+            "luminance": 0,
+            "interactive": false,
+            "slippery": false,
+            "flammable": false,
+            "catchesFireFromLava": false,
+            "brokenByWater": false
+        },
+        "hitbox": {
+            "width": 1,
+            "height": 1,
+            "length": 1
+        },
+        "drops": {
+            "defaultDrop": "minecraft:sandstone",
+            "silkTouchDrop": "minecraft:sandstone",
+            "dropAffectedByFortune": false
+        },
+        "toolData": [
+            {
+                "tool": "pickaxe",
+                "breakSpeed": {
+                    "wooden": 0.6,
+                    "stone": 0.3,
+                    "iron": 0.2,
+                    "diamond": 0.15,
+                    "netherite": 0.15,
+                    "golden": 0.1
+                }
+            },
+            {
+                "tool": "fists",
+                "breakSpeed": {
+                    "default": 4
+                }
+            }
+        ],
+        "minimumExperienceOnBreak": 0,
+        "maximumExperienceOnBreak": 0,
+        "removed": false
+    },
+    {
+        "name": "Chiseled Sandstone",
+        "minecraftName": "minecraft:chiseled_sandstone",
+        "legacyID": "24:1",
+        "introduced": "1.2.4",
+        "imageUrl": "https://mc.sebmandal.com/textures/block/chiseled_sandstone.png",
+        "naturalSpawns": {
+            "naturalSpawnInOverworldDimension": true,
+            "naturalSpawnInNetherDimension": true,
+            "naturalSpawnInEndDimension": true
+        },
+        "solidity": "vacant",
+        "stats": {
+            "opacity": 1,
+            "hardness": 0.8,
+            "resistance": 0.8,
+            "luminance": 0,
+            "interactive": false,
+            "slippery": false,
+            "flammable": false,
+            "catchesFireFromLava": false,
+            "brokenByWater": false
+        },
+        "hitbox": {
+            "width": 1,
+            "height": 1,
+            "length": 1
+        },
+        "drops": {
+            "defaultDrop": "minecraft:chiseled_sandstone",
+            "silkTouchDrop": "minecraft:chiseled_sandstone",
+            "dropAffectedByFortune": false
+        },
+        "toolData": [
+            {
+                "tool": "pickaxe",
+                "breakSpeed": {
+                    "wooden": 0.6,
+                    "stone": 0.3,
+                    "iron": 0.2,
+                    "diamond": 0.15,
+                    "netherite": 0.15,
+                    "golden": 0.1
+                }
+            },
+            {
+                "tool": "fists",
+                "breakSpeed": {
+                    "default": 4
+                }
+            }
+        ],
+        "minimumExperienceOnBreak": 0,
+        "maximumExperienceOnBreak": 0,
+        "removed": false
+    },
+    {
+        "name": "Cut Sandstone",
+        "minecraftName": "minecraft:cut_sandstone",
+        "legacyID": "24:1",
+        "introduced": "1.2.4",
+        "imageUrl": "https://mc.sebmandal.com/textures/block/cut_sandstone.png",
+        "naturalSpawns": {
+            "naturalSpawnInOverworldDimension": true,
+            "naturalSpawnInNetherDimension": false,
+            "naturalSpawnInEndDimension": false
+        },
+        "solidity": "solid",
+        "stats": {
+            "opacity": 1,
+            "hardness": 0.8,
+            "resistance": 0.8,
+            "luminance": 0,
+            "interactive": false,
+            "slippery": false,
+            "flammable": false,
+            "catchesFireFromLava": false,
+            "brokenByWater": false
+        },
+        "hitbox": {
+            "width": 1,
+            "height": 1,
+            "length": 1
+        },
+        "drops": {
+            "defaultDrop": "minecraft:cut_sandstone",
+            "silkTouchDrop": "minecraft:cut_sandstone",
+            "dropAffectedByFortune": false
+        },
+        "toolData": [
+            {
+                "tool": "pickaxe",
+                "breakSpeed": {
+                    "wooden": 0.6,
+                    "stone": 0.3,
+                    "iron": 0.2,
+                    "diamond": 0.15,
+                    "netherite": 0.15,
+                    "golden": 0.1
+                }
+            },
+            {
+                "tool": "fists",
+                "breakSpeed": {
+                    "default": 4
+                }
+            }
+        ],
+        "minimumExperienceOnBreak": 0,
+        "maximumExperienceOnBreak": 0,
+        "removed": false
+    },
+    {
+        "name": "Note Block",
+        "minecraftName": "minecraft:note_block",
+        "legacyID": "25",
+        "introduced": "beta 1.2",
+        "imageUrl": "https://mc.sebmandal.com/textures/block/note_block.png",
+        "naturalSpawns": {
+            "naturalSpawnInOverworldDimension": false,
+            "naturalSpawnInNetherDimension": false,
+            "naturalSpawnInEndDimension": false
+        },
+        "solidity": "solid",
+        "stats": {
+            "opacity": 1,
+            "hardness": 0.8,
+            "resistance": 0.8,
+            "luminance": 0,
+            "interactive": true,
+            "slippery": false,
+            "flammable": false,
+            "catchesFireFromLava": true,
+            "brokenByWater": false
+        },
+        "hitbox": {
+            "width": 1,
+            "height": 1,
+            "length": 1
+        },
+        "drops": {
+            "defaultDrop": "minecraft:note_block",
+            "silkTouchDrop": "minecraft:note_block",
+            "dropAffectedByFortune": false
+        },
+        "toolData": [
+            {
+                "tool": "axe",
+                "breakSpeed": {
+                    "wooden": 0.6,
+                    "stone": 0.3,
+                    "iron": 0.2,
+                    "diamond": 0.15,
+                    "netherite": 0.15,
+                    "golden": 0.1
+                }
+            },
+            {
+                "tool": "fists",
+                "breakSpeed": {
+                    "default": 1.2
+                }
+            }
+        ],
+        "minimumExperienceOnBreak": 0,
+        "maximumExperienceOnBreak": 0,
+        "removed": false
+    },
+    {
+        "name": "Powered Rail",
+        "minecraftName": "minecraft:powered_rail",
+        "legacyID": "27",
+        "introduced": "beta 1.5",
+        "imageUrl": "https://mc.sebmandal.com/textures/block/powered_rail.png",
+        "naturalSpawns": {
+            "naturalSpawnInOverworldDimension": false,
+            "naturalSpawnInNetherDimension": false,
+            "naturalSpawnInEndDimension": false
+        },
+        "solidity": "vacant",
+        "stats": {
+            "opacity": 0,
+            "hardness": 0.7,
+            "resistance": 0.7,
+            "luminance": 0,
+            "interactive": false,
+            "slippery": false,
+            "flammable": false,
+            "catchesFireFromLava": false,
+            "brokenByWater": true
+        },
+        "hitbox": {
+            "width": 1,
+            "height": 1,
+            "length": 1
+        },
+        "drops": {
+            "defaultDrop": "minecraft:powered_rail",
+            "silkTouchDrop": "minecraft:powered_rail",
+            "dropAffectedByFortune": false
+        },
+        "toolData": [
+            {
+                "tool": "pickaxe",
+                "breakSpeed": {
+                    "wooden": 0.55,
+                    "stone": 0.3,
+                    "iron": 0.2,
+                    "diamond": 0.15,
+                    "netherite": 0.15,
+                    "golden": 0.1
+                }
+            },
+            {
+                "tool": "fists",
+                "breakSpeed": {
+                    "default": 1.05
+                }
+            }
+        ],
+        "minimumExperienceOnBreak": 0,
+        "maximumExperienceOnBreak": 0,
+        "removed": false
+    },
+    {
+        "name": "Detector Rail",
+        "minecraftName": "minecraft:detector_rail",
+        "legacyID": "28",
+        "introduced": "beta 1.5",
+        "imageUrl": "https://mc.sebmandal.com/textures/block/detector_rail.png",
+        "naturalSpawns": {
+            "naturalSpawnInOverworldDimension": false,
+            "naturalSpawnInNetherDimension": false,
+            "naturalSpawnInEndDimension": false
+        },
+        "solidity": "vacant",
+        "stats": {
+            "opacity": 0,
+            "hardness": 0.7,
+            "resistance": 0.7,
+            "luminance": 0,
+            "interactive": false,
+            "slippery": false,
+            "flammable": false,
+            "catchesFireFromLava": false,
+            "brokenByWater": true
+        },
+        "hitbox": {
+            "width": 1,
+            "height": 1,
+            "length": 1
+        },
+        "drops": {
+            "defaultDrop": "minecraft:detector_rail",
+            "silkTouchDrop": "minecraft:detector_rail",
+            "dropAffectedByFortune": false
+        },
+        "toolData": [
+            {
+                "tool": "pickaxe",
+                "breakSpeed": {
+                    "wooden": 0.55,
+                    "stone": 0.3,
+                    "iron": 0.2,
+                    "diamond": 0.15,
+                    "netherite": 0.15,
+                    "golden": 0.1
+                }
+            },
+            {
+                "tool": "fists",
+                "breakSpeed": {
+                    "default": 1.05
+                }
+            }
+        ],
+        "minimumExperienceOnBreak": 0,
+        "maximumExperienceOnBreak": 0,
+        "removed": false
+    },
+    {
+        "name": "Sticky Piston",
+        "minecraftName": "minecraft:sticky_piston",
+        "legacyID": "29",
+        "introduced": "beta 1.7",
+        "imageUrl": "https://mc.sebmandal.com/textures/block/piston_top_sticky.png",
+        "naturalSpawns": {
+            "naturalSpawnInOverworldDimension": true,
+            "naturalSpawnInNetherDimension": true,
+            "naturalSpawnInEndDimension": true
+        },
+        "solidity": "vacant",
+        "stats": {
+            "opacity": 1,
+            "hardness": 1.5,
+            "resistance": 0.5,
+            "luminance": 0,
+            "interactive": false,
+            "slippery": false,
+            "flammable": false,
+            "catchesFireFromLava": false,
+            "brokenByWater": false
+        },
+        "hitbox": {
+            "width": 1,
+            "height": 1,
+            "length": 1
+        },
+        "drops": {
+            "defaultDrop": "minecraft:sticky_piston",
+            "silkTouchDrop": "minecraft:sticky_piston",
+            "dropAffectedByFortune": false
+        },
+        "toolData": [
+            {
+                "tool": "pickaxe",
+                "breakSpeed": {
+                    "wooden": 1.15,
+                    "stone": 0.6,
+                    "iron": 0.4,
+                    "diamond": 0.3,
+                    "netherite": 0.25,
+                    "golden": 0.2
+                }
+            },
+            {
+                "tool": "fists",
+                "breakSpeed": {
+                    "default": 2.25
+                }
+            }
+        ],
+        "minimumExperienceOnBreak": 0,
+        "maximumExperienceOnBreak": 0,
+        "removed": false
+    },
+    {
+        "name": "Cobweb",
+        "minecraftName": "minecraft:cobweb",
+        "legacyID": "30",
+        "introduced": "classic 0.26_SURVIVAL_TEST",
+        "imageUrl": "https://mc.sebmandal.com/textures/block/cobweb.png",
+        "naturalSpawns": {
+            "naturalSpawnInOverworldDimension": true,
+            "naturalSpawnInNetherDimension": true,
+            "naturalSpawnInEndDimension": true
+        },
+        "solidity": "vacant",
+        "stats": {
+            "opacity": 0.5,
+            "hardness": 4,
+            "resistance": 4,
+            "luminance": 0,
+            "interactive": false,
+            "slippery": false,
+            "flammable": false,
+            "catchesFireFromLava": false,
+            "brokenByWater": true
+        },
+        "hitbox": {
+            "width": 1,
+            "height": 1,
+            "length": 1
+        },
+        "drops": {
+            "defaultDrop": "minecraft:string",
+            "silkTouchDrop": "minecraft:cobweb",
+            "dropAffectedByFortune": true
+        },
+        "toolData": [
+            {
+                "tool": "shears",
+                "breakSpeed": {
+                    "default": 0.4
+                }
+            },
+            {
+                "tool": "sword",
+                "breakSpeed": {
+                    "default": 0.4
+                }
+            },
+            {
+                "tool": "fists",
+                "breakSpeed": {
+                    "default": 20
+                }
+            }
+        ],
+        "minimumExperienceOnBreak": 0,
+        "maximumExperienceOnBreak": 0,
+        "removed": false
+    },
+    {
+        "name": "Grass",
+        "minecraftName": "minecraft:grass",
+        "legacyID": "null",
+        "introduced": "beta 1.6 Test Build 3",
+        "imageUrl": "https://mc.sebmandal.com/textures/block/grass.png",
+        "naturalSpawns": {
+            "naturalSpawnInOverworldDimension": true,
+            "naturalSpawnInNetherDimension": true,
+            "naturalSpawnInEndDimension": true
+        },
+        "solidity": "vacant",
+        "stats": {
+            "opacity": 0.5,
+            "hardness": 0,
+            "resistance": 0,
+            "luminance": 0,
+            "interactive": false,
+            "slippery": false,
+            "flammable": true,
+            "catchesFireFromLava": true,
+            "brokenByWater": true
+        },
+        "hitbox": {
+            "width": 0.75,
+            "height": 0.87,
+            "length": 0.75
+        },
+        "drops": {
+            "defaultDrop": "minecraft:seeds",
+            "silkTouchDrop": "minecraft:grass",
+            "dropAffectedByFortune": true
+        },
+        "toolData": [],
         "minimumExperienceOnBreak": 0,
         "maximumExperienceOnBreak": 0,
         "removed": false
