@@ -2,16 +2,34 @@ extends ./partials/master
 block content
 	.container.p-3.bg-light(style='overflow: auto')
 		// header image
-		.col-md-3.col-12
+		//- desktop
+		.col-3.d-none.d-md-block
 			img.w-100.h-auto.float-start.me-3.pb-3.pb-md-0(
 				src=block.imageUrl,
 				alt=block.minecraftName,
 				width='8',
 				height='8'
 			)
+		//- mobile
+		.row.align-items-center
+			.col-3.d-md-none.float-left
+				img.w-100.h-auto.float-start.me-3.pb-3.pb-md-0(
+					src=block.imageUrl,
+					alt=block.minecraftName,
+					width='8',
+					height='8'
+				)
+
+			// Title / header
+			//- mobile
+			.col-9.d-md-none
+				h2.mb-0 #{ block.name }
+				p.mb-2.fst-italic
+					| #{ block.legacyID } &mdash; #{ block.minecraftName }
 		.row
 			// Title / header
-			.col-12.text-center.text-md-start
+			//- desktop
+			.col-12.text-center.text-md-start.d-none.d-md-block
 				h2.mb-0 #{ block.name }
 				p.mb-2.fst-italic
 					| #{ block.legacyID } &mdash; #{ block.minecraftName }
@@ -29,6 +47,24 @@ block content
 						href="/dashboard/edit_block/" + block.minecraftName.slice(10),
 						type='button'
 					) Edit Block
+			
+			// Stats
+			.col-12.mb-3
+				h3 Information
+				.col-12
+					code.text-dark
+						b introduced
+						| : #{ block.introduced }
+				.col-12
+					code.text-dark
+						b solidity
+						| : #{ block.solidity }
+
+				each stat in Object.keys(block.stats)
+					.col-12
+						code.text-dark
+							b #{ stat }
+							| : #{ block.stats[stat] }
 
 			// SPAWNS IN _ DIMENSIONS
 			.col-12.mb-3
@@ -45,20 +81,6 @@ block content
 					code.text-dark
 						b End
 						| : #{ block.naturalSpawns["naturalSpawnInEndDimension"] }
-
-			// Stats
-			.col-12.mb-3
-				h3 Statistics
-				.col-12
-					code.text-dark
-						b solidity
-						| : #{ block.solidity }
-
-				each stat in Object.keys(block.stats)
-					.col-12
-						code.text-dark
-							b #{ stat }
-							| : #{ block.stats[stat] }
 
 			// Hitbox dimensions
 			.col-12.mb-3
