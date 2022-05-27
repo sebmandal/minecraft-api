@@ -1,0 +1,11 @@
+[
+    {
+        "key": "123456789",
+        "usesLeft": 0,
+        "admin": false
+    },
+    {
+        "key": "987654321",
+        "admin": true
+    }
+]
