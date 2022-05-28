@@ -14,19 +14,19 @@ const script = async (req: Express.Request, res: Express.Response) => {
 	const key = req.query.key as string | undefined
 	// if no key was provided return 403
 	if (!key) {
-		res.status(403).send('No key provided')
+		res.json({error: true, message: "No key provided"})
 		return
 	}
 	// if the key provided is not in the list of keys return 403
 	if (!keys.includes(key)) {
-		res.status(403).send('Invalid key')
+		res.status(403).json({error: true, message: "Invalid key"})
 		return
 	}
 	res.setHeader('Content-Type', 'application/json')
 	for (var i = 0; i < apiKeys.length; i++) {
 		if (apiKeys[i].key === key) {
-			if(apiKeys[i].usesLeft <= 0) {
-				res.status(403).send('Key has no uses left')
+			if(apiKeys[i].usesLeft == 0) {
+				res.status(403).json({error: true, message: "Key has no uses left"})
 				return
 			}
 			// remove one from uses from the key in the apiKeys.json file
@@ -38,7 +38,6 @@ const script = async (req: Express.Request, res: Express.Response) => {
 			}
 		}
 	}
-	res.setHeader('Content-Type', 'application/json')
 
 	const BLOCKS = await JSON.parse(
 		fs.readFileSync('./api/blocks.json', 'utf8')

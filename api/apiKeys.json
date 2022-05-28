@@ -1,8 +1,7 @@
 [
     {
         "key": "123456789",
-        "usesLeft": 0,
-        "admin": false
+        "usesLeft": 0
     },
     {
         "key": "987654321",
