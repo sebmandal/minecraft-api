@@ -17,11 +17,11 @@
 
 <div style="display: flex; justify-content: center; align-items: center; min-width: 100%;">
   <div style="width: 50%;">
-    <p>🖥 Backend and frontend engineering: <a href="https://github.com/sebmandal">@sebmandal</a></p>
+    <p>🖥 Full-stack development: <a href="https://github.com/sebmandal">@sebmandal</a></p>
     <img src="https://cdn.discordapp.com/attachments/869843923428847666/875584753896665138/sebmandal.png" height="180" />
   </div>
   <div style="width: 50%;">
-    <p>📈 API information gathering and development: <a href="https://github.com/LucasJoel1">@LucasJoel1</a></p>
+    <p>📈 Information gathering and development: <a href="https://github.com/LucasJoel1">@LucasJoel1</a></p>
     <img src="https://cdn.discordapp.com/attachments/869843923428847666/875584899288010782/DragonLord25.png" height="180" />
   </div>
 </div>
